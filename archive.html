@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>往期归档 · 游戏开发周刊</title>
+<meta name="description" content="游戏开发周刊 全部 1 期归档">
+<meta property="og:type" content="article"><meta property="og:title" content="往期归档 · 游戏开发周刊">
+<meta property="og:description" content="游戏开发周刊 全部 1 期归档"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://tang-xiaolong.github.io/weekly-site/archive.html"><meta property="og:url" content="https://tang-xiaolong.github.io/weekly-site/archive.html">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script><style>
+:root{--bg:#f7f8fa;--panel:#fff;--ink:#1c2430;--mut:#5c6b80;--line:#dfe5ee;--ac:#2563eb;--gn:#059669;--chip:#eef2f9;--fs:15px}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1420;--panel:#141d2c;--ink:#e2e8f2;--mut:#8fa0b8;--line:#26324a;--ac:#5b8def;--gn:#34d399;--chip:#1a2436}}
+:root[data-theme="dark"]{--bg:#0d1420;--panel:#141d2c;--ink:#e2e8f2;--mut:#8fa0b8;--line:#26324a;--ac:#5b8def;--gn:#34d399;--chip:#1a2436}
+:root[data-theme="light"]{--bg:#f7f8fa;--panel:#fff;--ink:#1c2430;--mut:#5c6b80;--line:#dfe5ee;--ac:#2563eb;--gn:#059669;--chip:#eef2f9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;line-height:1.8;font-size:var(--fs)}
+a{color:var(--ac)}
+.num{font-family:Consolas,'Cascadia Mono',monospace;font-weight:700}
+header.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:11px 18px}
+.tw{max-width:46rem;margin:0 auto;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-right:48px}
+.tw h1{font-size:17px;margin:0;letter-spacing:.5px}
+.tw h1 a{color:var(--ink);text-decoration:none}
+.tw .sp{flex:1}
+.tw a.nav{color:var(--mut);text-decoration:none;font-size:13px}
+.tw a.nav:hover{color:var(--ac)}
+main{max-width:46rem;margin:0 auto;padding:18px 18px 64px}
+.ihead{margin:14px 0 6px}
+.ihead .no{font-size:30px;color:var(--ac);font-family:Consolas,'Cascadia Mono',monospace;font-weight:700}
+.ihead h2{font-size:23px;margin:2px 0 4px;text-wrap:balance}
+.ihead .rng{color:var(--mut);font-size:13px}
+.intro{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--ac);border-radius:0 12px 12px 0;padding:12px 18px;margin:18px 0 6px;color:color-mix(in srgb,var(--ink) 92%,var(--mut))}
+section.board{margin:30px 0 0}
+section.board h3{font-size:17px;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin:11px 0}
+.item .t{font-size:16px;font-weight:600;line-height:1.55;text-decoration:none;display:inline-block}
+.item .t:hover{text-decoration:underline}
+.meta{font-size:12px;color:var(--mut);margin:5px 0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.meta .src{font-family:Consolas,'Cascadia Mono',monospace}
+.tag{font-size:11px;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--mut)}
+.tag.daily{background:color-mix(in srgb,var(--gn) 15%,transparent);color:var(--gn)}
+.tag.hot{background:color-mix(in srgb,var(--ac) 14%,transparent);color:var(--ac)}
+.cm{margin:0;font-size:14.5px;color:color-mix(in srgb,var(--ink) 90%,var(--mut))}
+.also{margin-top:9px;font-size:12.5px;color:var(--mut)}
+.also a{color:var(--mut);text-decoration:underline dotted}
+.also a:hover{color:var(--ac)}
+.pager{display:flex;gap:12px;margin:34px 0 0}
+.pager a,.pager span{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;background:var(--panel);color:var(--ink);font-size:13.5px}
+.pager .nx{text-align:right;border-color:color-mix(in srgb,var(--ac) 40%,transparent)}
+.pager .lab{display:block;font-size:12px;color:var(--mut)}
+.pager .dis{opacity:.5}
+.foot{color:var(--mut);font-size:12.5px;margin-top:38px;border-top:1px solid var(--line);padding-top:14px;line-height:1.9}
+.foot code{font-family:Consolas,monospace;font-size:.95em}
+.alist{list-style:none;padding:0;margin:0}
+.alist li{display:flex;gap:12px;align-items:baseline;padding:11px 4px;border-bottom:1px dashed var(--line)}
+.alist a{text-decoration:none;font-weight:600}
+.alist .d{color:var(--mut);font-size:12.5px;font-family:Consolas,monospace}
+.alist .c{color:var(--mut);font-size:12.5px;margin-left:auto}
+.mon{margin:26px 0 6px;font-size:14px;color:var(--mut);font-weight:600}
+.tbtn{position:fixed;top:9px;right:12px;z-index:11;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;font-size:15px;padding:4px 11px;cursor:pointer;line-height:1.4;box-shadow:0 1px 6px rgba(0,0,0,.12)}
+.tbtn:active{transform:scale(.92)}
+</style></head><body>
+<button id="theme-btn" class="tbtn" aria-label="切换夜间模式">🌙</button>
+<header class="top"><div class="tw"><h1><a href="index.html">📰 游戏开发周刊</a></h1><span class=rng>往期归档</span><span class="sp"></span><a class="nav" href="archive.html">往期</a><a class="nav" href="feed.xml">RSS</a></div></header><main><div class="ihead"><h2>往期归档</h2><div class="rng">共 1 期</div></div><div class="mon">2026 年 07 月</div><ul class="alist"><li><span class="d">07/29</span><a href="issues/001.html">第 001 期</a><span class="c">23 条</span></li></ul><div class="foot">每周一更新 · 由私人助理自动出刊</div></main>
+<script>
+(function(){var b=document.getElementById('theme-btn');if(!b)return;
+var cur=function(){var t=document.documentElement.getAttribute('data-theme');
+  return t||((window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');};
+var paint=function(){var d=cur()==='dark';b.textContent=d?'\u2600\ufe0f':'\ud83c\udf19';
+  b.title=d?'\u5207\u5230\u65e5\u95f4\u6a21\u5f0f':'\u5207\u5230\u591c\u95f4\u6a21\u5f0f';};
+b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}paint();});
+paint();})();
+</script></body></html>

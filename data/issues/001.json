@@ -1,0 +1,316 @@
+{
+ "no": 1,
+ "week": "2026-W31",
+ "date": "2026-07-29",
+ "range": [
+  "2026-07-23",
+  "2026-07-29"
+ ],
+ "intro": "本期头条是 Unity CLI——官方第一次把整个 Unity 生态搬上命令行，AI agent 驱动编辑器终于有了官方入口；同周还有 Unity 7 重回路线图、实时 GI 立项，AI 侧 Opus 5 与 FLUX 3 前后脚落地，市场侧 GameDiscoverCo 一口气给了三份能直接拿去定策略的数据。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "821e68e81116",
+     "title": "Unity CLI + Unity Pipeline = Game Changers",
+     "url": "https://gamefromscratch.com/unity-cli-unity-pipeline-game-changers/",
+     "source": "gamefromscratch.com",
+     "published": "2026-07-21",
+     "comment": "Unite 2026 Seoul 上放出的官方命令行，覆盖整个 Unity 生态而不只是构建脚本。对把 Claude Code 当主力的人，这是第一次有官方入口让 agent 直接驱动编辑器，不用再赌第三方 MCP 桥的稳定性；另见那条论坛帖就是有人在实操把它接上 Claude Desktop，目前还处在互相摸索的阶段。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Unity CLI + Claude Desktop Workflow",
+       "url": "https://discussions.unity.com/t/unity-cli-claude-desktop-workflow/1732149",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "62293d419769",
+     "title": "Unity 7 is Back",
+     "url": "https://gamefromscratch.com/unity-7-is-back/",
+     "source": "gamefromscratch.com",
+     "published": "2026-07-21",
+     "comment": "2024 Unite 宣布之后就没动静的 Unity Next（即 Unity 7）重新回到路线图：与现有 Unity 干净切割、统一到单一渲染管线。手上有跨年长周期项目的，现在就该开始盘升级路径和管线选型的止损点。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "543b85e2946e",
+     "title": "Unity Getting Real-Time Global Illumination",
+     "url": "https://gamefromscratch.com/unity-getting-real-time-global-illumination/",
+     "source": "gamefromscratch.com",
+     "published": "2026-07-23",
+     "comment": "Unity 要补实时全局光照，Unreal 那边已经有很多年了。对小团队的价值是省掉烘焙 lightmap 的整套迭代成本，但落地版本、平台支持和性能开销都还没细节，别现在就改灯光方案。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "7bec40bd5720",
+     "title": "Web Platform - What shipped in 6.5, and what's coming in 6.6",
+     "url": "https://discussions.unity.com/t/web-platform-what-shipped-in-6-5-and-whats-coming-in-6-6/1732387",
+     "source": "discussions.unity.com",
+     "published": "2026-07-28",
+     "comment": "官方 Web 平台的两段式汇总：6.5 已发的 + 6.6 在做的，上一次更新还停在 6.4 的 Burst/Job System 多线程。要出 WebGL 或小游戏版本的话，这是唯一权威的功能时间表。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "df56189df988",
+     "title": "Multiplayer Service Package v2.3.0 is now publicly available",
+     "url": "https://discussions.unity.com/t/multiplayer-service-package-v2-3-0-is-now-publicly-available/1732363",
+     "source": "discussions.unity.com",
+     "published": "2026-07-28",
+     "comment": "SessionConnector 补上了 Join（此前只有 Create 和 CreateOrJoin），创建、加入、配置会话能在一个组件里走完。做联机原型时可以少写一层自己的会话状态机。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "592f07facb4e",
+     "title": "Unity has been dethroned by Godot for the first time in the GMTK Game Jam 2026.",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1v92e0z/unity_has_been_dethroned_by_godot_for_the_first/",
+     "source": "reddit.com",
+     "published": "2026-07-28",
+     "comment": "GMTK Game Jam 2026 里 Godot 首次在参赛作品数上超过 Unity。Jam 分布不等于商业项目分布，但它是新人流向的先行指标——教程、插件、招人的生态惯性会滞后一两年跟着走。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "377deda23f1c",
+     "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+     "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+     "source": "latent.space",
+     "published": "2026-07-25",
+     "comment": "Anthropic 把 Fable 级表现蒸馏到了 Opus 价位，标称是 Fable 的一半价。天天跑 Claude Code 的直接受益：同样预算能把主力模型钉在更强的一档，长任务不用再靠降级省钱。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Claude Opus 5 🧠, inside OpenAI’s hack 👨‍💻, NVIDIA open weights 🔓",
+       "url": "https://tldr.tech/ai/2026-07-27",
+       "source": "tldr.tech"
+      }
+     ]
+    },
+    {
+     "id": "1d92a3de2baa",
+     "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+     "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+     "source": "latent.space",
+     "published": "2026-07-24",
+     "comment": "Black Forest Labs 的 FLUX 3，多模态 flow 模型，按 AINews 的说法压过 Seedance 2.0、Gemini Omni 和 Grok Imagine，同期还放了 FLUX-mimic 视频-动作模型。概念图和 2D 素材这条线该重新测一遍基座了。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "36173ab2ceb2",
+     "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+     "url": "https://huggingface.co/blog/nunchaku-diffusers",
+     "source": "huggingface.co",
+     "published": "2026-07-23",
+     "comment": "Nunchaku 的 4-bit 扩散推理进了 Diffusers 主线，不用改推理栈就能在消费级显卡上跑更大的扩散模型。本地批量出贴图、图标、立绘的显存和速度瓶颈能直接缓解一档。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "256ea9eb95bf",
+     "title": "#002: Reaching the 'Next Level' with Mike Cook",
+     "url": "https://www.aiandgames.com/p/002-reaching-the-next-level-with",
+     "source": "aiandgames.com",
+     "published": "2026-07-24",
+     "comment": "Mike Cook 新书聊程序化生成与 generative design，播客里是作者本人拆思路。他是学界里少数真在做可运行的游戏生成系统的人，比市面上那些「用 AI 生成关卡」的演示内容扎实得多。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "e3d2baa9e1a7",
+     "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+     "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+     "source": "huggingface.co",
+     "published": "2026-07-27",
+     "comment": "2026 年 7 月那次前沿实验室 agent 入侵事件的技术时间线。在本机跑带凭证的 agent（Claude Code、一堆 MCP）的人该完整读一遍；另见 Modal 的澄清——被利用的是客户自己暴露在公网的无鉴权 endpoint，平台隔离没被攻破，翻车点在使用方的配置。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Quoting Akshat Bubna",
+       "url": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+       "source": "simonwillison.net"
+      },
+      {
+       "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+       "url": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
+       "source": "simonwillison.net"
+      }
+     ]
+    },
+    {
+     "id": "65b1226aa585",
+     "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+     "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+     "source": "simonwillison.net",
+     "published": "2026-07-26",
+     "comment": "一份对灰色 token 市场的调查：靠拼 API key 池把 LLM 调用折价倒卖。用便宜「中转」接口跑 Claude/GPT 的注意，你的 prompt 很可能正流经这条链路，可靠性和数据去向都不受任何合同约束。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "d5c40dc667bb",
+     "title": "Why China is embracing AI and \"very few\" studios refuse to adopt it",
+     "url": "https://www.pocketgamer.biz/why-china-is-embracing-ai-and-very-few-studios-refuse-to-adopt-it/",
+     "source": "pocketgamer.biz",
+     "published": "2026-07-29",
+     "comment": "PGC 上海场上 AWS 的判断：中国游戏行业里 AI 采用已经不是辩论题，「极少」有工作室拒绝。找外包或谈合作时，可以据此重设对交付速度和报价的预期。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "1e4d89544d34",
+     "title": "An opinionated guide to which AI to use to do stuff",
+     "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
+     "source": "simonwillison.net",
+     "published": "2026-07-27",
+     "comment": "Ethan Mollick 逐年更新的「什么活用哪个 AI」指南。对照他一年前那版（还是 ChatGPT/Claude/Gemini 聊天窗口，配 o3、Claude 4 Opus、Gemini 2.5 Pro），能量出自己的模型分工落后了多少。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "aa9fbf951e34",
+     "title": "regiellis/godot-mcp-go：Control a running Godot 4.7 editor and game directly from the terminal. Includes a Go CLI, editor addon, 312 commands, and an MCP server with dynamically generated tool schemas.",
+     "url": "https://github.com/regiellis/godot-mcp-go",
+     "source": "github.com",
+     "published": "2026-07-23",
+     "comment": "Go 写的 CLI + 编辑器插件 + MCP server，312 条命令直接驱动运行中的 Godot 4.7 编辑器和游戏，工具 schema 是动态生成的。引擎不对口也值得拆开看：「编辑器常驻 + 动态 schema」这套结构正是 Unity 侧 MCP 桥最欠的一环。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "c8d3ce165c68",
+     "title": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
+     "url": "https://github.com/onecli/onecli",
+     "source": "github.com",
+     "published": "2026-07-23",
+     "comment": "开源的 agent 凭证网关：密钥留在 vault 里，agent 只拿到代理后的调用能力，看不到 secret 本身。和本期那条 agent 入侵时间线配着读——本机堆了一屋子 MCP 和 API key 的人正是它的目标用户。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "874d780baa19",
+     "title": "How Guildrun genre-mashed its way to ~300k demo players in 10 days",
+     "url": "https://newsletter.gamediscover.co/p/how-guildrun-genre-mashed-its-way",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-07-28",
+     "comment": "Guildrun 靠品类混搭在 10 天做到约 30 万 demo 玩家的拆解。值钱的不是数字而是路径：它把两拨已有受众叠进同一个 demo，这是小团队少有的、不靠买量的曝光打法。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "918893913f40",
+     "title": "Will fewer people buy your Steam game due to player reviews?",
+     "url": "https://newsletter.gamediscover.co/p/will-fewer-people-buy-your-steam",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-07-24",
+     "comment": "GameDiscoverCo 直接问了一大批玩家：评价到底会不会让你不买。做定价和发布节奏时这类问卷比「口碑很重要」的常识有用，因为它给的是量级而不是方向。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "85423f97beec",
+     "title": "What 'long tail' should you expect for your PC game in 2026?",
+     "url": "https://newsletter.gamediscover.co/p/what-long-tail-should-you-expect",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-07-21",
+     "comment": "2026 年 PC 游戏发售后能指望多长的长尾，用了作者自称「过量」的数据来算。做首发后 3-12 个月的收入预估和打折排期时，可以直接拿来当参照基线。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "75c3e99345af",
+     "title": "\"Across the industry, we don't think enough about how we match the scope to what we're making\" – Mike Bithell on why the world needs an im-slim",
+     "url": "https://www.gamesindustry.biz/across-the-industry-we-dont-think-enough-about-how-we-match-the-scope-to-what-were-making-mike-bithell-on-why-the-world-needs-an-im-slim",
+     "source": "gamesindustry.biz",
+     "published": "2026-07-28",
+     "comment": "Bithell 在 2025 年裁掉 11 人之后的复盘：整个行业都没认真想过「规模要匹配你在做的东西」，他给的答案是做 im-slim——沉浸式模拟的瘦身版。一个人或小队做游戏的，这是本周最该读的一篇。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "23903564713e",
+     "title": "My game was stolen by Chinese \"developers\" and they’re actually making money from it?!",
+     "url": "https://www.reddit.com/r/gamedev/comments/1v9h9yj/my_game_was_stolen_by_chinese_developers_and/",
+     "source": "reddit.com",
+     "published": "2026-07-29",
+     "comment": "开发者发现自己的游戏被逆向后重新上架日区 App Store，而且在赚钱。别只当八卦看：Unity 构建的反编译成本很低，上架前至少过一遍 IL2CPP 和资源加密，并提前查清各商店的侵权申诉通道怎么走。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "c7c59d457809",
+     "title": "Interview: How EverQuest Legends Recreates Classic EverQuest's Iconic Visual Style",
+     "url": "https://80.lv/articles/interview-how-everquest-legends-recreates-classic-everquest-s-iconic-visual-style/",
+     "source": "80.lv",
+     "published": "2026-07-28",
+     "comment": "EverQuest Legends 团队讲在原始资产大量丢失的前提下怎么重建经典 MMO 的视觉：自建美术管线、复刻法术特效、在提画质的同时保住老玩家认得出的辨识度。做风格化项目或现代化重制的，是难得的完整管线样本。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "de1ab67d1ac9",
+     "title": "A one-line SQL query was silently wiping my players' cosmetics on every deploy",
+     "url": "https://www.reddit.com/r/gamedev/comments/1v917fa/a_oneline_sql_query_was_silently_wiping_my/",
+     "source": "reddit.com",
+     "published": "2026-07-28",
+     "comment": "一行 SQL 让每次部署都静默重置玩家外观，作者查了一整个下午。篇幅不长但值得读——单人做 live 游戏的典型死法不是崩溃，是数据被安安静静写坏，而且玩家报的现象在你本地永远复现不出来。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 270,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 0,
+  "merge_url": 0,
+  "merge_title": 5,
+  "kept": 265,
+  "out_of_window": 1035,
+  "excluded": 4,
+  "source_capped": 171,
+  "trimmed": 0,
+  "candidates": 94,
+  "failed_sources": [
+   "reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/IndieDev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 23,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 1
+ },
+ "generated_at": "2026-07-29T21:41:48+08:00"
+}

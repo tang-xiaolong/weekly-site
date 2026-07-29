@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 001 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/001.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/001.html</guid><pubDate>Wed, 29 Jul 2026 08:00:00 +0800</pubDate><description>本期头条是 Unity CLI——官方第一次把整个 Unity 生态搬上命令行，AI agent 驱动编辑器终于有了官方入口；同周还有 Unity 7 重回路线图、实时 GI 立项，AI 侧 Opus 5 与 FLUX 3 前后脚落地，市场侧 GameDiscoverCo 一口气给了三份能直接拿去定策略的数据。
+🎮 Unity 官方与引擎
+· Unity CLI + Unity Pipeline = Game Changers
+· Unity 7 is Back
+· Unity Getting Real-Time Global Illumination
+· Web Platform - What shipped in 6.5, and what&#x27;s coming in 6.6
+· Multiplayer Service Package v2.3.0 is now publicly available
+· Unity has been dethroned by Godot for the first time in the GMTK Game Jam 2026.
+🤖 AI × 游戏开发
+· [AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)
+· [AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model
+· Bringing Nunchaku 4-bit Diffusion Inference to Diffusers
+· #002: Reaching the &#x27;Next Level&#x27; with Mike Cook
+· Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident
+· An Inside Look at the Relay Market Powering Token Resellers and Fraud
+· Why China is embracing AI and &quot;very few&quot; studios refuse to adopt it
+· An opinionated guide to which AI to use to do stuff
+🛠 工具与开源
+· regiellis/godot-mcp-go：Control a running Godot 4.7 editor and game directly from the terminal. Includes a Go CLI, editor addon, 312 commands, and an MCP server with dynamically generated tool schemas.
+· Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents
+📊 独游与市场
+· How Guildrun genre-mashed its way to ~300k demo players in 10 days
+· Will fewer people buy your Steam game due to player reviews?
+· What &#x27;long tail&#x27; should you expect for your PC game in 2026?
+· &quot;Across the industry, we don&#x27;t think enough about how we match the scope to what we&#x27;re making&quot; – Mike Bithell on why the world needs an im-slim
+· My game was stolen by Chinese &quot;developers&quot; and they’re actually making money from it?!
+📝 技术长文
+· Interview: How EverQuest Legends Recreates Classic EverQuest&#x27;s Iconic Visual Style
+· A one-line SQL query was silently wiping my players&#x27; cosmetics on every deploy</description></item></channel></rss>
