@@ -1,0 +1,306 @@
+{
+ "no": 2,
+ "week": "2026-W32",
+ "date": "2026-08-03",
+ "range": [
+  "2026-07-28",
+  "2026-08-03"
+ ],
+ "intro": "MCP 2.0 发布 Stateless 模式、DeepSeek V4 Flash 继续压低推理成本、GPT-5.6 四个月降价 13 倍——AI 开发基础设施这周变化剧烈，每一条都影响你的工具链选型。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "5d06b3e80fa0",
+     "title": "Why go D2C now: The mobile game webshop business case",
+     "url": "https://unity.com/blog/mobile-game-webshop-business-case",
+     "source": "unity.com",
+     "published": "2026-07-27",
+     "comment": "D2C（官网直营商店）正成为手游新战场——2025 年头部产品 D2C 收入增长 38%，平台抽成政策松动和工具链成熟是主因。做手游且还在纯靠应用商店分成的，这篇值得一读。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "544da50be2c6",
+     "title": "Unity brings dedicated engine support to Netflix Games",
+     "url": "https://www.gamedeveloper.com/business/unity-brings-dedicated-engine-support-to-netflix-games",
+     "source": "gamedeveloper.com",
+     "published": "2026-07-30",
+     "comment": "Unity 正式为 Netflix Games 提供专属引擎支持，覆盖移动/电视/云游戏等多平台。如果你能拿到 Netflix 发行合作，开发体验会比之前直接用通用版好一个档次。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Unity announces dedicated engine support for Netflix Games",
+       "url": "https://www.gamesindustry.biz/unity-announces-dedicated-engine-for-netflix-games",
+       "source": "gamesindustry.biz"
+      },
+      {
+       "title": "Unity adds dedicated engine support for Netflix Games",
+       "url": "https://www.pocketgamer.biz/unity-adds-dedicated-engine-support-for-netflix-games/",
+       "source": "pocketgamer.biz"
+      }
+     ]
+    },
+    {
+     "id": "4746748c91a2",
+     "title": "LGPL Bink 1 video decoder and encoder - open sourced",
+     "url": "https://discussions.unity.com/t/lgpl-bink-1-video-decoder-and-encoder-open-sourced/1732729",
+     "source": "discussions.unity.com",
+     "published": "2026-08-01",
+     "comment": "社区开发者开源了 LGPL 协议的 Bink 1 编解码器，编码器意味着可以不买 RAD Game Tools 授权直接在游戏里用 Bink 视频。三文件解码器设计干净，适合需要视频播放但预算紧的项目。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "9907a2d595ba",
+     "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+     "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
+     "source": "simonwillison.net",
+     "published": "2026-07-31",
+     "comment": "MCP 2.0（2026-07-28 规范）正式推出 Stateless 模式——去掉了此前饱受诟病的\"长连接必须保持\"约束，这是 MCP 自发布以来最大的架构变化。对用 MCP 连接游戏引擎和编辑器的开发者，意味着更稳定的工具调用和更简单的部署。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "3df0a833ea01",
+     "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+     "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
+     "source": "simonwillison.net",
+     "published": "2026-07-31",
+     "comment": "DeepSeek V4 Flash 0731 发布，304B 参数但交互式基准跑分已进前十，特别强化了 agentic 能力。开源 + API 价格约 GPT-5 系列零头——批量跑代码生成和内容审查时成本优势很实在。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "5fc953c24485",
+     "title": "Building Context-Aware AI for Unity: Project Brain & Visual Reskin",
+     "url": "https://discussions.unity.com/t/building-context-aware-ai-for-unity-project-brain-visual-reskin/1732652",
+     "source": "discussions.unity.com",
+     "published": "2026-07-31",
+     "comment": "社区项目 Project Brain 试图让 AI 真正理解 Unity 项目的完整上下文——场景层级、脚本结构、截图一并感知，思路接近 Cursor 的代码库索引但针对游戏引擎。还在早期，但方向对了。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "cd00da6a8313",
+     "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+     "url": "https://usetokenless.com/",
+     "source": "usetokenless.com",
+     "published": "2026-07-29",
+     "comment": "YC S26 项目 Tokenless 做 AI API 网关——按每次调用的复杂度动态路由到不同模型，简单问题走便宜模型、复杂问题走强模型，号称省 50-80% 费用。重度使用 Claude+GPT+本地模型混用工作流的开发者直接受益。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "817e6d7587a5",
+     "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+     "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+     "source": "latent.space",
+     "published": "2026-07-31",
+     "comment": "GPT-5.6 全线降价 20%-80%，GPT-5.4 级别智能成本四个月降了 13 倍，主要靠递归自蒸馏。直接影响：用 GPT 做代码辅助和内容生成的门槛继续降低，但价格不再是选模型壁垒，能力才是。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Inkling-Small 🧠, GPT-5.6 price cuts 💸, Gemini Robotics 2 🤖",
+       "url": "https://tldr.tech/ai/2026-07-31",
+       "source": "tldr.tech"
+      },
+      {
+       "title": "OpenAI tops ARC-AGI-3 📈, GPT-5.6 efficiency ⚙️, AlphaFold team dissolution 🧬",
+       "url": "https://tldr.tech/ai/2026-07-30",
+       "source": "tldr.tech"
+      }
+     ]
+    },
+    {
+     "id": "294cc610e43f",
+     "title": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+     "url": "https://www.latent.space/p/ontologies-agentic-systems",
+     "source": "latent.space",
+     "published": "2026-07-30",
+     "comment": "AI 工程师重新捡起语义网时代的\"本体论\"（Ontology），用来圈定 AI Agent 的行为边界——让概率性 LLM 在确定性规则框架内运行。构建复杂游戏 AI（NPC 行为树+LLM 混合架构）时有直接启发。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "961656fd7e11",
+     "title": "Doriax Game Engine Hands-On",
+     "url": "https://gamefromscratch.com/doriax-game-engine-hands-on/",
+     "source": "gamefromscratch.com",
+     "published": "2026-07-30",
+     "comment": "Doriax（前身 Supernova）是 MIT 协议的开源 2D/3D 引擎，跨 Win/Mac/Linux，功能完整度出人意料。在 Godot 和 Unity 之间犹豫、或想要完全无抽成备选方案的，值得跑一下它的 demo。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "58026afa7b84",
+     "title": "August 2026 FREE GameDev Asset Round-Up",
+     "url": "https://gamefromscratch.com/august-2026-free-gamedev-asset-round-up/",
+     "source": "gamefromscratch.com",
+     "published": "2026-07-28",
+     "comment": "Epic Fab 市场 8 月免费资产已上线，3 个资产永久持有（7/28-8/11）。每个月薅一波，半年攒一个不小的生产资源池。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "584be00f112b",
+     "title": "GodotHub – Awesome New Launcher for Godot",
+     "url": "https://gamefromscratch.com/godothub-awesome-new-launcher-for-godot/",
+     "source": "gamefromscratch.com",
+     "published": "2026-07-27",
+     "comment": "GodotHub 是开源跨平台 Godot 引擎启动器/版本管理器，体验接近 Unity Hub，已有 Win/Mac/Linux 二进制。多版本 Godot 项目来回切的开发者必备。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "79830659b61a",
+     "title": "Add Cinematic Volumetric Fog To Blender Scenes In Just Minutes",
+     "url": "https://80.lv/articles/add-cinematic-volumetric-fog-to-blender-scenes-in-just-minutes/",
+     "source": "80.lv",
+     "published": "2026-08-01",
+     "comment": "Lazy3D 的 Blender 插件把体积雾创建从手动调节点变成拖拽式操作，从薄雾到浓雾几分钟搞定。需要快速给场景加氛围的独游开发者，省下的时间比插件价格值钱。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "0d08f3fcade6",
+     "title": "Creating Intricate Filigree Metalwork Patterns for a Material with Substance 3D",
+     "url": "https://80.lv/articles/creating-intricate-filigree-metalwork-patterns-for-a-material-with-substance-3d/",
+     "source": "80.lv",
+     "published": "2026-07-31",
+     "comment": "3D 艺术家 Jinho Yum 拆解了用 Substance 3D 创建复杂花丝金属材质的完整工作流——从基础形状变形到曲线方向/强度调整再到宝石处理。做风格化或装饰性材质的开发者能学到很多高阶技巧。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "50d3bcb9b62f",
+     "title": "How do PC player demographics change at 50 hours vs. 30 minutes?",
+     "url": "https://newsletter.gamediscover.co/p/how-do-pc-player-demographics-change",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-07-31",
+     "comment": "50 小时玩家 vs 30 分钟玩家的画像差异到底多大？Gamediscover 新研究给了具体数字。搞清楚你游戏的\"长期玩家是谁\"直接影响内容更新策略和付费设计——很多开发者做了一大堆内容但不知道谁在消耗它。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "4ab38d956fd6",
+     "title": "Gamesight: Creators are best predictor for a game's success, not viewership",
+     "url": "https://www.gamesindustry.biz/gamesight-creators-are-best-predictor-for-a-games-success-not-viewership",
+     "source": "gamesindustry.biz",
+     "published": "2026-07-30",
+     "comment": "Gamesight 数据：对 PvP FPS 游戏，活跃创作者/主播数量比总观看时长更能预测商业成功。翻译一下——重要的不是你买了多少观看量，而是多少真实的创作者自发在播你的游戏。直接影响发行期营销预算怎么花。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "f6c9a750e546",
+     "title": "Is Friendslop saturated?",
+     "url": "https://howtomarketagame.com/2026/07/30/is-friendslop-saturated/?utm_source=rss&utm_medium=rss&utm_campaign=is-friendslop-saturated",
+     "source": "howtomarketagame.com",
+     "published": "2026-07-30",
+     "comment": "Friendslop 品类（类似《Liar's Bar》那类社交推理派对游戏）不但没饱和反而在持续增长。Chris Zukowski 按时间线拉了主要产品数据——在考虑做这类游戏的，这篇帮你判断时机和定位。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "b14d34c263bf",
+     "title": "How Palworld went viral and made its way to version 1.0",
+     "url": "https://www.pocketgamer.biz/how-palworld-went-viral-and-made-its-way-to-version-1/",
+     "source": "pocketgamer.biz",
+     "published": "2026-08-01",
+     "comment": "Pocketpair 发行负责人在 ChinaJoy 复盘了 Palworld 四年半到 1.0 的全过程——首月数据、EA 转正式版策略、爆红后如何稳住。有 Early Access 计划的独立团队参考价值很高。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "21121700c96c",
+     "title": "EA acquisition set to close on August 4 following approval from required regulatory bodies",
+     "url": "https://www.gamesindustry.biz/ea-acquisition-set-to-close-on-august-4-following-approval-from-required-regulatory-bodies",
+     "source": "gamesindustry.biz",
+     "published": "2026-07-31",
+     "comment": "EA 以 550 亿美元被沙特 PIF 财团收购，8 月 4 日完成交易。大厂格局洗牌意味着人才流动 + 被砍项目 IP 可能抛售或开放授权——保持关注就好。",
+     "daily": false,
+     "also": [
+      {
+       "title": "EA expects acquisition by PIF-led consortium to close on August 4th",
+       "url": "https://www.pocketgamer.biz/ea-expects-acquisition-by-pif-led-consortium-to-close-on-august-4th/",
+       "source": "pocketgamer.biz"
+      },
+      {
+       "title": "EA clears US regulatory approvals in take-private deal",
+       "url": "https://www.gamedeveloper.com/business/ea-says-all-regulatory-approvals-have-been-cleared-for-its-take-private-deal",
+       "source": "gamedeveloper.com"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "85621961cd98",
+     "title": "I broke everything in my vehicle suspension system to rebuild it better than ever, I'm super happy with the result",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1vcdqfb/i_broke_everything_in_my_vehicle_suspension/",
+     "source": "reddit.com",
+     "published": "2026-08-01",
+     "comment": "独立开发者花一个月完全重写了车辆悬挂系统——有公式、有踩坑记录、有前后对比图，不是泛泛的\"我做了个车\"。想做车辆物理的程序员值得精读整个线程。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "6426273a50ef",
+     "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+     "url": "https://www.latent.space/p/chatgpt-work",
+     "source": "latent.space",
+     "published": "2026-07-28",
+     "comment": "OpenAI 核心产品工程负责人 Akshay Nathan 详解 ChatGPT Work 从 0 到 1000 万用户——覆盖 Sites、Memory、Subagents 和 No-Code 的产品决策。对用 AI 搭自己开发工作流的人来说，这是大厂的产品工程 playbook。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 245,
+  "drop_ledger_url": 12,
+  "drop_ledger_title": 0,
+  "merge_url": 0,
+  "merge_title": 5,
+  "kept": 228,
+  "out_of_window": 1057,
+  "excluded": 3,
+  "source_capped": 149,
+  "trimmed": 0,
+  "candidates": 79,
+  "failed_sources": [
+   "reddit r/gamedev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/gamedev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 21,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 0
+ },
+ "generated_at": "2026-08-03T18:59:19+08:00"
+}

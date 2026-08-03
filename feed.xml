@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 001 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/001.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/001.html</guid><pubDate>Wed, 29 Jul 2026 08:00:00 +0800</pubDate><description>本期头条是 Unity CLI——官方第一次把整个 Unity 生态搬上命令行，AI agent 驱动编辑器终于有了官方入口；同周还有 Unity 7 重回路线图、实时 GI 立项，AI 侧 Opus 5 与 FLUX 3 前后脚落地，市场侧 GameDiscoverCo 一口气给了三份能直接拿去定策略的数据。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 002 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/002.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/002.html</guid><pubDate>Mon, 03 Aug 2026 08:00:00 +0800</pubDate><description>MCP 2.0 发布 Stateless 模式、DeepSeek V4 Flash 继续压低推理成本、GPT-5.6 四个月降价 13 倍——AI 开发基础设施这周变化剧烈，每一条都影响你的工具链选型。
+🎮 Unity 官方与引擎
+· Why go D2C now: The mobile game webshop business case
+· Unity brings dedicated engine support to Netflix Games
+· LGPL Bink 1 video decoder and encoder - open sourced
+🤖 AI × 游戏开发
+· Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)
+· deepseek-ai/DeepSeek-V4-Flash-0731
+· Building Context-Aware AI for Unity: Project Brain &amp; Visual Reskin
+· Launch HN: Tokenless (YC S26) – Automatic model switching to save money
+· [AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization
+· Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web
+🛠 工具与开源
+· Doriax Game Engine Hands-On
+· August 2026 FREE GameDev Asset Round-Up
+· GodotHub – Awesome New Launcher for Godot
+· Add Cinematic Volumetric Fog To Blender Scenes In Just Minutes
+· Creating Intricate Filigree Metalwork Patterns for a Material with Substance 3D
+📊 独游与市场
+· How do PC player demographics change at 50 hours vs. 30 minutes?
+· Gamesight: Creators are best predictor for a game&#x27;s success, not viewership
+· Is Friendslop saturated?
+· How Palworld went viral and made its way to version 1.0
+· EA acquisition set to close on August 4 following approval from required regulatory bodies
+📝 技术长文
+· I broke everything in my vehicle suspension system to rebuild it better than ever, I&#x27;m super happy with the result
+· Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI</description></item><item><title>游戏开发周刊 第 001 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/001.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/001.html</guid><pubDate>Wed, 29 Jul 2026 08:00:00 +0800</pubDate><description>本期头条是 Unity CLI——官方第一次把整个 Unity 生态搬上命令行，AI agent 驱动编辑器终于有了官方入口；同周还有 Unity 7 重回路线图、实时 GI 立项，AI 侧 Opus 5 与 FLUX 3 前后脚落地，市场侧 GameDiscoverCo 一口气给了三份能直接拿去定策略的数据。
 🎮 Unity 官方与引擎
 · Unity CLI + Unity Pipeline = Game Changers
 · Unity 7 is Back
