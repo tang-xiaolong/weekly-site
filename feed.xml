@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 002 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/002.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/002.html</guid><pubDate>Mon, 03 Aug 2026 08:00:00 +0800</pubDate><description>MCP 2.0 发布 Stateless 模式、DeepSeek V4 Flash 继续压低推理成本、GPT-5.6 四个月降价 13 倍——AI 开发基础设施这周变化剧烈，每一条都影响你的工具链选型。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 003 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/003.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/003.html</guid><pubDate>Mon, 10 Aug 2026 08:00:00 +0800</pubDate><description>本期最值得看的两件事：Unity Pipeline 包 v0.4.0-exp.1 构建后把所有场景叠开在编辑器里（接了 CLI 管线的马上自查），以及两个「一次成型」AI 生成可玩游戏的横向样本。
+🎮 Unity 官方与引擎
+· CLI Pipeline package leaves all scenes open after builds
+· Customizable Main Toolbar: Unity 6.7 improvements
+· The 3D as 2D sample project, Bunny Blitz, is available now
+· Why Model Importer not support removing identical meshes? I write this options for everyone
+🤖 AI × 游戏开发
+· Auto mode is now the default in Claude Code for Pro, Max, and Team plans
+· winchxyz/tidewright：A 3D sandcastle simulator that runs entirely on the GPU. No engine, no libraries, no asset files, no build step. Built in one prompt with Claude Code.
+· Moonlight &amp; Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)
+· What Does the EU&#x27;s AI Transparency Rules Mean for Games | 06/08/26
+· #003.5 - Below the Line: Director AI, COTA, and Forza&#x27;s Drivatars
+🛠 工具与开源
+· Show HN: Simple algorithm and color space to generate diverse skin tones
+· Esoterica Game Engine
+📊 独游与市场
+· Game discovery lessons from 30 years (!) in the biz
+· July 2026&#x27;s top new PC &amp; console games, revealed...
+· Unity sells Supersonic publishing business to Tripledot for $40M
+· Unity records &quot;best quarter in history&quot; following continued success of Vector AI
+📝 技术长文
+· Pushing the limits in Simulating a City, One Page at a Time
+· What devs need to know about localization, ft. Concha Fernandez Alvarez, Aurelie Perrin, and Guido Di Carlo
+· Virtual Worlds Were Supposed to Let Players Be Themselves, But Monetization Forgets That</description></item><item><title>游戏开发周刊 第 002 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/002.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/002.html</guid><pubDate>Mon, 03 Aug 2026 08:00:00 +0800</pubDate><description>MCP 2.0 发布 Stateless 模式、DeepSeek V4 Flash 继续压低推理成本、GPT-5.6 四个月降价 13 倍——AI 开发基础设施这周变化剧烈，每一条都影响你的工具链选型。
 🎮 Unity 官方与引擎
 · Why go D2C now: The mobile game webshop business case
 · Unity brings dedicated engine support to Netflix Games

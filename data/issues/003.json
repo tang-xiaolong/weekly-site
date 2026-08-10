@@ -1,0 +1,255 @@
+{
+ "no": 3,
+ "week": "2026-W33",
+ "date": "2026-08-10",
+ "range": [
+  "2026-08-04",
+  "2026-08-10"
+ ],
+ "intro": "本期最值得看的两件事：Unity Pipeline 包 v0.4.0-exp.1 构建后把所有场景叠开在编辑器里（接了 CLI 管线的马上自查），以及两个「一次成型」AI 生成可玩游戏的横向样本。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "5858e5039b5f",
+     "title": "CLI Pipeline package leaves all scenes open after builds",
+     "url": "https://discussions.unity.com/t/cli-pipeline-package-leaves-all-scenes-open-after-builds/1733251",
+     "source": "discussions.unity.com",
+     "published": "2026-08-07",
+     "comment": "Unity Pipeline 包 v0.4.0-exp.1 的实锤 bug：任何 player 构建跑完后，构建列表里的所有场景会被 additive 叠开在编辑器里。已经把 CLI 管线接进日常构建的先确认自己版本——这种副作用配上构建后的自动化脚本，很容易误伤工程。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "afb9f7610da4",
+     "title": "Customizable Main Toolbar: Unity 6.7 improvements",
+     "url": "https://discussions.unity.com/t/customizable-main-toolbar-unity-6-7-improvements/1733331",
+     "source": "discussions.unity.com",
+     "published": "2026-08-07",
+     "comment": "可定制主工具栏的一批改进已经进 6.7，下个 Alpha 就能拿到，主要是元素分组和开关的可见性。工具栏塞满自定义按钮的人值得先看下新的分组行为再迁配置。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "235b8db51a31",
+     "title": "The 3D as 2D sample project, Bunny Blitz, is available now",
+     "url": "https://unity.com/blog/the-3d-as-2d-sample-project,-bunny-blitz,-is-available-now",
+     "source": "unity.com",
+     "published": "2026-08-05",
+     "comment": "官方放出的「3D 当 2D 用」示例工程 Bunny Blitz，可直接下载拆。想用 3D 资产做 2D 表现的项目，扒它的相机与渲染设置比读文档快。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "86364dc46b0d",
+     "title": "Why Model Importer not support removing identical meshes? I write this options for everyone",
+     "url": "https://discussions.unity.com/t/why-model-importer-not-support-removing-identical-meshes-i-write-this-options-for-everyone/1733139",
+     "source": "discussions.unity.com",
+     "published": "2026-08-06",
+     "comment": "有人自己补了 Model Importer 的「导入时合并相同网格」选项并公开了实现。Unity 默认把一个 FBX 里的重复实例当独立 mesh 导入，场景美术摆一片植被/道具就是白吃内存和包体——大场景项目值得直接抄。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "157925afc7b6",
+     "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+     "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+     "source": "simonwillison.net",
+     "published": "2026-08-08",
+     "comment": "8 月 14 日起，Claude Code 的 auto 模式在 Pro/Max/Team 计划的新会话里变成默认。无头管线和日常会话的行为都会跟着变，提前确认哪些脚本是靠当前默认值跑通的。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "6fa941a32c98",
+     "title": "winchxyz/tidewright：A 3D sandcastle simulator that runs entirely on the GPU. No engine, no libraries, no asset files, no build step. Built in one prompt with Claude Code.",
+     "url": "https://github.com/winchxyz/tidewright",
+     "source": "github.com",
+     "published": "2026-08-05",
+     "comment": "一个提示词让 Claude Code 生成的纯 GPU 3D 沙堡模拟器：无引擎、无第三方库、无资产文件、无构建步骤。当「AI 一次成型的上限在哪」的可复现样本看，比任何演示视频有说服力。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "9981e716804c",
+     "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
+     "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
+     "source": "simonwillison.net",
+     "published": "2026-08-07",
+     "comment": "同一个浣熊偷窃小游戏，上周用 Claude Fable 5 一次成型，这次换 Codex + GPT-5.6 Sol Ultra 再做一遍。同题不同模型的横向对照很少见，能看出各家在「产出一个完整可玩游戏」这种长任务上的真实差距。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "9d4fed095a07",
+     "title": "What Does the EU's AI Transparency Rules Mean for Games | 06/08/26",
+     "url": "https://www.aiandgames.com/p/what-does-the-eus-ai-transparency",
+     "source": "aiandgames.com",
+     "published": "2026-08-06",
+     "comment": "欧盟 AI 透明度规则落到游戏上具体要求什么。成品里用了生成式素材或 AI 驱动 NPC 的话，披露义务属于要提前排进发行清单的事，不是上架后再补。",
+     "daily": true,
+     "also": [
+      {
+       "title": "#003 - Stellar Blade's Hot New K-Slop?",
+       "url": "https://www.aiandgames.com/p/003-stellar-blades-hot-new-k-slop",
+       "source": "aiandgames.com"
+      }
+     ]
+    },
+    {
+     "id": "0ba7c0130cde",
+     "title": "#003.5 - Below the Line: Director AI, COTA, and Forza's Drivatars",
+     "url": "https://www.aiandgames.com/p/0035-below-the-line-director-ai-cota",
+     "source": "aiandgames.com",
+     "published": "2026-08-07",
+     "comment": "拆 Director AI、Forza 的 Drivatars 这类跑了十几年的游戏 AI——跟 LLM 无关，讲的是用系统而非模型去调玩家体验。做难度曲线和节奏设计时能直接借。付费订阅者专属。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "0b9a27702c0a",
+     "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+     "url": "https://toneyalexander.github.io/inclusive-color-space/",
+     "source": "toneyalexander.github.io",
+     "published": "2026-08-04",
+     "comment": "一套专为「可信且多样的肤色」设计的色彩空间，带取色器和程序化生成算法。做角色自定义系统或批量生成 NPC 外观时，比手攒调色板靠谱得多。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "c0d4999c1d94",
+     "title": "Esoterica Game Engine",
+     "url": "https://gamefromscratch.com/esoterica-game-engine/",
+     "source": "gamefromscratch.com",
+     "published": "2026-08-06",
+     "comment": "Steam 员工 Bobby Anguelov 的 C++ 开源引擎 Esoterica（渲染器由 Kirill Bazhenov 做）。不是拿来做项目的，是当「资深从业者会怎么搭一套引擎」的源码读物。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "4eb50fbb39bb",
+     "title": "Game discovery lessons from 30 years (!) in the biz",
+     "url": "https://newsletter.gamediscover.co/p/game-discovery-lessons-from-30-years",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-07",
+     "comment": "GameDiscoverCo 作者用 30 年从业经历总结的发现性（discovery）教训。平时那些周更是数据流水账，这种周年回顾密度高得多，值得完整读一遍而不是扫标题。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "08db49eedb2c",
+     "title": "July 2026's top new PC & console games, revealed...",
+     "url": "https://newsletter.gamediscover.co/p/july-2026s-top-new-pc-and-console",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-04",
+     "comment": "7 月 PC/主机新品榜单，外加未发售 Steam 游戏的热度趋势。定发行窗口前先看同期同类竞品的实际表现，比拍脑袋强。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "5037e3959059",
+     "title": "Unity sells Supersonic publishing business to Tripledot for $40M",
+     "url": "https://www.gamedeveloper.com/business/unity-sells-supersonic-publishing-biz-to-tripledot-for-40m",
+     "source": "gamedeveloper.com",
+     "published": "2026-08-06",
+     "comment": "Unity 把 Supersonic 发行业务以 4000 万美元卖给 Tripledot。对小团队的直接含义是 Unity 自家的发行侧支持不再是可选项；Tripledot 那边明说是冲着「AI 时代的游戏」和以色列的人才去的。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Tripledot Studios acquires Supersonic from Unity for $40m",
+       "url": "https://www.gamesindustry.biz/tripledot-studios-acquires-supersonic-from-unity-for-40m",
+       "source": "gamesindustry.biz"
+      }
+     ]
+    },
+    {
+     "id": "f7c06a4585df",
+     "title": "Unity records \"best quarter in history\" following continued success of Vector AI",
+     "url": "https://www.gamesindustry.biz/unity-records-best-quarter-in-history-following-continued-success-of-vector-ai",
+     "source": "gamesindustry.biz",
+     "published": "2026-08-07",
+     "comment": "Unity CEO 称这是公司上市以来最好的一个季度，功劳记在 Vector AI 广告业务上。配合上面卖掉 Supersonic 看，引擎已经不是这家公司的增长引擎了——短期是涨价压力小，长期是资源往哪儿倾斜心里得有数。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "d8cd4e9d3c52",
+     "title": "Pushing the limits in Simulating a City, One Page at a Time",
+     "url": "https://www.gamedeveloper.com/design/pushing-the-limits-in-simulating-a-city-one-page-at-a-time",
+     "source": "gamedeveloper.com",
+     "published": "2026-08-07",
+     "comment": "Stone Librande 复盘 SimCity(2013) 的「一页设计文档」方法论。单人和小团队最常见的死法是文档写了没人读，把每个系统压到一页这套做法当天就能用上。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "9c15ad70607c",
+     "title": "What devs need to know about localization, ft. Concha Fernandez Alvarez, Aurelie Perrin, and Guido Di Carlo",
+     "url": "https://www.gamedeveloper.com/production/what-devs-need-to-know-about-localization-ft-concha-fernandez-alvarez-aurelie-perrin-and-guido-di-carlo",
+     "source": "gamedeveloper.com",
+     "published": "2026-08-07",
+     "comment": "三位本地化从业者从译者视角讲开发者最常犯的错。准备上多语言之前读，比出了问题再返工便宜得多。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "c5caa67f3f0e",
+     "title": "Virtual Worlds Were Supposed to Let Players Be Themselves, But Monetization Forgets That",
+     "url": "https://80.lv/articles/richard-bartle-mmo-monetization-virtual-worlds-players-express-themselves/",
+     "source": "80.lv",
+     "published": "2026-08-07",
+     "comment": "MUD1 联合作者 Richard Bartle 谈虚拟世界的初衷、玩家与开发者之间的契约，以及 F2P/付费获胜/Web3 是怎么把它一步步拆掉的。做长线在线设计的可以当反面清单读。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 246,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 0,
+  "merge_url": 0,
+  "merge_title": 4,
+  "kept": 242,
+  "out_of_window": 1057,
+  "excluded": 5,
+  "source_capped": 158,
+  "trimmed": 0,
+  "candidates": 84,
+  "failed_sources": [
+   "reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/IndieDev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 18,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 1
+ },
+ "generated_at": "2026-08-10T10:24:20+08:00"
+}
