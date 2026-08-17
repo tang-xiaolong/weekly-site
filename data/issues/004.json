@@ -1,0 +1,292 @@
+{
+ "no": 4,
+ "week": "2026-W34",
+ "date": "2026-08-17",
+ "range": [
+  "2026-08-11",
+  "2026-08-17"
+ ],
+ "intro": "本期最值得动手的是 Unity CLI beta.4——出包不再需要往项目里塞任何 C# 胶水，CI 和 AI 驱动的构建链能直接瘦一圈；其余干货集中在本地开放模型和参展/发行的取舍数据上。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "9c62d8d41131",
+     "title": "Unity CLI 1.0.0-beta.4 is rolling out",
+     "url": "https://discussions.unity.com/t/unity-cli-1-0-0-beta-4-is-rolling-out/1733720",
+     "source": "discussions.unity.com",
+     "published": "2026-08-13",
+     "comment": "beta.4 主要在把 CLI 从你的路上挪开：构建 player 不再需要项目侧的 C# 代码，同一台机器可以同时登录多个 Unity 账号。已经在用 CLI 跑构建的人，这版能删掉一批项目内的胶水脚本；Linux 上跑的先读公告里那段单独说明。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ab3bb2941c6e",
+     "title": "Now Available: Unity Hub 3.21 Beta",
+     "url": "https://discussions.unity.com/t/now-available-unity-hub-3-21-beta/1733691",
+     "source": "discussions.unity.com",
+     "published": "2026-08-12",
+     "comment": "Hub 3.21 Beta 的重点是项目列表：终于有标签分组，以及新增 Platform 列——不开 Editor 就能切目标平台。多项目并行、经常在 Windows/Android 之间来回切的人，省的是分钟级的等待。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "4453a4523bec",
+     "title": "5 tips for using GitHub Copilot with Unity",
+     "url": "https://unity.com/blog/5-tips-for-using-github-copilot-with-unity",
+     "source": "unity.com",
+     "published": "2026-08-11",
+     "comment": "Unity 官方给的 5 条 Copilot 使用建议。价值不在 Copilot 本身，而在官方口径下“AI 辅助写 Unity 代码”的边界画在哪——大部分结论平移到 Claude Code 上同样成立。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "0a0678f17236",
+     "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+     "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+     "source": "simonwillison.net",
+     "published": "2026-08-16",
+     "comment": "Qwen 3.8 27B：Apache 2 授权、带视觉能力，27B 这个体量正好塞得进一台配置尚可的笔记本。实测的坑是默认思考链过长，鸡毛蒜皮的任务也在硬推理——本地跑记得压 thinking 预算。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "13c65496c22a",
+     "title": "[AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise",
+     "url": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
+     "source": "latent.space",
+     "published": "2026-08-11",
+     "comment": "Muse Glimmer / Spark 开放权重发布，Glimmer 单张 RTX 3090 就能跑起来。想把生成能力关进本机（美术占位图、不外发的文本）的独立开发者，这是本周门槛最低的一条路。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Muse Glimmer ✨, OpenAI Cyber 🛡️, Claude vs Riemann Hypothesis 🧠",
+       "url": "https://tldr.tech/ai/2026-08-11",
+       "source": "tldr.tech"
+      }
+     ]
+    },
+    {
+     "id": "ca65cfd9285d",
+     "title": "Don't classify. Hallucinate!",
+     "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+     "source": "simonwillison.net",
+     "published": "2026-08-14",
+     "comment": "把分类任务反过来做：不喂给模型一份 1856 个标签的清单让它选，而是让它先“幻觉”出标签、再去和已有标签集匹配。资产库打标、Steam 标签归类这种“候选集大到塞不进上下文”的场景可以直接抄。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "bcb2b6c49aeb",
+     "title": "React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue",
+     "url": "https://www.latent.space/p/flue-2",
+     "source": "latent.space",
+     "published": "2026-08-15",
+     "comment": "Astro 作者 Fred Schott 给自己的 agent 框架 Flue 2 加了 React 式 hooks，核心主张是 agent 的能力上限由 harness 决定而不是模型。自己在拼 Claude Code 管道的人，值得拿这套抽象对照一下自己的工具编排。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "79cb1ff3ebb1",
+     "title": "Saber Interactive Unveils Schrödinger's Narrative Designer | 12/08/26",
+     "url": "https://www.aiandgames.com/p/saber-interactive-unveils-schrodingers",
+     "source": "aiandgames.com",
+     "published": "2026-08-12",
+     "comment": "Saber 的《Rideshare》被指用 AI 写文本，官方回应是“没有用 AI 取代任何编剧”，但还是补上了 AI 披露标注。风向很清楚：披露正在从可选变成默认，跑 AI 工作流的独立项目最好提前想清楚自己怎么标、标到什么粒度。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Saber Interactive to add Rideshare 'Stimulator' AI disclosure after public controversy",
+       "url": "https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-",
+       "source": "gamedeveloper.com"
+      }
+     ]
+    },
+    {
+     "id": "b67dee082d59",
+     "title": "Where are game devs sourcing their speech and sound effects from",
+     "url": "https://www.reddit.com/r/gamedev/comments/1vpxdvp/where_are_game_devs_sourcing_their_speech_and/",
+     "source": "reddit.com",
+     "published": "2026-08-16",
+     "comment": "开发者在讨论语音和音效到底该从哪来——动态配音的量级一上去，ElevenLabs 这个“显然选项”在成本和授权上都不那么显然。准备做带配音的项目前，先读一轮别人的实际方案比自己试便宜。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "4e955fa884d6",
+     "title": "State of Open Models: Summer 2026 Observations",
+     "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+     "source": "huggingface.co",
+     "published": "2026-08-14",
+     "comment": "Hugging Face 的开放模型半年盘点。用途很明确：纠结哪些活儿本地跑、哪些该走 API 时，这种横向对比比追单个发布通稿省时间。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "8a0da5406379",
+     "title": "SpriteLoop – Free 2D Animation Tool",
+     "url": "https://gamefromscratch.com/spriteloop-free-2d-animation-tool/",
+     "source": "gamefromscratch.com",
+     "published": "2026-08-13",
+     "comment": "免费的 2D 剪出式动画工具，Win/Mac/Linux 都有，把一组图片组装成动画。定位是商业同类工具的免费缩水版——做占位演出或小体量角色动画够用，省一笔订阅。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "5627bcf4bdcc",
+     "title": "Godot 4.8 Dev2 and Dev3 Releases",
+     "url": "https://gamefromscratch.com/godot-4-8-dev2-and-dev3-releases/",
+     "source": "gamefromscratch.com",
+     "published": "2026-08-10",
+     "comment": "Godot 4.8 连发 Dev2、Dev3。不迁移也值得扫一眼每个 dev 版的改动清单，作为竞品参照看它往哪走，比看发布会有信息量。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "25a47b7071c9",
+     "title": "Procedural American Downtown Generator For Blender",
+     "url": "https://80.lv/articles/procedural-american-downtown-generator-for-blender/",
+     "source": "80.lv",
+     "published": "2026-08-14",
+     "comment": "Blender 的程序化美式市区生成器，卖点是生成后仍保留手工干预空间。做城市远景和背景楼群时，它压掉的是“把地图填满”这段纯体力活。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "74a5c10d1021",
+     "title": "Easy Stylized Line Art Technique For Blender",
+     "url": "https://80.lv/articles/easy-stylized-line-art-technique-for-blender/",
+     "source": "80.lv",
+     "published": "2026-08-14",
+     "comment": "Blender 风格化描边的一套做法，作者把工程设置免费放出来了。想要卡通/线稿风又不想从零试参数的，直接下下来拆开看最快。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "fdc5bb85177c",
+     "title": "How Iron Nest sold >250k copies in less than 3 days...",
+     "url": "https://newsletter.gamediscover.co/p/how-iron-nest-sold-250k-copies-in",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-14",
+     "comment": "《Iron Nest》不到 3 天卖出 25 万份，GameDiscoverCo 拆了它的曝光路径。值得看的不是结果数字，而是前置动作——愿望单是怎么攒的、曝光节点是怎么排的。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "30cd0ae6a23b",
+     "title": "The state of virtual 3rd-party festivals 2026",
+     "url": "https://howtomarketagame.com/2026/08/11/the-state-of-virtual-3rd-party-festivals-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-state-of-virtual-3rd-party-festivals-2026",
+     "source": "howtomarketagame.com",
+     "published": "2026-08-11",
+     "comment": "线上第三方展会/节展的 2026 现状盘点：哪些还有真实导流，哪些已经退化成走过场。参展是每年都要重做一次的取舍，这篇给的是决策依据而不是感想。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Putting your game in a showcase? 5 key Qs to ask...",
+       "url": "https://newsletter.gamediscover.co/p/putting-your-game-in-a-showcase-5",
+       "source": "newsletter.gamediscover.co"
+      }
+     ]
+    },
+    {
+     "id": "3ecf030ea28a",
+     "title": "\"I don't see why people are scared of it\" – ShipShaper developer Tomas Sala on why indies shouldn't be stressing about GTA6",
+     "url": "https://www.gamesindustry.biz/i-dont-see-why-people-are-scared-of-it-why-shipshaper-developer-tomas-sala-doesnt-think-indies-should-be-stressing-about-gta6",
+     "source": "gamesindustry.biz",
+     "published": "2026-08-14",
+     "comment": "ShipShaper 作者 Tomas Sala 的判断：为躲 GTA6 硬把发售提前，损失比撞车更大，小体量游戏和它的受众几乎不重叠。今年下半年有排期焦虑的可以拿这条当解药——但记住他谈的是自己那个体量。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "8d91a73f908d",
+     "title": "Japanese article gained us 1,000 wishlists",
+     "url": "https://www.reddit.com/r/gamedev/comments/1vp3tz7/japanese_article_gained_us_1000_wishlists/",
+     "source": "reddit.com",
+     "published": "2026-08-15",
+     "comment": "一篇日文报道换来 1000 个愿望单，而线索来自那位“年年给你点赞的老粉”。两个提醒：非英语区媒体的边际收益常被低估；长期跟着你的那几个人，可能比一次泛曝光更值钱。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ddec400ad14f",
+     "title": "Why do Pixel Art Games Often Have Non-Pixel Art Cover Images?",
+     "url": "https://www.reddit.com/r/gamedev/comments/1vpdkea/why_do_pixel_art_games_often_have_nonpixel_art/",
+     "source": "reddit.com",
+     "published": "2026-08-15",
+     "comment": "为什么 Celeste、Omori 这类像素游戏的商店主图都是高清插画而不是像素图。讨论直接关系到胶囊图的点击率——正在做 Steam 页面的话，这条比再画一版像素 logo 更该先想清楚。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "d06777a8343c",
+     "title": "Using Rust Code from Unity for High Performance",
+     "url": "https://discussions.unity.com/t/using-rust-code-from-unity-for-high-performance/1733798",
+     "source": "discussions.unity.com",
+     "published": "2026-08-13",
+     "comment": "有人把 Rust 编成动态库塞进 Unity 运行时测性能，博客里横向比了目前可用的几种运行时方案。在 Burst / Job System 之外还想找路的，这是本周唯一一份带实测数据的对照。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "609218adc575",
+     "title": "3D Artist Reimagined Half-Life 2's Headcrab With Unreal Engine 5's Substrate",
+     "url": "https://80.lv/articles/3d-artist-reimagined-half-life-2-s-headcrab-with-unreal-engine-5-s-substrate/",
+     "source": "80.lv",
+     "published": "2026-08-14",
+     "comment": "用 UE5 的 Substrate 重做《半条命 2》头蟹，作者写了 62 页的完整流程拆解。引擎不对口，但材质分层的思路和性能取舍是通用的，当美术管线的免费教材读。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 199,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 1,
+  "merge_url": 1,
+  "merge_title": 4,
+  "kept": 193,
+  "out_of_window": 1066,
+  "excluded": 3,
+  "source_capped": 115,
+  "trimmed": 0,
+  "candidates": 78,
+  "failed_sources": [
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "reddit r/Unity3D: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Unity3D/top/.rss?t=week&limit=25"
+  ],
+  "picked": 21,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 1
+ },
+ "generated_at": "2026-08-17T10:25:25+08:00"
+}

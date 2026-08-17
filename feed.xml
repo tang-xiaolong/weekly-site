@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 003 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/003.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/003.html</guid><pubDate>Mon, 10 Aug 2026 08:00:00 +0800</pubDate><description>本期最值得看的两件事：Unity Pipeline 包 v0.4.0-exp.1 构建后把所有场景叠开在编辑器里（接了 CLI 管线的马上自查），以及两个「一次成型」AI 生成可玩游戏的横向样本。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 004 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/004.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/004.html</guid><pubDate>Mon, 17 Aug 2026 08:00:00 +0800</pubDate><description>本期最值得动手的是 Unity CLI beta.4——出包不再需要往项目里塞任何 C# 胶水，CI 和 AI 驱动的构建链能直接瘦一圈；其余干货集中在本地开放模型和参展/发行的取舍数据上。
+🎮 Unity 官方与引擎
+· Unity CLI 1.0.0-beta.4 is rolling out
+· Now Available: Unity Hub 3.21 Beta
+🤖 AI × 游戏开发
+· 5 tips for using GitHub Copilot with Unity
+· Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things
+· [AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise
+· Don&#x27;t classify. Hallucinate!
+· React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue
+· Saber Interactive Unveils Schrödinger&#x27;s Narrative Designer | 12/08/26
+· Where are game devs sourcing their speech and sound effects from
+· State of Open Models: Summer 2026 Observations
+🛠 工具与开源
+· SpriteLoop – Free 2D Animation Tool
+· Godot 4.8 Dev2 and Dev3 Releases
+· Procedural American Downtown Generator For Blender
+· Easy Stylized Line Art Technique For Blender
+📊 独游与市场
+· How Iron Nest sold &gt;250k copies in less than 3 days...
+· The state of virtual 3rd-party festivals 2026
+· &quot;I don&#x27;t see why people are scared of it&quot; – ShipShaper developer Tomas Sala on why indies shouldn&#x27;t be stressing about GTA6
+· Japanese article gained us 1,000 wishlists
+· Why do Pixel Art Games Often Have Non-Pixel Art Cover Images?
+📝 技术长文
+· Using Rust Code from Unity for High Performance
+· 3D Artist Reimagined Half-Life 2&#x27;s Headcrab With Unreal Engine 5&#x27;s Substrate</description></item><item><title>游戏开发周刊 第 003 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/003.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/003.html</guid><pubDate>Mon, 10 Aug 2026 08:00:00 +0800</pubDate><description>本期最值得看的两件事：Unity Pipeline 包 v0.4.0-exp.1 构建后把所有场景叠开在编辑器里（接了 CLI 管线的马上自查），以及两个「一次成型」AI 生成可玩游戏的横向样本。
 🎮 Unity 官方与引擎
 · CLI Pipeline package leaves all scenes open after builds
 · Customizable Main Toolbar: Unity 6.7 improvements
