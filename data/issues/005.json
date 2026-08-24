@@ -1,0 +1,291 @@
+{
+ "no": 5,
+ "week": "2026-W35",
+ "date": "2026-08-24",
+ "range": [
+  "2026-08-18",
+  "2026-08-24"
+ ],
+ "intro": "Unity 官方本周静默，值得花时间的都在 AI 工作流那栏：arXiv 那篇 code-native 3D 资产生成把「生成完还能改」往前推了一步，GameDiscoverCo 则用数据回答了 Steam 哪些品类的玩家最不吃 AI 这一套。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "bee0d7e748f9",
+     "title": "Addressables Multi-Catalog System - A fork of Addressables for DLC purposes",
+     "url": "https://discussions.unity.com/t/addressables-multi-catalog-system-a-fork-of-addressables-for-dlc-purposes/1734470",
+     "source": "discussions.unity.com",
+     "published": "2026-08-21",
+     "comment": "Addressables 的多 catalog 分支，专门解决「基础游戏 + DLC 包」的资源分发，作者维护了好几年、刚同步到新版 Addressables。要做付费追加内容又不想自己去改 Addressables 源码的，这是现成的一条路。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "71ea6098f5b7",
+     "title": "Unity 6000.7.0a5 crashes after adding the Visual Studio Editor 2.0.28 package to a project",
+     "url": "https://discussions.unity.com/t/unity-6000-7-0a5-crashes-after-adding-the-visual-studio-editor-2-0-28-package-to-a-project/1734497",
+     "source": "discussions.unity.com",
+     "published": "2026-08-21",
+     "comment": "Unity 6000.7.0a5 里装 Visual Studio Editor 2.0.28 包必崩，已报 IN-151913 且给了完整复现步骤。在 6.7 alpha 上尝鲜的话，先别动这个包。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "98c0efd2b650",
+     "title": "Ugui vs UITK for interfaces?",
+     "url": "https://discussions.unity.com/t/ugui-vs-uitk-for-interfaces/1734500",
+     "source": "discussions.unity.com",
+     "published": "2026-08-21",
+     "comment": "UGUI 还是 UI Toolkit——这问题隔一年就得重问一次，因为答案在变。开新项目、要铺面板/滚动条/加载进度这类常规界面之前，值得先看一眼当下大家的实际选择再定技术栈。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "d3c5af5ace5f",
+     "title": "Code-native generation of highly programmable 3D assets (2026)",
+     "url": "https://arxiv.org/abs/2607.22738",
+     "source": "arxiv.org",
+     "published": "2026-08-18",
+     "comment": "让模型直接生成「带参数的程序化 3D 资产代码」，而不是吐一坨死网格——改个数就是一个新变体（arXiv，HN 54 分 39 评）。用 AI 铺 3D 资产最大的痛点是生成完只能重生成不能改，这条思路正是冲着它去的。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "1015ca36e760",
+     "title": "The /wayfinder Skill: Navigating the “Fog of War” of Planning",
+     "url": "https://www.latent.space/p/wayfinder-skill",
+     "source": "latent.space",
+     "published": "2026-08-20",
+     "comment": "Matt Pocock 的 /wayfinder skill：项目开局或方向不明时，先让 agent 把「战争迷雾」扫一遍再动手写。结构本身是可抄的，比又一个 prompt 模板有用。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "659601936eb2",
+     "title": "More than just code review",
+     "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+     "source": "simonwillison.net",
+     "published": "2026-08-22",
+     "comment": "用好 coding agent 的核心技能被总结成两句：敢下指令，以及能确认改动真的照你说的落地了——逐行 review 只是验证手段之一，不是唯一。这条影响的是你注意力往哪放，比换模型见效快。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "61b5ac1a8ce4",
+     "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+     "url": "https://github.com/proliferate-ai/proliferate",
+     "source": "github.com",
+     "published": "2026-08-21",
+     "comment": "开源、可自托管的 agent 工作台，把 Claude Code、Codex、OpenCode、Cursor、Grok 收进一个界面里跑和编排任务（YC S25）。多 agent 并行已经是日常的话，值得试试统一入口。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "cfc3dba828c4",
+     "title": "Quoting Drew Breunig",
+     "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+     "source": "simonwillison.net",
+     "published": "2026-08-23",
+     "comment": "Drew Breunig 的观察：Fable 之前，花时间打磨 harness 和上下文策略基本是白费——新模型一来就把你的问题抹平了；Fable 之后不再是这样，harness 投入开始有复利。",
+     "daily": false,
+     "also": [
+      {
+       "title": "The Evolution of the Agent Harness",
+       "url": "https://www.latent.space/p/attention-interface",
+       "source": "latent.space"
+      }
+     ]
+    },
+    {
+     "id": "a4962e1ce15c",
+     "title": "Quoting Linus Torvalds",
+     "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+     "source": "simonwillison.net",
+     "published": "2026-08-22",
+     "comment": "Linus Torvalds 说一次地狱级调试里大半苦力活是 AI 干的，但 AI 中途好几次斩钉截铁地说「这解决不了，写个报告算了」。被 agent 的自信劝退长什么样，这段比任何评测都直观。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "d2db023be683",
+     "title": "Show HN: Huzzah – a novel approach to coding with AI",
+     "url": "https://www.danielvaughn.dev/posts/huzzah/",
+     "source": "danielvaughn.dev",
+     "published": "2026-08-20",
+     "comment": "作者几乎全年用 coding agent 写代码，写到心力交瘁，于是做了个叫 Huzzah 的实验性编辑器换一种人机分工。工具本身不一定要用，但如果你也开始烦「盯着 agent 刷屏」，这是一个不同形态的参考。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "67a8d3b2cb9f",
+     "title": "ArcBrush – Node Based Procedural 2D Graphics App",
+     "url": "https://gamefromscratch.com/arcbrush-node-based-procedural-2d-graphics-app/",
+     "source": "gamefromscratch.com",
+     "published": "2026-08-18",
+     "comment": "ArcBrush，节点式程序化 2D 图形工具，近 100 个节点、Win/Mac/Linux 三平台，作者的定位是「ImageMagick 的能力但好用得多」。批量出图标、纹理底图、UI 素材这类重复活可以拿它试。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "ea2803d42645",
+     "title": "Roblox makes three of its AI safety tools open source",
+     "url": "https://www.gamesindustry.biz/roblox-makes-three-of-its-ai-safety-tools-open-source",
+     "source": "gamesindustry.biz",
+     "published": "2026-08-21",
+     "comment": "Roblox 通过 ROOST 开源了三个 AI 安全模型。做联机或带 UGC 的游戏时，这是少见的拿来就能跑的成品审核模型，省掉自己训一套的成本。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "38d02122a8a3",
+     "title": "This Free Tool Turns HTML5 Games Into Full Standalone Websites",
+     "url": "https://80.lv/articles/this-free-tool-turns-html5-games-into-full-standalone-websites/",
+     "source": "80.lv",
+     "published": "2026-08-21",
+     "comment": "Playgama Wrap 免费把 HTML5 游戏打包成独立网站，自带支付、分析、SEO 和买量工具。有 web demo 的话，等于在商店和小游戏门户之外多一个自己能掌控的分发口。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "118351102eb5",
+     "title": "Working on a new script for Aseprite",
+     "url": "https://www.reddit.com/r/IndieDev/comments/1vwgq5h/working_on_a_new_script_for_aseprite/",
+     "source": "reddit.com",
+     "published": "2026-08-23",
+     "comment": "有人在给 Aseprite 写脚本，把画好的图当布料处理：旋转、设锚点、拖出可拉扯的面。还在开发中，但旗帜、披风这类 2D 动画要是能省掉大半逐帧，值得提前盯着。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "0b5c781f0d4f",
+     "title": "Are Steam players of particular genres less accepting of AI?",
+     "url": "https://newsletter.gamediscover.co/p/are-steam-players-of-particular-genres",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-18",
+     "comment": "GameDiscoverCo 用数据看不同品类的 Steam 玩家对 AI 的接受度差异有多大。你整条流程都在用 AI，商店页那句声明怎么写、会伤到哪些人群，这篇比社区吵架有参考价值得多。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "76dbb1248893",
+     "title": "The week of the golden age",
+     "url": "https://howtomarketagame.com/2026/08/18/the-week-of-the-golden-age/?utm_source=rss&utm_medium=rss&utm_campaign=the-week-of-the-golden-age",
+     "source": "howtomarketagame.com",
+     "published": "2026-08-18",
+     "comment": "Valve 公布 7 月畅销榜后，作者发现榜上挤满了小团队做的、体量更小也更快做完的游戏。「缩小 scope、更快出货」这次是有榜单数据撑着的，不只是精神安慰。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Part 2: The Week of the Golden Age",
+       "url": "https://howtomarketagame.com/2026/08/20/part-2-the-week-of-the-golden-age/?utm_source=rss&utm_medium=rss&utm_campaign=part-2-the-week-of-the-golden-age",
+       "source": "howtomarketagame.com"
+      },
+      {
+       "title": "Part 3: The Week Of The Golden Age: How Many Dudes?",
+       "url": "https://howtomarketagame.com/2026/08/21/part-3-the-week-of-the-golden-age-how-many-dudes/?utm_source=rss&utm_medium=rss&utm_campaign=part-3-the-week-of-the-golden-age-how-many-dudes",
+       "source": "howtomarketagame.com"
+      }
+     ]
+    },
+    {
+     "id": "608270a5d636",
+     "title": "Will Big Walk’s 1m+ sales usher in a ‘co-op only’ game era?",
+     "url": "https://newsletter.gamediscover.co/p/will-big-walks-1m-sales-usher-in",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-21",
+     "comment": "Big Walk 卖过 100 万套，这篇拆了它为什么成，以及「纯合作」会不会变成下一个扎堆方向。在给下个项目决定要不要塞联机之前先看这条。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "4e76f64a5bf2",
+     "title": "Rover's Tale developer Observer Interactive parts ways with Team17 as it moves to self-publishing",
+     "url": "https://www.gamesindustry.biz/rovers-tale-developer-observer-interactive-parts-ways-with-team17-as-it-moves-to-self-publishing",
+     "source": "gamesindustry.biz",
+     "published": "2026-08-21",
+     "comment": "Rover's Tale 的开发者和 Team17 解约，转为自发行——签发行还是自己来，本周多了一个新鲜样本，值得跟一跟它自发行后的实际表现。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "3628d3fdcb63",
+     "title": "A Deeper Look at PlayStation 5 Pro's Updated PSSR | 19/08/26",
+     "url": "https://www.aiandgames.com/p/a-deeper-look-at-playstation-5-pros",
+     "source": "aiandgames.com",
+     "published": "2026-08-19",
+     "comment": "基于 SIGGRAPH 演讲拆解 PS5 Pro 新版 PSSR 的工作方式。和 DLSS 同属 ML 超分这条线，想搞清楚这代主机超分到底在算什么、你的画面交上去会被怎么处理，这是本周最扎实的一篇。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "ea277008822c",
+     "title": "This First-Person Sword Fighting Game's Combat is 100% Physics-Based",
+     "url": "https://80.lv/articles/this-first-person-sword-fighting-game-s-combat-is-100-physics-based/",
+     "source": "80.lv",
+     "published": "2026-08-21",
+     "comment": "单人开发的 Bloodfall 把第一人称近战做成 100% 物理驱动：鼠标直接控制武器，碰撞、反弹、锁住、磕到环境全靠模拟。物理战斗最难的是手感，值得看他在哪些地方做了让步。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "3dce097de05f",
+     "title": "Puzzles, Lore & Inspiration: Get Glimpse of Newest Rusty Lake Game Development",
+     "url": "https://80.lv/articles/puzzles-lore-inspiration-get-glimpse-of-rusty-lake-development/",
+     "source": "80.lv",
+     "published": "2026-08-21",
+     "comment": "Rusty Lake 联合创始人聊新作 Servant of the Lake 的谜题设计和世界观怎么长出来。这个小团队一直靠体量不大的解谜游戏持续出货，谈「谜题怎么造」比大多数设计文章具体。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 193,
+  "drop_ledger_url": 2,
+  "drop_ledger_title": 2,
+  "merge_url": 0,
+  "merge_title": 6,
+  "kept": 183,
+  "out_of_window": 1078,
+  "excluded": 3,
+  "source_capped": 103,
+  "trimmed": 0,
+  "candidates": 80,
+  "failed_sources": [
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "reddit r/gamedev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/gamedev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 21,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 2
+ },
+ "generated_at": "2026-08-24T10:25:31+08:00"
+}

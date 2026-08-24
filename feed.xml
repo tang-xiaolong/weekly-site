@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 004 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/004.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/004.html</guid><pubDate>Mon, 17 Aug 2026 08:00:00 +0800</pubDate><description>本期最值得动手的是 Unity CLI beta.4——出包不再需要往项目里塞任何 C# 胶水，CI 和 AI 驱动的构建链能直接瘦一圈；其余干货集中在本地开放模型和参展/发行的取舍数据上。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 005 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/005.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/005.html</guid><pubDate>Mon, 24 Aug 2026 08:00:00 +0800</pubDate><description>Unity 官方本周静默，值得花时间的都在 AI 工作流那栏：arXiv 那篇 code-native 3D 资产生成把「生成完还能改」往前推了一步，GameDiscoverCo 则用数据回答了 Steam 哪些品类的玩家最不吃 AI 这一套。
+🎮 Unity 官方与引擎
+· Addressables Multi-Catalog System - A fork of Addressables for DLC purposes
+· Unity 6000.7.0a5 crashes after adding the Visual Studio Editor 2.0.28 package to a project
+· Ugui vs UITK for interfaces?
+🤖 AI × 游戏开发
+· Code-native generation of highly programmable 3D assets (2026)
+· The /wayfinder Skill: Navigating the “Fog of War” of Planning
+· More than just code review
+· Show HN: Proliferate- open-source, self-hostable Codex for any coding agent
+· Quoting Drew Breunig
+· Quoting Linus Torvalds
+· Show HN: Huzzah – a novel approach to coding with AI
+🛠 工具与开源
+· ArcBrush – Node Based Procedural 2D Graphics App
+· Roblox makes three of its AI safety tools open source
+· This Free Tool Turns HTML5 Games Into Full Standalone Websites
+· Working on a new script for Aseprite
+📊 独游与市场
+· Are Steam players of particular genres less accepting of AI?
+· The week of the golden age
+· Will Big Walk’s 1m+ sales usher in a ‘co-op only’ game era?
+· Rover&#x27;s Tale developer Observer Interactive parts ways with Team17 as it moves to self-publishing
+📝 技术长文
+· A Deeper Look at PlayStation 5 Pro&#x27;s Updated PSSR | 19/08/26
+· This First-Person Sword Fighting Game&#x27;s Combat is 100% Physics-Based
+· Puzzles, Lore &amp; Inspiration: Get Glimpse of Newest Rusty Lake Game Development</description></item><item><title>游戏开发周刊 第 004 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/004.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/004.html</guid><pubDate>Mon, 17 Aug 2026 08:00:00 +0800</pubDate><description>本期最值得动手的是 Unity CLI beta.4——出包不再需要往项目里塞任何 C# 胶水，CI 和 AI 驱动的构建链能直接瘦一圈；其余干货集中在本地开放模型和参展/发行的取舍数据上。
 🎮 Unity 官方与引擎
 · Unity CLI 1.0.0-beta.4 is rolling out
 · Now Available: Unity Hub 3.21 Beta
