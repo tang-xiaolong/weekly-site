@@ -1,0 +1,227 @@
+{
+ "no": 6,
+ "week": "2026-W36",
+ "date": "2026-08-31",
+ "range": [
+  "2026-08-25",
+  "2026-08-31"
+ ],
+ "intro": "本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "0a7f2aca5d10",
+     "title": "Open-Source DLSS 5 Neural Rendering Integration for Unity 6.3 URP",
+     "url": "https://discussions.unity.com/t/open-source-dlss-5-neural-rendering-integration-for-unity-6-3-urp/1735124",
+     "source": "discussions.unity.com",
+     "published": "2026-08-29",
+     "comment": "有人写了个自定义 UnityRHI 原生插件（基于 Direct3D 12），把 DLSS 5 的神经渲染接进 Unity 6.3 的 URP，并且开源了。想在 URP 上试神经渲染的，这是眼下能直接扒的参考实现；就算用不上，原生插件挂进 URP 渲染流程的写法本身也值得读一遍。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "0b3971dd9615",
+     "title": "A frame rate cap can quietly wreck your scene load times too",
+     "url": "https://discussions.unity.com/t/a-frame-rate-cap-can-quietly-wreck-your-scene-load-times-too/1734706",
+     "source": "discussions.unity.com",
+     "published": "2026-08-24",
+     "comment": "项目把帧率锁在 30 是为了玩法，结果发现这个锁在场景加载期间同样生效——加载时根本没有画面需要稳帧，白白拖慢加载。任何设了帧率上限的工程，都该去确认加载前后有没有临时解锁。",
+     "daily": false,
+     "also": [
+      {
+       "title": "TIL a frame rate cap can quietly wreck your scene load times too",
+       "url": "https://www.reddit.com/r/Unity3D/comments/1vxj6i6/til_a_frame_rate_cap_can_quietly_wreck_your_scene/",
+       "source": "reddit.com"
+      }
+     ]
+    },
+    {
+     "id": "0ffe51dc7ee6",
+     "title": "I finally made fully destructible buildings that run in real time on Android",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1w2dp15/i_finally_made_fully_destructible_buildings_that/",
+     "source": "reddit.com",
+     "published": "2026-08-30",
+     "comment": "作者花三个月优化移动端，最后彻底放弃 PhysX 自己写体素物理，把实时可破坏建筑跑上了 Android。移动端做破坏被物理卡住的，重点看他为什么判定自研比继续优化 PhysX 划算。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "692861af6a72",
+     "title": "Three games, 10 years, one Unity project: Piecing together The Immortal John Triptych",
+     "url": "https://unity.com/blog/immortal-john-triptych-joe-richardson-interview",
+     "source": "unity.com",
+     "published": "2026-08-27",
+     "comment": "Joe Richardson 一个人用 Adventure Creator 做了十年，最后把三部作品合并进同一个 Unity 工程，再借 Akupara 的支持一起移植主机。长线独立项目怎么跨版本活下来、怎么攒成一个可发行的包，这是难得的第一手样本。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "5ae4b2e4b916",
+     "title": "I made a dynamic water shader that reacts to physics for my indie game",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1w1n25o/i_made_a_dynamic_water_shader_that_reacts_to/",
+     "source": "reddit.com",
+     "published": "2026-08-29",
+     "comment": "3D 平台游戏的动态水面 shader，作者把实现讲透了：水位是拿物体 Y 坐标喂 step 函数，晃动靠两个 Rotate 节点叠出来。开销小，Shader Graph 里照着搭就能跑。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "9e4cfc70ee9a",
+     "title": "Breaking Claude Code Opus 5 Auto Mode",
+     "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+     "source": "simonwillison.net",
+     "published": "2026-08-27",
+     "comment": "Anthropic 把 auto 模式设成默认，并对它挡提示注入的能力给了相当强的说法，这篇就是冲着这条防线去打的。如果你让无头 Claude 去读 issue、抓网页、跑别人的仓库，这篇直接决定你还该不该那样放开工具权限。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "3e91b1e92182",
+     "title": "Qwen3.8-Flash-Next",
+     "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+     "source": "simonwillison.net",
+     "published": "2026-08-26",
+     "comment": "Qwen 的新开源多模态 MoE：125B 总参数、只激活 6B，官方说是 Qwen4 架构的提前预览。激活量这么小意味着本地真跑得动，批量素材描述、资源打标这类脏活可以考虑从 API 挪回本机。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "2f6f4db88bb7",
+     "title": "Quoting Paul Dix",
+     "url": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+     "source": "simonwillison.net",
+     "published": "2026-08-26",
+     "comment": "Paul Dix 的一段话：AI 写了一百万行代码，之后几个月持续打磨，现在这套软件稳定跑在几百万台开发者机器上。当「AI 写的代码不能上生产」这条直觉需要校准时，这是个带规模的具体反例。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "3bedc5c4f068",
+     "title": "How To Make Stylized Hair Look Like Curves In Maya",
+     "url": "https://80.lv/articles/how-to-make-stylized-hair-look-like-curves-in-maya/",
+     "source": "80.lv",
+     "published": "2026-08-29",
+     "comment": "把风格化头发做出曲线质感的技法，Maya 为主，同时给了 Blender 版本。做卡通角色又不想上完整毛发系统的，这类技法性价比最高，不用为它换软件。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "3834d5373454",
+     "title": "How have the genres of hit PC games changed since 2021?",
+     "url": "https://newsletter.gamediscover.co/p/how-have-the-genres-of-hit-pc-games",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-25",
+     "comment": "GameDiscoverCo 用实际数据回答：2021 年至今 PC 爆款的品类构成怎么变的。选品类是独立开发最贵的一次决策，带数据的横向对比比任何「风口」判断都值钱。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "827e8ded5abb",
+     "title": "Hearth & Hamlet’s ~100k & the rise of the bite-sized clicker...",
+     "url": "https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-08-28",
+     "comment": "把 Hearth & Hamlet 约 10 万的成绩和「小体量点击类」的批量冒头放在一起看。低成本、能快速验证的小品类正在出成绩——一个人做游戏的排期该怎么押，自己按这组数字算。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "bbc725b8be63",
+     "title": "Cloud Imperium delays Squadron 42 to 2027 – \"There is no way I want to launch into the attention buzz saw of GTA 6\"",
+     "url": "https://www.gamesindustry.biz/cloud-imperium-delays-squadron-42-to-2027-there-is-no-way-i-want-to-launch-into-the-attention-buzz-saw-of-gta-6",
+     "source": "gamesindustry.biz",
+     "published": "2026-08-28",
+     "comment": "Cloud Imperium 把 Squadron 42 推到 2027 Q2，明说是不想撞进 GTA 6 的「注意力绞肉机」。上期那位说独立游戏不必怕 GTA 6 的开发者未必错，但这里有人用整整一年的档期投了反对票——排发行窗口时两边都该称一称。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "68d87bc2f281",
+     "title": "How you (yes, you) can benefit from 1-on-1 synchronous playtesting",
+     "url": "https://www.gamedeveloper.com/design/how-you-yes-you-can-benefit-from-1-on-1-synchronous-playtesting",
+     "source": "gamedeveloper.com",
+     "published": "2026-08-27",
+     "comment": "Brian Cronin 在 GDC 讲一对一同步测试：坐在一个玩家旁边看他玩，比问卷和远程数据更早暴露设计问题。这是少数零预算、今晚就能开始做的事。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "6fc69fe2a78d",
+     "title": "Warlock's magic system was built on game-bending player choices",
+     "url": "https://www.gamedeveloper.com/design/warlock-s-magic-system-was-built-on-game-breaking-player-choices",
+     "source": "gamedeveloper.com",
+     "published": "2026-08-28",
+     "comment": "Warlock 的法术系统是围绕「玩家钻空子」设计的：不把漏洞堵掉，而是把它写进规则。想做涌现式系统的，这篇讲清了取舍落在哪。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "74ca93b3ece2",
+     "title": "CD Projekt Red has The Witcher 4 running on all target platforms after Cyberpunk 2077 lesson",
+     "url": "https://www.gamedeveloper.com/production/cd-projekt-red-has-the-witcher-4-running-on-all-target-platforms-after-cyberpunk-2077-lesson",
+     "source": "gamedeveloper.com",
+     "published": "2026-08-27",
+     "comment": "CDPR 联席 CEO 说《巫师 4》现在已经在所有目标平台上跑起来了，明确是吃了《赛博朋克 2077》的亏。这条教训对一个人也成立：最弱的目标平台越早跑通，后期被迫砍内容的概率越低。",
+     "daily": true,
+     "also": [
+      {
+       "title": "CD Projekt Red has The Witcher 4 running on all target platforms after Cyberpunk 2077 lesson",
+       "url": "https://www.reddit.com/r/gamedev/comments/1w0cqxw/cd_projekt_red_has_the_witcher_4_running_on_all/",
+       "source": "reddit.com"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 196,
+  "drop_ledger_url": 1,
+  "drop_ledger_title": 0,
+  "merge_url": 1,
+  "merge_title": 4,
+  "kept": 190,
+  "out_of_window": 1077,
+  "excluded": 2,
+  "source_capped": 113,
+  "trimmed": 0,
+  "candidates": 77,
+  "failed_sources": [
+   "https://gamefromscratch.com/feed/: HTTPError: 502 Server Error: Bad Gateway for url: https://gamefromscratch.com/feed/",
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/IndieDev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 15,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 1
+ },
+ "generated_at": "2026-08-31T10:25:46+08:00"
+}

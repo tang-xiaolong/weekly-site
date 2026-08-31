@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 005 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/005.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/005.html</guid><pubDate>Mon, 24 Aug 2026 08:00:00 +0800</pubDate><description>Unity 官方本周静默，值得花时间的都在 AI 工作流那栏：arXiv 那篇 code-native 3D 资产生成把「生成完还能改」往前推了一步，GameDiscoverCo 则用数据回答了 Steam 哪些品类的玩家最不吃 AI 这一套。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 006 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/006.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/006.html</guid><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate><description>本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。
+🎮 Unity 官方与引擎
+· Open-Source DLSS 5 Neural Rendering Integration for Unity 6.3 URP
+· A frame rate cap can quietly wreck your scene load times too
+· I finally made fully destructible buildings that run in real time on Android
+· Three games, 10 years, one Unity project: Piecing together The Immortal John Triptych
+· I made a dynamic water shader that reacts to physics for my indie game
+🤖 AI × 游戏开发
+· Breaking Claude Code Opus 5 Auto Mode
+· Qwen3.8-Flash-Next
+· Quoting Paul Dix
+🛠 工具与开源
+· How To Make Stylized Hair Look Like Curves In Maya
+📊 独游与市场
+· How have the genres of hit PC games changed since 2021?
+· Hearth &amp; Hamlet’s ~100k &amp; the rise of the bite-sized clicker...
+· Cloud Imperium delays Squadron 42 to 2027 – &quot;There is no way I want to launch into the attention buzz saw of GTA 6&quot;
+📝 技术长文
+· How you (yes, you) can benefit from 1-on-1 synchronous playtesting
+· Warlock&#x27;s magic system was built on game-bending player choices
+· CD Projekt Red has The Witcher 4 running on all target platforms after Cyberpunk 2077 lesson</description></item><item><title>游戏开发周刊 第 005 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/005.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/005.html</guid><pubDate>Mon, 24 Aug 2026 08:00:00 +0800</pubDate><description>Unity 官方本周静默，值得花时间的都在 AI 工作流那栏：arXiv 那篇 code-native 3D 资产生成把「生成完还能改」往前推了一步，GameDiscoverCo 则用数据回答了 Steam 哪些品类的玩家最不吃 AI 这一套。
 🎮 Unity 官方与引擎
 · Addressables Multi-Catalog System - A fork of Addressables for DLC purposes
 · Unity 6000.7.0a5 crashes after adding the Visual Studio Editor 2.0.28 package to a project

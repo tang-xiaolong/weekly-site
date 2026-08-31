@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>游戏开发周刊 第 006 期</title>
+<meta name="description" content="本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。">
+<meta property="og:type" content="article"><meta property="og:title" content="游戏开发周刊 第 006 期">
+<meta property="og:description" content="本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://tang-xiaolong.github.io/weekly-site/issues/006.html"><meta property="og:url" content="https://tang-xiaolong.github.io/weekly-site/issues/006.html">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../feed.xml">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script><style>
+:root{--bg:#f7f8fa;--panel:#fff;--ink:#1c2430;--mut:#5c6b80;--line:#dfe5ee;--ac:#2563eb;--gn:#059669;--chip:#eef2f9;--fs:15px}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1420;--panel:#141d2c;--ink:#e2e8f2;--mut:#8fa0b8;--line:#26324a;--ac:#5b8def;--gn:#34d399;--chip:#1a2436}}
+:root[data-theme="dark"]{--bg:#0d1420;--panel:#141d2c;--ink:#e2e8f2;--mut:#8fa0b8;--line:#26324a;--ac:#5b8def;--gn:#34d399;--chip:#1a2436}
+:root[data-theme="light"]{--bg:#f7f8fa;--panel:#fff;--ink:#1c2430;--mut:#5c6b80;--line:#dfe5ee;--ac:#2563eb;--gn:#059669;--chip:#eef2f9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;line-height:1.8;font-size:var(--fs)}
+a{color:var(--ac)}
+.num{font-family:Consolas,'Cascadia Mono',monospace;font-weight:700}
+header.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:11px 18px}
+.tw{max-width:46rem;margin:0 auto;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-right:48px}
+.tw h1{font-size:17px;margin:0;letter-spacing:.5px}
+.tw h1 a{color:var(--ink);text-decoration:none}
+.tw .sp{flex:1}
+.tw a.nav{color:var(--mut);text-decoration:none;font-size:13px}
+.tw a.nav:hover{color:var(--ac)}
+main{max-width:46rem;margin:0 auto;padding:18px 18px 64px}
+.ihead{margin:14px 0 6px}
+.ihead .no{font-size:30px;color:var(--ac);font-family:Consolas,'Cascadia Mono',monospace;font-weight:700}
+.ihead h2{font-size:23px;margin:2px 0 4px;text-wrap:balance}
+.ihead .rng{color:var(--mut);font-size:13px}
+.intro{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--ac);border-radius:0 12px 12px 0;padding:12px 18px;margin:18px 0 6px;color:color-mix(in srgb,var(--ink) 92%,var(--mut))}
+section.board{margin:30px 0 0}
+section.board h3{font-size:17px;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin:11px 0}
+.item .t{font-size:16px;font-weight:600;line-height:1.55;text-decoration:none;display:inline-block}
+.item .t:hover{text-decoration:underline}
+.meta{font-size:12px;color:var(--mut);margin:5px 0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.meta .src{font-family:Consolas,'Cascadia Mono',monospace}
+.tag{font-size:11px;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--mut)}
+.tag.daily{background:color-mix(in srgb,var(--gn) 15%,transparent);color:var(--gn)}
+.tag.hot{background:color-mix(in srgb,var(--ac) 14%,transparent);color:var(--ac)}
+.cm{margin:0;font-size:14.5px;color:color-mix(in srgb,var(--ink) 90%,var(--mut))}
+.also{margin-top:9px;font-size:12.5px;color:var(--mut)}
+.also a{color:var(--mut);text-decoration:underline dotted}
+.also a:hover{color:var(--ac)}
+.pager{display:flex;gap:12px;margin:34px 0 0}
+.pager a,.pager span{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;background:var(--panel);color:var(--ink);font-size:13.5px}
+.pager .nx{text-align:right;border-color:color-mix(in srgb,var(--ac) 40%,transparent)}
+.pager .lab{display:block;font-size:12px;color:var(--mut)}
+.pager .dis{opacity:.5}
+.foot{color:var(--mut);font-size:12.5px;margin-top:38px;border-top:1px solid var(--line);padding-top:14px;line-height:1.9}
+.foot code{font-family:Consolas,monospace;font-size:.95em}
+.alist{list-style:none;padding:0;margin:0}
+.alist li{display:flex;gap:12px;align-items:baseline;padding:11px 4px;border-bottom:1px dashed var(--line)}
+.alist a{text-decoration:none;font-weight:600}
+.alist .d{color:var(--mut);font-size:12.5px;font-family:Consolas,monospace}
+.alist .c{color:var(--mut);font-size:12.5px;margin-left:auto}
+.mon{margin:26px 0 6px;font-size:14px;color:var(--mut);font-weight:600}
+.tbtn{position:fixed;top:9px;right:12px;z-index:11;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;font-size:15px;padding:4px 11px;cursor:pointer;line-height:1.4;box-shadow:0 1px 6px rgba(0,0,0,.12)}
+.tbtn:active{transform:scale(.92)}
+</style></head><body>
+<button id="theme-btn" class="tbtn" aria-label="切换夜间模式">🌙</button>
+<header class="top"><div class="tw"><h1><a href="../index.html">📰 游戏开发周刊</a></h1><span class=rng>第 006 期</span><span class="sp"></span><a class="nav" href="../archive.html">往期</a><a class="nav" href="../feed.xml">RSS</a></div></header><main><div class="ihead"><div class="no">#006</div><h2>游戏开发周刊 第 006 期</h2><div class="rng">08/25 – 08/31 · 15 条 · 5 个板块</div></div><div class="intro">本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。</div><section class="board"><h3>🎮 Unity 官方与引擎</h3><article class="item"><a class="t" href="https://discussions.unity.com/t/open-source-dlss-5-neural-rendering-integration-for-unity-6-3-urp/1735124" target="_blank" rel="noopener">Open-Source DLSS 5 Neural Rendering Integration for Unity 6.3 URP</a><div class="meta"><span class="src">discussions.unity.com</span><span>08/29</span></div><p class="cm">有人写了个自定义 UnityRHI 原生插件（基于 Direct3D 12），把 DLSS 5 的神经渲染接进 Unity 6.3 的 URP，并且开源了。想在 URP 上试神经渲染的，这是眼下能直接扒的参考实现；就算用不上，原生插件挂进 URP 渲染流程的写法本身也值得读一遍。</p></article><article class="item"><a class="t" href="https://discussions.unity.com/t/a-frame-rate-cap-can-quietly-wreck-your-scene-load-times-too/1734706" target="_blank" rel="noopener">A frame rate cap can quietly wreck your scene load times too</a><div class="meta"><span class="src">discussions.unity.com</span><span>08/24</span></div><p class="cm">项目把帧率锁在 30 是为了玩法，结果发现这个锁在场景加载期间同样生效——加载时根本没有画面需要稳帧，白白拖慢加载。任何设了帧率上限的工程，都该去确认加载前后有没有临时解锁。</p><div class="also">另见：<a href="https://www.reddit.com/r/Unity3D/comments/1vxj6i6/til_a_frame_rate_cap_can_quietly_wreck_your_scene/" target="_blank" rel="noopener nofollow">reddit.com</a></div></article><article class="item"><a class="t" href="https://www.reddit.com/r/Unity3D/comments/1w2dp15/i_finally_made_fully_destructible_buildings_that/" target="_blank" rel="noopener">I finally made fully destructible buildings that run in real time on Android</a><div class="meta"><span class="src">reddit.com</span><span>08/30</span></div><p class="cm">作者花三个月优化移动端，最后彻底放弃 PhysX 自己写体素物理，把实时可破坏建筑跑上了 Android。移动端做破坏被物理卡住的，重点看他为什么判定自研比继续优化 PhysX 划算。</p></article><article class="item"><a class="t" href="https://unity.com/blog/immortal-john-triptych-joe-richardson-interview" target="_blank" rel="noopener">Three games, 10 years, one Unity project: Piecing together The Immortal John Triptych</a><div class="meta"><span class="src">unity.com</span><span>08/27</span></div><p class="cm">Joe Richardson 一个人用 Adventure Creator 做了十年，最后把三部作品合并进同一个 Unity 工程，再借 Akupara 的支持一起移植主机。长线独立项目怎么跨版本活下来、怎么攒成一个可发行的包，这是难得的第一手样本。</p></article><article class="item"><a class="t" href="https://www.reddit.com/r/Unity3D/comments/1w1n25o/i_made_a_dynamic_water_shader_that_reacts_to/" target="_blank" rel="noopener">I made a dynamic water shader that reacts to physics for my indie game</a><div class="meta"><span class="src">reddit.com</span><span>08/29</span></div><p class="cm">3D 平台游戏的动态水面 shader，作者把实现讲透了：水位是拿物体 Y 坐标喂 step 函数，晃动靠两个 Rotate 节点叠出来。开销小，Shader Graph 里照着搭就能跑。</p></article></section><section class="board"><h3>🤖 AI × 游戏开发</h3><article class="item"><a class="t" href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/" target="_blank" rel="noopener">Breaking Claude Code Opus 5 Auto Mode</a><div class="meta"><span class="src">simonwillison.net</span><span>08/27</span><span class="tag daily">早报提过</span></div><p class="cm">Anthropic 把 auto 模式设成默认，并对它挡提示注入的能力给了相当强的说法，这篇就是冲着这条防线去打的。如果你让无头 Claude 去读 issue、抓网页、跑别人的仓库，这篇直接决定你还该不该那样放开工具权限。</p></article><article class="item"><a class="t" href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next/" target="_blank" rel="noopener">Qwen3.8-Flash-Next</a><div class="meta"><span class="src">simonwillison.net</span><span>08/26</span></div><p class="cm">Qwen 的新开源多模态 MoE：125B 总参数、只激活 6B，官方说是 Qwen4 架构的提前预览。激活量这么小意味着本地真跑得动，批量素材描述、资源打标这类脏活可以考虑从 API 挪回本机。</p></article><article class="item"><a class="t" href="https://simonwillison.net/2026/Aug/26/paul-dix/" target="_blank" rel="noopener">Quoting Paul Dix</a><div class="meta"><span class="src">simonwillison.net</span><span>08/26</span></div><p class="cm">Paul Dix 的一段话：AI 写了一百万行代码，之后几个月持续打磨，现在这套软件稳定跑在几百万台开发者机器上。当「AI 写的代码不能上生产」这条直觉需要校准时，这是个带规模的具体反例。</p></article></section><section class="board"><h3>🛠 工具与开源</h3><article class="item"><a class="t" href="https://80.lv/articles/how-to-make-stylized-hair-look-like-curves-in-maya/" target="_blank" rel="noopener">How To Make Stylized Hair Look Like Curves In Maya</a><div class="meta"><span class="src">80.lv</span><span>08/29</span></div><p class="cm">把风格化头发做出曲线质感的技法，Maya 为主，同时给了 Blender 版本。做卡通角色又不想上完整毛发系统的，这类技法性价比最高，不用为它换软件。</p></article></section><section class="board"><h3>📊 独游与市场</h3><article class="item"><a class="t" href="https://newsletter.gamediscover.co/p/how-have-the-genres-of-hit-pc-games" target="_blank" rel="noopener">How have the genres of hit PC games changed since 2021?</a><div class="meta"><span class="src">newsletter.gamediscover.co</span><span>08/25</span><span class="tag daily">早报提过</span></div><p class="cm">GameDiscoverCo 用实际数据回答：2021 年至今 PC 爆款的品类构成怎么变的。选品类是独立开发最贵的一次决策，带数据的横向对比比任何「风口」判断都值钱。</p></article><article class="item"><a class="t" href="https://newsletter.gamediscover.co/p/hearth-and-hamlets-100k-and-the-rise" target="_blank" rel="noopener">Hearth &amp; Hamlet’s ~100k &amp; the rise of the bite-sized clicker...</a><div class="meta"><span class="src">newsletter.gamediscover.co</span><span>08/28</span><span class="tag daily">早报提过</span></div><p class="cm">把 Hearth &amp; Hamlet 约 10 万的成绩和「小体量点击类」的批量冒头放在一起看。低成本、能快速验证的小品类正在出成绩——一个人做游戏的排期该怎么押，自己按这组数字算。</p></article><article class="item"><a class="t" href="https://www.gamesindustry.biz/cloud-imperium-delays-squadron-42-to-2027-there-is-no-way-i-want-to-launch-into-the-attention-buzz-saw-of-gta-6" target="_blank" rel="noopener">Cloud Imperium delays Squadron 42 to 2027 – &quot;There is no way I want to launch into the attention buzz saw of GTA 6&quot;</a><div class="meta"><span class="src">gamesindustry.biz</span><span>08/28</span></div><p class="cm">Cloud Imperium 把 Squadron 42 推到 2027 Q2，明说是不想撞进 GTA 6 的「注意力绞肉机」。上期那位说独立游戏不必怕 GTA 6 的开发者未必错，但这里有人用整整一年的档期投了反对票——排发行窗口时两边都该称一称。</p></article></section><section class="board"><h3>📝 技术长文</h3><article class="item"><a class="t" href="https://www.gamedeveloper.com/design/how-you-yes-you-can-benefit-from-1-on-1-synchronous-playtesting" target="_blank" rel="noopener">How you (yes, you) can benefit from 1-on-1 synchronous playtesting</a><div class="meta"><span class="src">gamedeveloper.com</span><span>08/27</span><span class="tag daily">早报提过</span></div><p class="cm">Brian Cronin 在 GDC 讲一对一同步测试：坐在一个玩家旁边看他玩，比问卷和远程数据更早暴露设计问题。这是少数零预算、今晚就能开始做的事。</p></article><article class="item"><a class="t" href="https://www.gamedeveloper.com/design/warlock-s-magic-system-was-built-on-game-breaking-player-choices" target="_blank" rel="noopener">Warlock&#x27;s magic system was built on game-bending player choices</a><div class="meta"><span class="src">gamedeveloper.com</span><span>08/28</span><span class="tag daily">早报提过</span></div><p class="cm">Warlock 的法术系统是围绕「玩家钻空子」设计的：不把漏洞堵掉，而是把它写进规则。想做涌现式系统的，这篇讲清了取舍落在哪。</p></article><article class="item"><a class="t" href="https://www.gamedeveloper.com/production/cd-projekt-red-has-the-witcher-4-running-on-all-target-platforms-after-cyberpunk-2077-lesson" target="_blank" rel="noopener">CD Projekt Red has The Witcher 4 running on all target platforms after Cyberpunk 2077 lesson</a><div class="meta"><span class="src">gamedeveloper.com</span><span>08/27</span><span class="tag daily">早报提过</span></div><p class="cm">CDPR 联席 CEO 说《巫师 4》现在已经在所有目标平台上跑起来了，明确是吃了《赛博朋克 2077》的亏。这条教训对一个人也成立：最弱的目标平台越早跑通，后期被迫砍内容的概率越低。</p><div class="also">另见：<a href="https://www.reddit.com/r/gamedev/comments/1w0cqxw/cd_projekt_red_has_the_witcher_4_running_on_all/" target="_blank" rel="noopener nofollow">reddit.com</a></div></article></section><nav class="pager"><a class="pv" href="../issues/005.html"><span class="lab">← 上一期</span>第 005 期</a><span class="nx dis"><span class="lab">下一期 →</span>没有了</span></nav><div class="foot">扫描 196 条 → 去重后 190 条 → 精选 15 条<br>本期抓取失败的源 3 个：https://gamefromscratch.com/feed/: HTTPError: 502 Server Err；https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Erro；reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Req<br>本刊由脚本采集 + AI 辅助编辑生成，条目均来自公开 RSS / API；仅收录标题、原文链接与本刊点评，版权归原作者所有，点评不代表原作者观点。<br>生成于 2026-08-31T10:25</div></main>
+<script>
+(function(){var b=document.getElementById('theme-btn');if(!b)return;
+var cur=function(){var t=document.documentElement.getAttribute('data-theme');
+  return t||((window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');};
+var paint=function(){var d=cur()==='dark';b.textContent=d?'\u2600\ufe0f':'\ud83c\udf19';
+  b.title=d?'\u5207\u5230\u65e5\u95f4\u6a21\u5f0f':'\u5207\u5230\u591c\u95f4\u6a21\u5f0f';};
+b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}paint();});
+paint();})();
+</script></body></html>
