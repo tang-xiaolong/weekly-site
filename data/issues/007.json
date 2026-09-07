@@ -1,0 +1,306 @@
+{
+ "no": 7,
+ "week": "2026-W37",
+ "date": "2026-09-07",
+ "range": [
+  "2026-09-01",
+  "2026-09-07"
+ ],
+ "intro": "Steam 单周新游首破 700 款、其中 74% 评测不足 10 条——这个分母比任何发行技巧都更该先读；工具面本周的实货是 Unity Pipeline 0.6.0 把热重载捅进了 IL2CPP，以及 Memory Profiler 新增的 Roots & Impact 表。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "eaf362acbe47",
+     "title": "Unity Pipeline package 0.6.0-exp.1 is available now!",
+     "url": "https://discussions.unity.com/t/unity-pipeline-package-0-6-0-exp-1-is-available-now/1735626",
+     "source": "discussions.unity.com",
+     "published": "2026-09-03",
+     "comment": "Unity Pipeline 包 0.6.0-exp.1：热重载现在能配 IL2CPP 使用，也能作用到已连接的真机上；Runtime Server 从 MonoBehaviour 挪到了 Settings，属破坏性变更，升级要改代码。真机上改一行 C# 不用重打包，省下的是调手感时整块的等待时间。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ffec1345cd1b",
+     "title": "Memory Profiler 1.2.0-pre.1 Released — Roots & Impact Profiling & CoreCLR Support",
+     "url": "https://discussions.unity.com/t/memory-profiler-1-2-0-pre-1-released-roots-impact-profiling-coreclr-support/1735523",
+     "source": "discussions.unity.com",
+     "published": "2026-09-02",
+     "comment": "Memory Profiler 1.2.0-pre.1 新增 Roots & Impact 表，能顺着引用根回答「到底是谁把这块内存钉住了」，同时补上 CoreCLR 支持。查泄漏从此不必只靠两张快照做 diff 猜。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "d4c7a9898691",
+     "title": "Performance parity DX11 vs DX12 (again)",
+     "url": "https://discussions.unity.com/t/performance-parity-dx11-vs-dx12-again/1735784",
+     "source": "discussions.unity.com",
+     "published": "2026-09-05",
+     "comment": "Unity 6.3 里 DX12 已是默认后端，但这份实测显示 DX11 与 DX12 的性能仍未持平。如果你的项目没有非吃不可的 DX12 独占特性，升级后值得自己量一遍再定用哪个后端，别默认接受。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "a1cbcfe94723",
+     "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
+     "url": "https://www.latent.space/p/astra",
+     "source": "latent.space",
+     "published": "2026-09-03",
+     "comment": "latent.space 烧了 200 亿 token 实测 GPT-6 Astra，结论是单价贵 2.5 倍但按任务算反而更便宜，计算机操作与编码到了新 SOTA。真正可迁移的是那笔账怎么算：贵的 token 常常是便宜的活，你在排自己管道用哪个模型时是同一套逻辑。",
+     "daily": true,
+     "also": [
+      {
+       "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+       "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+       "source": "latent.space"
+      },
+      {
+       "title": "Introducing GPT-6 Astra for developers",
+       "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+       "source": "simonwillison.net"
+      }
+     ]
+    },
+    {
+     "id": "351938c5ce63",
+     "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
+     "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
+     "source": "latent.space",
+     "published": "2026-09-02",
+     "comment": "Claude Fable/Mythos 5.1：缓存价格砍 75%，但输出 token 量涨了约 70%。对天天跑的长会话无头管道是净利好——前提是你真把 prompt 缓存用起来了，否则只吃到输出变贵那一半。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "d5973faa8b2d",
+     "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+     "url": "https://github.com/okf-memory/okf-agent-memory",
+     "source": "github.com",
+     "published": "2026-09-05",
+     "comment": "把 agent 的长期记忆做成 git 原生的形态：记忆是仓库里的文件，能 diff、能回滚、跟着分支走，而不是躺在某个工具的私有存储里。HN 76 分。你现在手写的 memory 文件本质是同一思路的低配版，值得对照着看它把哪些地方做实了。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Give Your Coding Agents a Memory You Own",
+       "url": "https://huggingface.co/blog/funes",
+       "source": "huggingface.co"
+      }
+     ]
+    },
+    {
+     "id": "5c9859ad918b",
+     "title": "AI Coding Agent Skills for Real Engineers",
+     "url": "https://github.com/mattpocock/skills",
+     "source": "github.com",
+     "published": "2026-09-01",
+     "comment": "一套面向真在写生产代码的工程师的 agent skills（HN 43 分）。当作写 skill 的参照样本读最划算——看别人怎么切粒度、怎么写触发描述，比自己从零试错快一大截。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "05f7779b8205",
+     "title": "Using Blender with coding agents on macOS",
+     "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+     "source": "simonwillison.net",
+     "published": "2026-09-05",
+     "comment": "Simon Willison 的做法：装完整版 Blender，然后让编码 agent 直接用 Blender 的 Python API 写脚本建模、跑渲染。文中路径是 macOS，套路搬到 Windows 没有障碍。这是 AI 做 3D 里更可控的那一半——结构化建模交给代码，agent 只负责写脚本。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "1ae450e7a53b",
+     "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
+     "url": "https://www.latent.space/p/pr-not-welcome",
+     "source": "latent.space",
+     "published": "2026-09-01",
+     "comment": "Vercel AI SDK、Astro、tldraw 这批项目开始拒收社区随手 PR，改成用 agent 团队批量修 bug 和加功能。单人开发者该读的是另一半：他们怎么把零散需求拆成 agent 可直接执行的任务流水线。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "edb634b414f0",
+     "title": "tantaneity/constellation-dice：Astral dice in Unity URP: nebula, stars and per-face constellations in a single raymarch pass on the default cube",
+     "url": "https://github.com/tantaneity/constellation-dice",
+     "source": "github.com",
+     "published": "2026-09-01",
+     "comment": "在一个默认 Cube 上用单个 raymarch pass 画出星云、星点和每个面各不相同的星座，Unity URP + ShaderLab，20 星。当 raymarch 入门读物很合适：范围小到一次能读完，效果又足够抄进自己项目。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "abc0d4db8842",
+     "title": "Blender Studio Opens OVERGROWN’s Free Behind-the-Scenes Archive",
+     "url": "https://80.lv/articles/blender-studio-opens-overgrown-s-free-behind-the-scenes-archive/",
+     "source": "80.lv",
+     "published": "2026-09-04",
+     "comment": "Blender Studio 限时开放了 OVERGROWN 的全套制作日志——动画、绑定、毛发、着色、布景、灯光、水效、合成。能看到专业团队真实决策过程的材料本来就少，何况是限时免费，想看趁早。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "fbf4ce7c2189",
+     "title": "Nexus Mods is acquiring database and analytics site SteamDB",
+     "url": "https://www.gamedeveloper.com/business/nexus-mods-is-acquiring-database-and-analytics-site-steamdb",
+     "source": "gamedeveloper.com",
+     "published": "2026-09-02",
+     "comment": "SteamDB 被 Nexus Mods 收购，对方给的说法是提供资源和长期稳定性。这站是查竞品价格史、在线人数、更新频率的日常工具，换东家后免费查询额度和数据口径值不值得盯一眼，你自己心里有数。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "e1e5091e028f",
+     "title": "Over 700 games launched on Steam in one week for the first time, though 74% had fewer than 10 reviews",
+     "url": "https://www.gamesindustry.biz/over-700-games-launched-on-steam-in-one-week-for-the-first-time-though-74-had-fewer-than-10-reviews",
+     "source": "gamesindustry.biz",
+     "published": "2026-09-02",
+     "comment": "Steam 单周新游首次突破 700 款，其中 74% 的评测数不到 10 条。这个分母意味着上架即被看见已经彻底不成立——上线前的愿望单存量和曝光节奏得当成必做项，而不是加分项。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Over 700 games launched on Steam in a single week for the first time 🫠",
+       "url": "https://www.reddit.com/r/gamedev/comments/1w8r9t8/over_700_games_launched_on_steam_in_a_single_week/",
+       "source": "reddit.com"
+      }
+     ]
+    },
+    {
+     "id": "4a33b4e19940",
+     "title": "Steam Wishlists By the Numbers: What Actually Gets Wishlisted",
+     "url": "https://80.lv/articles/steam-wishlists-by-the-numbers-what-actually-gets-wishlisted/",
+     "source": "80.lv",
+     "published": "2026-09-04",
+     "comment": "GEM Capital 拆了 Steam 愿望单前 100 名，给出品类、发行商与趋势分布。挑立项方向或给现有项目找定位时，这类「到底什么在被加愿望单」的数据比体感和论坛印象靠谱得多。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "9ed7695bad8d",
+     "title": "What are the top new games of Gamescom 2026?",
+     "url": "https://newsletter.gamediscover.co/p/what-are-the-top-new-games-of-gamescom",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-09-01",
+     "comment": "GameDiscoverCo 的 Gamescom 2026 愿望单榜单——哪些新公布的游戏真把曝光转成了愿望单。看法不是追热门，而是反推同题材下曝光到愿望单的换算比例，用来给自己的预期定锚。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "d89302349642",
+     "title": "Aggro Crab launches publishing label to splash that Peak cash",
+     "url": "https://www.gamedeveloper.com/business/aggro-crab-launches-publishing-label-to-splash-that-peak-cash",
+     "source": "gamedeveloper.com",
+     "published": "2026-09-01",
+     "comment": "Aggro Crab 拿《Peak》赚的钱开了发行厂牌，方向是强度高、风格化、有态度的游戏，并明说不碰生成式 AI 的粗制内容。多一个开发者自己开的发行方是好事；但如果你的管线重度用 AI，这条也顺手把对方的门槛标出来了。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Aggro Crab launches publishing label to splash that Peak cash",
+       "url": "https://www.reddit.com/r/gamedev/comments/1w4jlzu/aggro_crab_launches_publishing_label_to_splash/",
+       "source": "reddit.com"
+      }
+     ]
+    },
+    {
+     "id": "8d0b38ee0659",
+     "title": "Hi! I think it's time for a community-run \"human made\" label for indie games",
+     "url": "https://www.reddit.com/r/IndieDev/comments/1w8sp0f/hi_i_think_its_time_for_a_communityrun_human_made/",
+     "source": "reddit.com",
+     "published": "2026-09-06",
+     "comment": "有人在 r/IndieDev 提议搞一个社区自治的 human made 标签。别管它最后能不能落地，信号很清楚：玩家侧对 AI 参与度的敏感正在往「要求标注」走，重度用 AI 的项目提前想好怎么表述，比事后解释便宜得多。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "06bd2093cf4e",
+     "title": "Strategically making Star Wars Zero Company, ft. Greg Foertsch",
+     "url": "https://www.gamedeveloper.com/production/strategically-making-star-wars-zero-company-ft-greg-foertsch",
+     "source": "gamedeveloper.com",
+     "published": "2026-09-04",
+     "comment": "Bit Reactor 的 CEO 兼创意总监 Greg Foertsch 讲《Star Wars Zero Company》是怎么做出来的，重点在回合制战术的系统与关卡取舍。配着另见那条读：这家工作室发售前刚做过无薪临时停工，访谈里的从容要打个折。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Star Wars Zero Company studio furloughed workers ahead of launch",
+       "url": "https://www.gamedeveloper.com/business/star-wars-zero-company-studio-furloughed-workers-ahead-of-launch",
+       "source": "gamedeveloper.com"
+      }
+     ]
+    },
+    {
+     "id": "44bc98fe17d7",
+     "title": "Interview: How War for Westeros Turns Game of Thrones Into an Epic RTS",
+     "url": "https://80.lv/articles/interview-how-war-for-westeros-turns-game-of-thrones-into-an-epic-rts/",
+     "source": "80.lv",
+     "published": "2026-09-04",
+     "comment": "PlaySide 的总监拆《权力的游戏：War for Westeros》：非对称阵营怎么平衡、政治阴谋系统怎么和沙盒战役咬合、UE5 美术管线怎么撑住大规模战斗。结构层面的思路跟引擎无关，做策略或模拟类可以直接借。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "16955d94fd8a",
+     "title": "There's No Limit to How Bad Code Can Get",
+     "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
+     "source": "simonwillison.net",
+     "published": "2026-09-06",
+     "comment": "关于「技术债重到推倒重来更划算」的老争论，Simon Willison 的反驳很实在：他见过的重写几乎没有成功的。在 agent 一天能吐几千行的当下这话更值钱——代码永远还能更烂，它不像加楼层那样有物理上限。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Quoting Zach Kehs",
+       "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
+       "source": "simonwillison.net"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 186,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 3,
+  "merge_url": 1,
+  "merge_title": 5,
+  "kept": 177,
+  "out_of_window": 1086,
+  "excluded": 3,
+  "source_capped": 99,
+  "trimmed": 0,
+  "candidates": 78,
+  "failed_sources": [
+   "https://gamefromscratch.com/feed/: HTTPError: 403 Client Error: Forbidden for url: https://gamefromscratch.com/feed/",
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "reddit r/Unity3D: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Unity3D/top/.rss?t=week&limit=25"
+  ],
+  "picked": 20,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 3
+ },
+ "generated_at": "2026-09-07T10:25:23+08:00"
+}

@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 006 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/006.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/006.html</guid><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate><description>本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 007 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/007.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/007.html</guid><pubDate>Mon, 07 Sep 2026 08:00:00 +0800</pubDate><description>Steam 单周新游首破 700 款、其中 74% 评测不足 10 条——这个分母比任何发行技巧都更该先读；工具面本周的实货是 Unity Pipeline 0.6.0 把热重载捅进了 IL2CPP，以及 Memory Profiler 新增的 Roots &amp; Impact 表。
+🎮 Unity 官方与引擎
+· Unity Pipeline package 0.6.0-exp.1 is available now!
+· Memory Profiler 1.2.0-pre.1 Released — Roots &amp; Impact Profiling &amp; CoreCLR Support
+· Performance parity DX11 vs DX12 (again)
+🤖 AI × 游戏开发
+· GPT-6 Astra: an automated AI Engineer you can hire for &lt;$6 an hour
+· [AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens
+· OKF Agent Memory – Git-native persistent memory for AI coding agents
+· AI Coding Agent Skills for Real Engineers
+· Using Blender with coding agents on macOS
+· PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors
+🛠 工具与开源
+· tantaneity/constellation-dice：Astral dice in Unity URP: nebula, stars and per-face constellations in a single raymarch pass on the default cube
+· Blender Studio Opens OVERGROWN’s Free Behind-the-Scenes Archive
+· Nexus Mods is acquiring database and analytics site SteamDB
+📊 独游与市场
+· Over 700 games launched on Steam in one week for the first time, though 74% had fewer than 10 reviews
+· Steam Wishlists By the Numbers: What Actually Gets Wishlisted
+· What are the top new games of Gamescom 2026?
+· Aggro Crab launches publishing label to splash that Peak cash
+· Hi! I think it&#x27;s time for a community-run &quot;human made&quot; label for indie games
+📝 技术长文
+· Strategically making Star Wars Zero Company, ft. Greg Foertsch
+· Interview: How War for Westeros Turns Game of Thrones Into an Epic RTS
+· There&#x27;s No Limit to How Bad Code Can Get</description></item><item><title>游戏开发周刊 第 006 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/006.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/006.html</guid><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate><description>本期最该点开的两条：有人冲着 Claude Code 刚设为默认的 auto 模式做了实测突破，以及 Unity 6.3 URP 上冒出了开源的 DLSS 5 神经渲染接入。
 🎮 Unity 官方与引擎
 · Open-Source DLSS 5 Neural Rendering Integration for Unity 6.3 URP
 · A frame rate cap can quietly wreck your scene load times too
