@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 007 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/007.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/007.html</guid><pubDate>Mon, 07 Sep 2026 08:00:00 +0800</pubDate><description>Steam 单周新游首破 700 款、其中 74% 评测不足 10 条——这个分母比任何发行技巧都更该先读；工具面本周的实货是 Unity Pipeline 0.6.0 把热重载捅进了 IL2CPP，以及 Memory Profiler 新增的 Roots &amp; Impact 表。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 008 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/008.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/008.html</guid><pubDate>Mon, 14 Sep 2026 08:00:00 +0800</pubDate><description>本期头条只有一条：Unity 官方发了 Claude Code 插件，skills + Unity CLI + MCP 直连 Editor 一条命令装完；其余看点是 CoreCLR 的真实性能反馈、Asset Store 的集体掉单，以及 Steam demo 同时在线能不能预测正式版成绩。
+🎮 Unity 官方与引擎
+· Official Unity Plugin for Claude Code
+· CoreCLR vs IL2CPP vs Mono: The performance gains are awesome!
+· Netcode for Entities 7.0.0: moving back to an independent package in Unity 6.7
+· DrakkenRidge: Building an open-world adventure for mobile VR
+· Sudden drop to zero sales since September 7 – anyone else experiencing this?
+🤖 AI × 游戏开发
+· Quoting Boris Cherny
+· commit-rewriter 0.1
+· So you want to use OpenRouter?
+· Rebuilding AUTOMATIC1111 with Gradio Workflow
+🛠 工具与开源
+· Hand placing pipes was killing me, so I made this tool
+· This Free Blender Tool Makes Hair Rigging Easier
+· This Blender Add-On Lets You Add Jiggle Physics to Bodies, Clothes and Hair
+📊 独游与市场
+· Does your Steam demo CCU ‘predict’ your game’s success?
+· My game came out a month ago. Yesterday, a Brazilian YouTuber discovered my webcam mechanic. His video just hit 1.8M views in 24 hours.
+· Game went viral on social media 3 weeks ago. Dev had to put &#x27;original&#x27; on capsule.
+· You probably shouldn’t launch a horror game in October
+· When 1.0 goes nice: Yet Another Zombie Survivors edition
+📝 技术长文
+· EchoForge Uses Spatial Sound to Build 3D Worlds in Unity
+· Diving into ‘The Sinking City 2’ | 09/09/26</description></item><item><title>游戏开发周刊 第 007 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/007.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/007.html</guid><pubDate>Mon, 07 Sep 2026 08:00:00 +0800</pubDate><description>Steam 单周新游首破 700 款、其中 74% 评测不足 10 条——这个分母比任何发行技巧都更该先读；工具面本周的实货是 Unity Pipeline 0.6.0 把热重载捅进了 IL2CPP，以及 Memory Profiler 新增的 Roots &amp; Impact 表。
 🎮 Unity 官方与引擎
 · Unity Pipeline package 0.6.0-exp.1 is available now!
 · Memory Profiler 1.2.0-pre.1 Released — Roots &amp; Impact Profiling &amp; CoreCLR Support
