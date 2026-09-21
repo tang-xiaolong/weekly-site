@@ -1,0 +1,314 @@
+{
+ "no": 9,
+ "week": "2026-W39",
+ "date": "2026-09-21",
+ "range": [
+  "2026-09-15",
+  "2026-09-21"
+ ],
+ "intro": "本周 AI 从「尝鲜」变成「基建」：Unity 官方亲自给编码 agent 写了 skill，TGS 报告里 85% 的日本开发者已在日常用生成式 AI；另一头，surviv.io 作者用九年两笔账说明同一个点子在 2026 年为什么是净亏。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "bf1f3bf95e87",
+     "title": "The Official Unity Plugin for Codex",
+     "url": "https://unity.com/blog/unity-plugin-codex",
+     "source": "unity.com",
+     "published": "2026-09-16",
+     "comment": "Unity 官方给 OpenAI Codex 做的插件，把 sprite atlas、URP renderer feature、内购、本地化这些活儿的官方做法打包成 skill 喂给 agent，让它照引擎文档办事，而不是靠训练数据里的二手经验。就算你不用 Codex，这套「官方把自己的最佳实践写成 agent 技能」的组织方式也值得抄进自己的技能库。",
+     "daily": true,
+     "also": [
+      {
+       "title": "The Official Unity Plugin for Codex",
+       "url": "https://discussions.unity.com/t/the-official-unity-plugin-for-codex/1736730",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "08b844564162",
+     "title": "Unity 6.7 Beta is now available",
+     "url": "https://discussions.unity.com/t/unity-6-7-beta-is-now-available/1736830",
+     "source": "discussions.unity.com",
+     "published": "2026-09-17",
+     "comment": "Unity 6.7 公测开始，每周滚出测试版和发布说明。想提前摸 NGO 3.0、新 CLI 的从这进；正在出货的项目别碰。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "fe8740f24033",
+     "title": "Netcode for GameObjects 3.0.0 is now available",
+     "url": "https://discussions.unity.com/t/netcode-for-gameobjects-3-0-0-is-now-available/1736792",
+     "source": "discussions.unity.com",
+     "published": "2026-09-17",
+     "comment": "Netcode for GameObjects 3.0.0 与 Netcode for Entities 7.0.0 同步发布，从 Unity 6.7 起随引擎版本交付。做联机的现在就该看交付方式和升级路径改了什么，别等升版本时才发现。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "e685ac64b61c",
+     "title": "CICD Made Easier with Unity CLI",
+     "url": "https://unity.com/blog/cicd-made-easier-with-unity-cli",
+     "source": "unity.com",
+     "published": "2026-09-15",
+     "comment": "新的 Unity CLI 把装版本、跑测试、出包统一成一套命令，替掉各家自己攒的 CI 脚本，换任何 CI 提供商都能跑。对单人开发意义更大——无头构建这条路顺了，agent 才接得住「改完自己出个包验证」这一环。",
+     "daily": true,
+     "also": [
+      {
+       "title": "5 tips for speeding up your XR dev workflows with Unity CLI",
+       "url": "https://unity.com/blog/5-tips-for-speeding-up-your-xr-dev-workflows-with-unity-cli",
+       "source": "unity.com"
+      }
+     ]
+    },
+    {
+     "id": "1fa7983e68f6",
+     "title": "Experimental: UI Toolkit Connector for Figma design",
+     "url": "https://discussions.unity.com/t/experimental-ui-toolkit-connector-for-figma-design/1736969",
+     "source": "discussions.unity.com",
+     "published": "2026-09-18",
+     "comment": "com.unity.ui.figma 0.1.0-exp.1，让 UI 在 Figma 和 UI Toolkit 之间直接搬，不用照着设计稿再手搭一遍。实验版别指望稳，但省的正好是最枯燥那段工。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "dfe3bb310c50",
+     "title": "Over 85% of Japanese Game Developers Now Use Generative AI, According to TGS Report",
+     "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report/",
+     "source": "80.lv",
+     "published": "2026-09-18",
+     "comment": "CESA 在 TGS 的报告：超过 85% 的日本开发者至少偶尔使用生成式 AI，同时普遍配了人工复核、限定可用工具、禁止原样使用生成结果这三条约束。这组数字可以直接拿去回应「用 AI 就是偷工减料」，后面那三条也正是你自己该立的规矩。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "1f8960fc24c2",
+     "title": "ZCode, the GLM coding agent, silently uploads your Git history",
+     "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+     "source": "tokenstead.ai",
+     "published": "2026-09-18",
+     "comment": "GLM 的编码 agent ZCode 被发现会静默上传你的 git 历史。装任何第三方 agent 之前先确认它往外发什么——私有仓的提交记录里，有些东西比源码还敏感。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "aba00e8df969",
+     "title": "Quoting Thariq Shihipar",
+     "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+     "source": "simonwillison.net",
+     "published": "2026-09-18",
+     "comment": "Claude Code 从 2.1.277 起支持 AGENTS.md：目录里没有 CLAUDE.md 时会回退读 AGENTS.md。同时用多个 agent 的人可以只维护一份项目说明了。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "fa85680d5155",
+     "title": "[AINews] Jev: a “System One Model” that only decides/classifies/routes/scores — >100x faster, >200x cheaper than small frontier LLMs",
+     "url": "https://www.latent.space/p/ainews-jev-a-system-one-model-that",
+     "source": "latent.space",
+     "published": "2026-09-16",
+     "comment": "Jev 是只负责判断/分类/路由/打分的「系统一」模型，号称比小号前沿模型快 100 倍以上、便宜 200 倍以上。游戏和工具管线里绝大多数 AI 调用要的正是这种廉价判断（该不该触发、归哪类、打几分）而非长文生成，值得把这类环节单独算笔账。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Jev ⚡, Periodic Neon 🧬, Gemini 3.8 Live 💬",
+       "url": "https://tldr.tech/ai/2026-09-16",
+       "source": "tldr.tech"
+      }
+     ]
+    },
+    {
+     "id": "cf422959e508",
+     "title": "The Steam Fest That Proves Why Everyone Hates on AI in Games | 16/09/26",
+     "url": "https://www.aiandgames.com/p/the-steam-fest-that-proves-why-everyone",
+     "source": "aiandgames.com",
+     "published": "2026-09-16",
+     "comment": "AI and Games 拆解那场以生成式 AI 为卖点的 Steam 活动，讲清楚它为什么精准踩中了玩家的反感点。你的商店页要不要提 AI、怎么提，这篇是现成的反面教材。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "a6d98c4088ed",
+     "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
+     "url": "https://github.com/pizza-bot-app/pizza-bot",
+     "source": "github.com",
+     "published": "2026-09-15",
+     "comment": "自托管桌面应用（Mac/Win/Linux），把后台跑的 agent 做成一个收件箱：跑完的进未读，需要你拍板的排队等回复。常年挂着几条无人值守管线的人值得看看这个交互形态，比每次翻日志靠谱。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "0b3a8d0483fd",
+     "title": "Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents",
+     "url": "https://news.ycombinator.com/item?id=49743049",
+     "source": "news.ycombinator.com",
+     "published": "2026-09-17",
+     "comment": "把 AI 对话在不同编码 agent 之间搬家。价值取决于你是不是真在多个 agent 间来回切——如果是，省的是每次重讲一遍上下文。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "05ce851bc837",
+     "title": "I made a Unity plugin that adds soft-body flesh physics directly to animated characters",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1wkkmsx/i_made_a_unity_plugin_that_adds_softbody_flesh/",
+     "source": "reddit.com",
+     "published": "2026-09-19",
+     "comment": "Flesh Dynamics：给已有骨骼动画的角色叠一层软体运动和碰撞反应。作者说难点在跨不同 skinned mesh 稳定、避免硬碰撞凹陷——这类「加一点点手感就活了」的效果自己从头写成本极高。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "003feecc394e",
+     "title": "1-bit OKLab quantization + dithering: There are two colors on this image!",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1wkq85p/1bit_oklab_quantization_dithering_there_are_two/",
+     "source": "reddit.com",
+     "published": "2026-09-19",
+     "comment": "OKLab 空间做 1 位量化加抖动，整张图只有两种颜色，h/s/v 分开控制、抖动强度可调、还能换半调或噪声图案替代标准 dither。做复古单色或印刷质感风格的，这个实现思路比直接阈值化高一档。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "2686c50dac97",
+     "title": "A Procedural Lightning effect made with Shader Graph and HLSL",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1wkekce/a_procedural_lightning_effect_made_with_shader/",
+     "source": "reddit.com",
+     "published": "2026-09-19",
+     "comment": "Shader Graph + HLSL 做的程序化闪电，看一眼节点图就知道能不能抄进自己项目。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "0343fad33dc0",
+     "title": "Breakdown: Creating a Realistic 3D Environment of an Ankara Street",
+     "url": "https://80.lv/articles/breakdown-creating-a-realistic-3d-environment-of-an-ankara-street/",
+     "source": "80.lv",
+     "published": "2026-09-18",
+     "comment": "安卡拉小巷场景的完整拆解：实拍参考怎么收、墙面和路面的平铺材质怎么在 Substance 3D Designer 里搭出来。写实场景材质流程照着走一遍，比看十个零散教程管用。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "0b41e9826f40",
+     "title": "Is the game biz sustainable for the average indie dev?",
+     "url": "https://newsletter.gamediscover.co/p/is-the-game-biz-sustainable-for-the",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-09-15",
+     "comment": "GameDiscoverCo 用两套口径算「平均独立开发者靠这行能不能活」。结论不好看，但这是给自己定预算和退出线时该用的基准数字，比听成功案例有用得多。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "228967a58bc8",
+     "title": "The one ‘game discovery by player age’ chart you need to see",
+     "url": "https://newsletter.gamediscover.co/p/the-one-game-discovery-by-player",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-09-18",
+     "comment": "按玩家年龄段切分的游戏发现渠道图表——不同年龄的人从哪儿知道新游戏，差别大到会直接改变你的投放决定。定推广渠道前先看自己的目标玩家落在哪一档。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "436d7df1e3c9",
+     "title": "Dredge maker Black Salt Games establishes indie studio Team Trifold under new Saltworks Entertainment label",
+     "url": "https://www.gamesindustry.biz/black-salt-games-establishes-indie-studio-team-trifold-under-new-saltworks-entertainment-label",
+     "source": "gamesindustry.biz",
+     "published": "2026-09-18",
+     "comment": "《Dredge》团队 Black Salt Games 开了新工作室 Team Trifold，同时立了白牌发行品牌 Saltworks，给自家和另一家新西兰独立团队提供发行服务。继 Aggro Crab 之后第二家成功独立团转身做发行，小团队的发行选项里多了一类没那么吃人的。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "e3608b99d3cb",
+     "title": "Optimizing Deep Rock Galactic Survivor for mobile",
+     "url": "https://unity.com/blog/optimizing-deep-rock-galactic-survivor-for-mobile",
+     "source": "unity.com",
+     "published": "2026-09-18",
+     "comment": "Piktiv 把《深岩银河：幸存者》搬上手机的完整技术账：flow field 寻路、KD-tree 做物理查询、GPU driven 渲染、Burst jobs、Addressables。割草类成千上万单位会遇到的性能墙基本都在这一篇里，官方出品，方案可以直接对照着抄。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "79ce5ceab350",
+     "title": "Exploring the AI of Command & Conquer",
+     "url": "https://www.aiandgames.com/p/exploring-the-ai-of-command-conquer",
+     "source": "aiandgames.com",
+     "published": "2026-09-14",
+     "comment": "扒 2020 年《命令与征服》重制版公开的源码，看那套 RTS AI 究竟怎么写的。经典即时战略的决策结构比现在多数教程实在得多，做战略玩法或自动战斗的值得读。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "42790fa73e5e",
+     "title": "Interview: How Cyberpunk 2077’s Night City Was Built Almost Entirely by Hand",
+     "url": "https://80.lv/articles/interview-how-cyberpunk-2077-s-night-city-was-built-almost-entirely-by-hand/",
+     "source": "80.lv",
+     "published": "2026-09-18",
+     "comment": "CDPR 美术总监讲夜之城几乎全手工搭建：第一人称视角如何反过来决定尺度与细节密度、为什么路径追踪契合他们的光照管线、《往日之影》又改了什么。程序化生成救不了的地方在哪，这篇说得很具体。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "d35e6e5b6878",
+     "title": "Can Skills Learned in Games Transfer to Real-World Work?",
+     "url": "https://www.latent.space/p/good-start-labs",
+     "source": "latent.space",
+     "published": "2026-09-15",
+     "comment": "Good Start Labs 用一款铁路经营游戏训练 AI，其中一个版本在金融研究任务上变强了——差别出在训练设计，不在游戏本身。如果「把游戏当训练环境」这条线成立，游戏开发者手里的可玩系统就成了稀缺资产。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 169,
+  "drop_ledger_url": 1,
+  "drop_ledger_title": 3,
+  "merge_url": 1,
+  "merge_title": 1,
+  "kept": 163,
+  "out_of_window": 1054,
+  "excluded": 5,
+  "source_capped": 96,
+  "trimmed": 0,
+  "candidates": 67,
+  "failed_sources": [
+   "https://gamefromscratch.com/feed/: HTTPError: 403 Client Error: Forbidden for url: https://gamefromscratch.com/feed/",
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "https://www.gamedeveloper.com/rss.xml: HTTPError: 403 Client Error: Forbidden for url: https://www.gamedeveloper.com/rss.xml",
+   "reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/IndieDev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 23,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 2
+ },
+ "generated_at": "2026-09-21T10:24:27+08:00"
+}

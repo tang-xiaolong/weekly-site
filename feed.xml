@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 008 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/008.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/008.html</guid><pubDate>Mon, 14 Sep 2026 08:00:00 +0800</pubDate><description>本期头条只有一条：Unity 官方发了 Claude Code 插件，skills + Unity CLI + MCP 直连 Editor 一条命令装完；其余看点是 CoreCLR 的真实性能反馈、Asset Store 的集体掉单，以及 Steam demo 同时在线能不能预测正式版成绩。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 009 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/009.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/009.html</guid><pubDate>Mon, 21 Sep 2026 08:00:00 +0800</pubDate><description>本周 AI 从「尝鲜」变成「基建」：Unity 官方亲自给编码 agent 写了 skill，TGS 报告里 85% 的日本开发者已在日常用生成式 AI；另一头，surviv.io 作者用九年两笔账说明同一个点子在 2026 年为什么是净亏。
+🎮 Unity 官方与引擎
+· The Official Unity Plugin for Codex
+· Unity 6.7 Beta is now available
+· Netcode for GameObjects 3.0.0 is now available
+· CICD Made Easier with Unity CLI
+· Experimental: UI Toolkit Connector for Figma design
+🤖 AI × 游戏开发
+· Over 85% of Japanese Game Developers Now Use Generative AI, According to TGS Report
+· ZCode, the GLM coding agent, silently uploads your Git history
+· Quoting Thariq Shihipar
+· [AINews] Jev: a “System One Model” that only decides/classifies/routes/scores — &gt;100x faster, &gt;200x cheaper than small frontier LLMs
+· The Steam Fest That Proves Why Everyone Hates on AI in Games | 16/09/26
+· Show HN: Pizza Bot – An inbox for AI agents that work in the background
+· Launch HN: Skillsync (YC W26) – AI chat sessions made portable across agents
+🛠 工具与开源
+· I made a Unity plugin that adds soft-body flesh physics directly to animated characters
+· 1-bit OKLab quantization + dithering: There are two colors on this image!
+· A Procedural Lightning effect made with Shader Graph and HLSL
+· Breakdown: Creating a Realistic 3D Environment of an Ankara Street
+📊 独游与市场
+· Is the game biz sustainable for the average indie dev?
+· The one ‘game discovery by player age’ chart you need to see
+· Dredge maker Black Salt Games establishes indie studio Team Trifold under new Saltworks Entertainment label
+📝 技术长文
+· Optimizing Deep Rock Galactic Survivor for mobile
+· Exploring the AI of Command &amp; Conquer
+· Interview: How Cyberpunk 2077’s Night City Was Built Almost Entirely by Hand
+· Can Skills Learned in Games Transfer to Real-World Work?</description></item><item><title>游戏开发周刊 第 008 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/008.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/008.html</guid><pubDate>Mon, 14 Sep 2026 08:00:00 +0800</pubDate><description>本期头条只有一条：Unity 官方发了 Claude Code 插件，skills + Unity CLI + MCP 直连 Editor 一条命令装完；其余看点是 CoreCLR 的真实性能反馈、Asset Store 的集体掉单，以及 Steam demo 同时在线能不能预测正式版成绩。
 🎮 Unity 官方与引擎
 · Official Unity Plugin for Claude Code
 · CoreCLR vs IL2CPP vs Mono: The performance gains are awesome!
