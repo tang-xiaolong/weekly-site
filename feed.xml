@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 009 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/009.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/009.html</guid><pubDate>Mon, 21 Sep 2026 08:00:00 +0800</pubDate><description>本周 AI 从「尝鲜」变成「基建」：Unity 官方亲自给编码 agent 写了 skill，TGS 报告里 85% 的日本开发者已在日常用生成式 AI；另一头，surviv.io 作者用九年两笔账说明同一个点子在 2026 年为什么是净亏。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 010 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/010.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/010.html</guid><pubDate>Mon, 28 Sep 2026 08:00:00 +0800</pubDate><description>本周最该点开的是 Unity 6.6 的 content directories——AssetBundle 的正式替代路线图已经画出来了；另外社区版 Unity Nanite 第一次放出可看的开源预览。
+🎮 Unity 官方与引擎
+· Content directories: Beyond the AssetBundle
+· [PREVIEW - OpenSource] - Unity Nanite (Unity Virtual Mesh Geometry System - UVMGS)
+· Meta VR Glasses are coming. Build with Unity from day one.
+· How RUST LTD built the deep firearm simulation for Hot Dogs, Horseshoes &amp; Hand Grenades 2
+· Graphics Livestream: Unanswered questions
+🤖 AI × 游戏开发
+· [AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%
+· Runway’s WorldPrompt and the Engineering of Real-Time Worlds
+· Note on 24th September 2026
+· Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design
+🛠 工具与开源
+· ColinLeung-NiloCat/NiloPathTracing：RTX Path Tracing + DLSS Ray Reconstruction for Unity URP. One-click setup, native NiloToon support.
+· [RELEASED]Keeping full logs in shipped games — BqLog for Unity
+· Get These 177 SVBRDF-Scanned Textures for Free
+📊 独游与市场
+· PSA for devs getting cold-pitched by Switch publishers: our experience with RedDeer.Games, and a free way to check whether your build was ever actually reviewed.
+· a noob dev&#x27;s reflection and survival guide on social media marketing
+· What are Steam Deck’s biggest 2026 hits - and top genres?
+· &quot;Crowdfunding is fundamentally a marketing and a community exercise&quot; – What developers need to know about funding a game with Kickstarter in 2026
+· BeamNG.drive - the biggest driving game hit nobody analyzes?
+📝 技术长文
+· 2026 in LLMs (so far)
+· Prince of Persia took four years, but Mechner’s journals don’t read like four years of steady progress</description></item><item><title>游戏开发周刊 第 009 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/009.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/009.html</guid><pubDate>Mon, 21 Sep 2026 08:00:00 +0800</pubDate><description>本周 AI 从「尝鲜」变成「基建」：Unity 官方亲自给编码 agent 写了 skill，TGS 报告里 85% 的日本开发者已在日常用生成式 AI；另一头，surviv.io 作者用九年两笔账说明同一个点子在 2026 年为什么是净亏。
 🎮 Unity 官方与引擎
 · The Official Unity Plugin for Codex
 · Unity 6.7 Beta is now available

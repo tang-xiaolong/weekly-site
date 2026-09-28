@@ -1,0 +1,274 @@
+{
+ "no": 10,
+ "week": "2026-W40",
+ "date": "2026-09-28",
+ "range": [
+  "2026-09-22",
+  "2026-09-28"
+ ],
+ "intro": "本周最该点开的是 Unity 6.6 的 content directories——AssetBundle 的正式替代路线图已经画出来了；另外社区版 Unity Nanite 第一次放出可看的开源预览。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "61d3cfe96da9",
+     "title": "Content directories: Beyond the AssetBundle",
+     "url": "https://unity.com/blog/content-directories-beyond-the-assetbundle",
+     "source": "unity.com",
+     "published": "2026-09-22",
+     "comment": "Unity 6.6 用 content directories 取代 AssetBundle：更细粒度的内容单元，官方口径是构建更快、包体更小、加载更好，远程下发要等到 Unity 7。你现在的分包方案未来大概率要重写一遍，趁早看迁移路径；配套论坛帖演示了在 MonoBehaviour 上用 Loadable<T> 字段的实际写法。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Using Loadable fields on MonoBehaviour?",
+       "url": "https://discussions.unity.com/t/using-loadable-t-fields-on-monobehaviour/1737586",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "c961b3ede03f",
+     "title": "[PREVIEW - OpenSource] - Unity Nanite (Unity Virtual Mesh Geometry System - UVMGS)",
+     "url": "https://discussions.unity.com/t/preview-opensource-unity-nanite-unity-virtual-mesh-geometry-system-uvmgs/1737690",
+     "source": "discussions.unity.com",
+     "published": "2026-09-26",
+     "comment": "社区版 Unity Nanite（UVMGS，虚拟几何体系统）放出首批结果与开源预览，作者从四月啃到现在，阴影部分自述还没搞定。不是能直接上项目的东西，但它是目前唯一在公开推进的 Unity 侧虚拟几何方案，做高密度场景的可以开始跟。",
+     "daily": false,
+     "also": [
+      {
+       "title": "I'm tired of putting up with this or UNanite - Virtual Mesh Geometry",
+       "url": "https://discussions.unity.com/t/im-tired-of-putting-up-with-this-or-unanite-virtual-mesh-geometry/1737535",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "05f192c5d28a",
+     "title": "Meta VR Glasses are coming. Build with Unity from day one.",
+     "url": "https://unity.com/blog/build-for-meta-vr-glasses-with-unity",
+     "source": "unity.com",
+     "published": "2026-09-24",
+     "comment": "Meta VR 眼镜发布，Unity 6.6 day-one 支持：OpenXR、XR Interaction Toolkit、XR Hands、眼动追踪、quad views 渲染全到位。同场 Meta 还放了手机和浏览器上用 prompt 生成 2D/3D 游戏的工具，信号意义大于当下可用性。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Meta unveils AI-powered game tools for mobile devices and browsers; announces VR Glasses with day-one Unity support",
+       "url": "https://www.gamesindustry.biz/meta-unveils-ai-powered-game-tools-for-mobile-devices-and-browsers-announces-vr-glasses-with-day-one-unity-support",
+       "source": "gamesindustry.biz"
+      }
+     ]
+    },
+    {
+     "id": "7f03451e82f1",
+     "title": "How RUST LTD built the deep firearm simulation for Hot Dogs, Horseshoes & Hand Grenades 2",
+     "url": "https://unity.com/blog/rust-ltd-hot-dogs-horseshoes-hand-grenades-2",
+     "source": "unity.com",
+     "published": "2026-09-25",
+     "comment": "官方拆解 RUST LTD 如何在 Unity 里从零重写《Hot Dogs, Horseshoes & Hand Grenades 2》的枪械模拟：ECS 弹道、自定义枪械物理、Quest 3 的帧预算取舍，以及自建的编辑器工具链。做 VR 或任何强物理交互的项目，这是少见的把「性能预算怎么花」讲到具体的官方案例。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "e6b20a798bc3",
+     "title": "Graphics Livestream: Unanswered questions",
+     "url": "https://discussions.unity.com/t/graphics-livestream-unanswered-questions/1737509",
+     "source": "discussions.unity.com",
+     "published": "2026-09-24",
+     "comment": "Unity 图形团队把直播 Q&A 上没答完的问题补成了帖子，涉及 SCGI 的时空降噪等细节。官方在这类补答里通常比文档更愿意讲限制条件，跟新一代光照方案的可以扫一眼。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "979c76531fa4",
+     "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+     "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+     "source": "latent.space",
+     "published": "2026-09-23",
+     "comment": "Claude Opus 5.5 发布，同一周各家集体降价 40–50%。对每天跑无头 agent 的人来说这是今年少数直接改变成本结构的事，该重算一遍批量任务的预算和模型档位了。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "189ae567ad41",
+     "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+     "url": "https://www.latent.space/p/runway",
+     "source": "latent.space",
+     "published": "2026-09-25",
+     "comment": "Runway 的 WorldPrompt / GWM Worlds 2 用持久上下文加定时动作，去操控一个实时生成视频与音频的世界模型。离做游戏还远，但「可控」是世界模型从 demo 走向工具的分水岭，值得看清它的控制手段长什么样。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "1301a89d33b9",
+     "title": "Note on 24th September 2026",
+     "url": "https://simonwillison.net/2026/Sep/24/harder/",
+     "source": "simonwillison.net",
+     "published": "2026-09-24",
+     "comment": "Simon Willison 的短记：越用 coding agent 越觉得它让软件工程更难了——上限很高，但要真吃到需要非同寻常的纪律和知识。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "357d83a89c19",
+     "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+     "url": "https://github.com/devdotfast/whiteboard",
+     "source": "github.com",
+     "published": "2026-09-24",
+     "comment": "Whiteboard（YC W26）是个开源桌面 IDE，让人和 agent 在同一块画布上做软件架构设计。刚发布别指望成熟，但把设计阶段也变成人机共享工作区这个方向，比又一个代码补全插件有意思。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "d98f093b5302",
+     "title": "ColinLeung-NiloCat/NiloPathTracing：RTX Path Tracing + DLSS Ray Reconstruction for Unity URP. One-click setup, native NiloToon support.",
+     "url": "https://github.com/ColinLeung-NiloCat/NiloPathTracing",
+     "source": "github.com",
+     "published": "2026-09-22",
+     "comment": "NiloPathTracing 把 RTX 路径追踪加 DLSS Ray Reconstruction 接进了 Unity URP，号称一键配置并原生兼容 NiloToon。本周新仓（★17），适合拿来烘参考图、做光照对比基准，别当产品渲染管线用。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "bff52d7b1b85",
+     "title": "[RELEASED]Keeping full logs in shipped games — BqLog for Unity",
+     "url": "https://discussions.unity.com/t/released-keeping-full-logs-in-shipped-games-bqlog-for-unity/1737573",
+     "source": "discussions.unity.com",
+     "published": "2026-09-25",
+     "comment": "BqLog for Unity 正面处理那个老问题：上线前把日志关了，然后玩家报了个你复现不出来的 bug。想在正式包里保留完整日志又不被性能和体积拖死的，先看它的取舍怎么做。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "d456e8e1404b",
+     "title": "Get These 177 SVBRDF-Scanned Textures for Free",
+     "url": "https://80.lv/articles/get-these-177-svbrdf-scanned-textures-for-free/",
+     "source": "80.lv",
+     "published": "2026-09-25",
+     "comment": "colormass 放出 177 张 SVBRDF 扫描材质免费用，含木头、玻璃、漆面、陶瓷。扫描件的好处是 PBR 通道齐全、参数可信，比随手下的贴图省一轮调参。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "9ab17bb30d31",
+     "title": "PSA for devs getting cold-pitched by Switch publishers: our experience with RedDeer.Games, and a free way to check whether your build was ever actually reviewed.",
+     "url": "https://www.reddit.com/r/gamedev/comments/1wqiboq/psa_for_devs_getting_coldpitched_by_switch/",
+     "source": "reddit.com",
+     "published": "2026-09-26",
+     "comment": "一位开发者完整记录了被 Switch 发行商 RedDeer.Games 冷启动私信、「评估」之后变成付费移植报价的过程——而 Steam 的 key 报告显示对方根本没启动过他们的构建。帖里给了免费的核验方法，被发行商主动找上门的都该会这一招。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "d3bd60f0cd77",
+     "title": "a noob dev's reflection and survival guide on social media marketing",
+     "url": "https://www.reddit.com/r/gamedev/comments/1wr6dkk/a_noob_devs_reflection_and_survival_guide_on/",
+     "source": "reddit.com",
+     "published": "2026-09-27",
+     "comment": "新手开发者的社媒营销复盘：IG 六千粉、全平台约 50 万播放，Steam 页面上线一个月愿望单还不到 500。播放量不等于愿望单这件事，很少有人愿意拿自己的数据说得这么直白。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ef23074ed6c4",
+     "title": "What are Steam Deck’s biggest 2026 hits - and top genres?",
+     "url": "https://newsletter.gamediscover.co/p/what-are-steam-decks-biggest-2026",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-09-25",
+     "comment": "GameDiscoverCo 扒了 Steam Deck 2026 年的爆款与热门品类。在犹豫要不要为掌机做适配和 UI 缩放的话，这份名单能告诉你哪些品类在这块屏幕上真的转化得动。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "4a7f8d4066cc",
+     "title": "\"Crowdfunding is fundamentally a marketing and a community exercise\" – What developers need to know about funding a game with Kickstarter in 2026",
+     "url": "https://www.gamesindustry.biz/crowdfunding-is-fundamentally-a-marketing-and-a-community-exercise-what-developers-need-to-know-about-funding-a-game-with-kickstarter-in-2026",
+     "source": "gamesindustry.biz",
+     "published": "2026-09-25",
+     "comment": "2026 年还能不能靠 Kickstarter 众筹做游戏？结论是能，但它本质上是一次营销和社区动员演练，不是融资渠道。开众筹前读这篇校准预期。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "5c60227a6464",
+     "title": "BeamNG.drive - the biggest driving game hit nobody analyzes?",
+     "url": "https://newsletter.gamediscover.co/p/beamngdrive-the-biggest-driving-game",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-09-22",
+     "comment": "GameDiscoverCo 终于拿 BeamNG.drive 开刀——体量巨大却几乎没人分析过的驾驶模拟长青产品。不靠发行节奏、靠物理沙盒口碑长期滚量是怎么成立的，这是本周唯一的样本。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "7a0476f161b3",
+     "title": "2026 in LLMs (so far)",
+     "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+     "source": "simonwillison.net",
+     "published": "2026-09-27",
+     "comment": "Simon Willison 在 WeAreDevelopers 的闭幕演讲整理稿，把 2026 年 LLM 领域按时间线捋了一遍。你大概每周都在追这些新闻，但按时间轴重读一次，能看清哪些是真的在变、哪些只是当时喊得响。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "0ba5c3d339be",
+     "title": "Prince of Persia took four years, but Mechner’s journals don’t read like four years of steady progress",
+     "url": "https://www.reddit.com/r/gamedev/comments/1wrv3ih/prince_of_persia_took_four_years_but_mechners/",
+     "source": "reddit.com",
+     "published": "2026-09-27",
+     "comment": "有人读完 Jordan Mechner 做《波斯王子》时的日记，发现那四年（约 3800 小时）在日记里完全不像稳步推进。在你还不知道这东西能不能成的阶段，项目到底长什么样——这是进度条和里程碑永远不会告诉你的部分。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 176,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 2,
+  "merge_url": 0,
+  "merge_title": 0,
+  "kept": 174,
+  "out_of_window": 1054,
+  "excluded": 3,
+  "source_capped": 101,
+  "trimmed": 0,
+  "candidates": 73,
+  "failed_sources": [
+   "https://gamefromscratch.com/feed/: HTTPError: 403 Client Error: Forbidden for url: https://gamefromscratch.com/feed/",
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "https://www.gamedeveloper.com/rss.xml: HTTPError: 403 Client Error: Forbidden for url: https://www.gamedeveloper.com/rss.xml",
+   "reddit r/Unity3D: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Unity3D/top/.rss?t=week&limit=25"
+  ],
+  "picked": 19,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 0
+ },
+ "generated_at": "2026-09-28T10:24:15+08:00"
+}
