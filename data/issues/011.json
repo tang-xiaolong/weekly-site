@@ -1,0 +1,236 @@
+{
+ "no": 11,
+ "week": "2026-W41",
+ "date": "2026-10-05",
+ "range": [
+  "2026-09-29",
+  "2026-10-05"
+ ],
+ "intro": "本周主线是 Unity 7 落地带来的版本分叉——CoreCLR 路线、Entities Write Groups 弃用、Input System 改走 core package，升级计划都得重算；AI 侧最可照抄的是官方那条「概念图 + Unity CLI 让 agent 搭出能跑的 UI Toolkit 菜单」的示范。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "b20731fff3d6",
+     "title": "Unity 7 is here",
+     "url": "https://discussions.unity.com/t/unity-7-is-here/1738415",
+     "source": "discussions.unity.com",
+     "published": "2026-10-06",
+     "comment": "Unity 7 落地的官方论坛帖。对还在 6000.x 上的项目，这意味着 6.7 LTS 之外又多出一条主干线，升级路线图得重新算一遍。帖子本身信息很短，真正的细节要配着同期的 CoreCLR 进展和包体变更一起读。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "dd101d638baa",
+     "title": "CoreCLR, Scripting, and .NET Update, October 2026",
+     "url": "https://discussions.unity.com/t/coreclr-scripting-and-net-update-october-2026/1738338",
+     "source": "discussions.unity.com",
+     "published": "2026-10-05",
+     "comment": "Unity 官方给 .NET 现代化路线的 10 月进度，接 3 月/6 月两次更新和技术升级指南往下走：CoreCLR 的受支持发布锚在 6.7 LTS 与 Unity 7 这条线上。打算吃 CoreCLR 性能红利的，这篇决定你该停在哪个版本上等。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "2b941d0acb33",
+     "title": "Entities - Write groups deprecated in 7.0",
+     "url": "https://discussions.unity.com/t/entities-write-groups-deprecated-in-7-0/1738388",
+     "source": "discussions.unity.com",
+     "published": "2026-10-06",
+     "comment": "Entities 在 6000.7.0b3 把 Write Groups API 标成 deprecated，文档里却没给替代机制——帖子就是在追问「那换成什么」。用 DOTS 且靠写组做 system 互斥的项目，现在就该盯这个线程，别等真升级那天才发现一堆系统要重写。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "b23a9310dfe8",
+     "title": "Unity Announces External Dependency Manager Package",
+     "url": "https://unity.com/blog/external-dependency-manager",
+     "source": "unity.com",
+     "published": "2026-09-29",
+     "comment": "Unity 推出官方 External Dependency Manager（EDM），接替社区时代的 EDM4U 管 Android/iOS 原生 SDK 依赖。接过广告/登录/内购 SDK 的都吃过 EDM4U 的版本冲突，迁到官方维护这条线值得早排。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "dfe998d44a0f",
+     "title": "Meeting you where you work: Unity Plugin for Grok Build",
+     "url": "https://unity.com/blog/unity-plugin-grok",
+     "source": "unity.com",
+     "published": "2026-10-01",
+     "comment": "官方 Unity Plugin 现在也能装进 Grok Build，同一套 30+ 条 Unity 自写 skill，一条终端命令装完，要求 Unity 6+。继 Claude Code 和 Codex 之后的第三个宿主——说明这套 skill 是宿主无关的，换 agent 不必重建工作流。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "dafdb2cac5cf",
+     "title": "The Agent Said It Was Done. The Database Disagreed.",
+     "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+     "source": "huggingface.co",
+     "published": "2026-10-03",
+     "comment": "Agent 报告「做完了」，数据库说没有。重度让 agent 跑改动的人该把它当验收清单读：你判断完成的依据是 agent 的自述，还是真实落地的副作用。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "ff90b9d2a687",
+     "title": "This is the first time I’ve coded myself without AI in a year, and I feel both amazing and incredibly sad.",
+     "url": "https://www.reddit.com/r/gamedev/comments/1wyzq9k/this_is_the_first_time_ive_coded_myself_without/",
+     "source": "reddit.com",
+     "published": "2026-10-06",
+     "comment": "一位大厂工程师的自述：岗位要求每件事都走 AI，一年没自己写过代码，这次手写完「既爽又难受」。不是 AI 怀疑论，而是一份关于手感流失的一手观察——如果你的 Unity 代码也一年没亲手敲过，值得照着照镜子。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "80ca0be05695",
+     "title": "Microsoft’s New AI-Powered Patents Offer Little to Be Excited About | 30/09/26",
+     "url": "https://www.aiandgames.com/p/microsofts-new-ai-powered-patents",
+     "source": "aiandgames.com",
+     "published": "2026-09-30",
+     "comment": "AI and Games 拆了微软新公开的几项游戏 AI 专利，结论是噱头大于实质。当祛魅材料读，省得被「大厂已经在用 AI 做游戏」的二手转述带着跑。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "4ccfe72257c4",
+     "title": "Sega won't \"entrust the creative aspect of games to AI,\" but is using tech to \"improve efficiency\" in other departments",
+     "url": "https://www.gamesindustry.biz/sega-wont-entrust-the-creative-aspect-of-games-to-ai-but-is-using-tech-to-improve-efficiency-in-other-departments",
+     "source": "gamesindustry.biz",
+     "published": "2026-10-06",
+     "comment": "世嘉的表态：创作部分不交给 AI，但在发行等部门用它提效率。大厂把线画在哪里，对你谈外包和发行时的预期管理有点参考——也仅止于此，别指望更多细节。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "b49506667c83",
+     "title": "koronto11/ludo-npc-ai：A visual workspace for game narratives and NPCs. Build worlds, arrange scenes and characters, edit branching dialogue, review AI drafts, and rehearse stories. Collaborate with your own AI through bilingual Skills.",
+     "url": "https://github.com/koronto11/ludo-npc-ai",
+     "source": "github.com",
+     "published": "2026-10-05",
+     "comment": "剧情与 NPC 的可视化工作台：建世界观、排场景角色、编分支对话、审 AI 草稿，还带中英双语 Skills 接自己的 agent。本周新仓、★19，还是雏形，但「对话树 + AI 出草稿 + 人工复核」这条链子的组织方式可以直接搬。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "c36b37fcb9d8",
+     "title": "thienbao1233/ninja-ripper-2.10：Ninja Ripper 2.10 Beta, free version for testing.",
+     "url": "https://github.com/thienbao1233/ninja-ripper-2.10",
+     "source": "github.com",
+     "published": "2026-10-04",
+     "comment": "从运行中的游戏抽模型贴图的老牌工具更新到 2.10 Beta（★107）。只当技术参考用——拆渲染管线学布线可以，抓出来的资产进不了你的商业项目。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "8d3ab67caec0",
+     "title": "i-Roboticist/godot-coop：Real-time collaboration for the Godot editor. Edit the same project together, live: scenes, scripts, files and settings sync as you work.",
+     "url": "https://github.com/i-Roboticist/godot-coop",
+     "source": "github.com",
+     "published": "2026-10-03",
+     "comment": "给 Godot 编辑器做的实时协作：场景、脚本、文件、设置边改边同步（★20，GDScript）。Unity 这边还在靠版本控制为 .unity 文件打架，花几分钟看看这个思路。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "0d74ea67925b",
+     "title": "No more universal Daily Deals on Steam - is that good?",
+     "url": "https://newsletter.gamediscover.co/p/no-more-universal-daily-deals-on",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-10-02",
+     "comment": "Steam 取消全站统一的 Daily Deals，GameDiscoverCo 分析这对曝光结构的影响，并附本周新品榜。打折排期和促销期望值要跟着改——本期市场条里先读这个。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "f5610a589a4a",
+     "title": "What do s&box’s issues (so far) tell us about launching platforms in 2026?",
+     "url": "https://newsletter.gamediscover.co/p/what-do-s-and-boxs-issues-so-far",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-09-29",
+     "comment": "把 s&box 开局的一连串问题当作「2026 年做一个平台要付什么代价」的样本来剖。考虑把游戏押在新兴 UGC 平台上的，这篇的教训比平台方宣传页实在。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "d8a9387be147",
+     "title": "Show HN: Our space game has a built-in RISC-V emulator that runs Linux",
+     "url": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv/",
+     "source": "againstallodds.games",
+     "published": "2026-10-02",
+     "comment": "一支 demoscene 出身的小团队在自家太空游戏里塞进一个能跑 Linux 的 RISC-V 模拟器，并专门写博客解释为什么和怎么做。读它不是为了抄模拟器，而是看「把真实计算机当成游戏内可编程物件」怎么被压进可发行的体量。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "de8424b6e299",
+     "title": "Scaling Scritchy Scratchy across platforms",
+     "url": "https://unity.com/blog/scaling-scritchy-scratchy-across-platforms",
+     "source": "unity.com",
+     "published": "2026-09-28",
+     "comment": "Scritchy Scratchy 跨 PC、移动、Switch 与 Switch 2 的移植纪录，重点是保住手感的同时压住性能。官方案例稿难免有宣传味，但多平台移植的取舍清单对打算上主机的个人开发者是现成参考。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "3e8c9e10cd87",
+     "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+     "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+     "source": "huggingface.co",
+     "published": "2026-09-29",
+     "comment": "MCP agent 的来源核查：除了答案对不对，还要能说清这条事实是哪个 source 给的。接了一堆 MCP server 之后，「模型自己说的」和「某个工具返回的」混在一起极难追责，这篇讲怎么把来源钉死。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 148,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 2,
+  "merge_url": 1,
+  "merge_title": 1,
+  "kept": 144,
+  "out_of_window": 1097,
+  "excluded": 1,
+  "source_capped": 76,
+  "trimmed": 0,
+  "candidates": 68,
+  "failed_sources": [
+   "https://gamefromscratch.com/feed/: HTTPError: 403 Client Error: Forbidden for url: https://gamefromscratch.com/feed/",
+   "https://www.pocketgamer.biz/rss/: HTTPError: 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/rss/",
+   "https://www.gamedeveloper.com/rss.xml: HTTPError: 403 Client Error: Forbidden for url: https://www.gamedeveloper.com/rss.xml",
+   "reddit r/Unity3D: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Unity3D/top/.rss?t=week&limit=25"
+  ],
+  "picked": 17,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 2
+ },
+ "generated_at": "2026-10-10T23:23:14+08:00"
+}

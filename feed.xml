@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 010 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/010.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/010.html</guid><pubDate>Mon, 28 Sep 2026 08:00:00 +0800</pubDate><description>本周最该点开的是 Unity 6.6 的 content directories——AssetBundle 的正式替代路线图已经画出来了；另外社区版 Unity Nanite 第一次放出可看的开源预览。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 011 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/011.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/011.html</guid><pubDate>Mon, 05 Oct 2026 08:00:00 +0800</pubDate><description>本周主线是 Unity 7 落地带来的版本分叉——CoreCLR 路线、Entities Write Groups 弃用、Input System 改走 core package，升级计划都得重算；AI 侧最可照抄的是官方那条「概念图 + Unity CLI 让 agent 搭出能跑的 UI Toolkit 菜单」的示范。
+🎮 Unity 官方与引擎
+· Unity 7 is here
+· CoreCLR, Scripting, and .NET Update, October 2026
+· Entities - Write groups deprecated in 7.0
+· Unity Announces External Dependency Manager Package
+🤖 AI × 游戏开发
+· Meeting you where you work: Unity Plugin for Grok Build
+· The Agent Said It Was Done. The Database Disagreed.
+· This is the first time I’ve coded myself without AI in a year, and I feel both amazing and incredibly sad.
+· Microsoft’s New AI-Powered Patents Offer Little to Be Excited About | 30/09/26
+· Sega won&#x27;t &quot;entrust the creative aspect of games to AI,&quot; but is using tech to &quot;improve efficiency&quot; in other departments
+🛠 工具与开源
+· koronto11/ludo-npc-ai：A visual workspace for game narratives and NPCs. Build worlds, arrange scenes and characters, edit branching dialogue, review AI drafts, and rehearse stories. Collaborate with your own AI through bilingual Skills.
+· thienbao1233/ninja-ripper-2.10：Ninja Ripper 2.10 Beta, free version for testing.
+· i-Roboticist/godot-coop：Real-time collaboration for the Godot editor. Edit the same project together, live: scenes, scripts, files and settings sync as you work.
+📊 独游与市场
+· No more universal Daily Deals on Steam - is that good?
+· What do s&amp;box’s issues (so far) tell us about launching platforms in 2026?
+📝 技术长文
+· Show HN: Our space game has a built-in RISC-V emulator that runs Linux
+· Scaling Scritchy Scratchy across platforms
+· Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents</description></item><item><title>游戏开发周刊 第 010 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/010.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/010.html</guid><pubDate>Mon, 28 Sep 2026 08:00:00 +0800</pubDate><description>本周最该点开的是 Unity 6.6 的 content directories——AssetBundle 的正式替代路线图已经画出来了；另外社区版 Unity Nanite 第一次放出可看的开源预览。
 🎮 Unity 官方与引擎
 · Content directories: Beyond the AssetBundle
 · [PREVIEW - OpenSource] - Unity Nanite (Unity Virtual Mesh Geometry System - UVMGS)
