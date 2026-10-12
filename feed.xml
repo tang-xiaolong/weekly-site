@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 011 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/011.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/011.html</guid><pubDate>Mon, 05 Oct 2026 08:00:00 +0800</pubDate><description>本周主线是 Unity 7 落地带来的版本分叉——CoreCLR 路线、Entities Write Groups 弃用、Input System 改走 core package，升级计划都得重算；AI 侧最可照抄的是官方那条「概念图 + Unity CLI 让 agent 搭出能跑的 UI Toolkit 菜单」的示范。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 012 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/012.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/012.html</guid><pubDate>Mon, 12 Oct 2026 08:00:00 +0800</pubDate><description>本周两件事直接动到手上的工具链：com.unity.pipeline 0.9.0 要统一改命令名（你写的 CLI 脚本和给 agent 封的 wrapper 都得跟着改），以及论坛里有人把 URP 的 DLSS4/FSR4 隐藏预览挖出来了；另外 Steam 又调了一轮区域定价换算值，该去后台过一遍自己的价表。
+🎮 Unity 官方与引擎
+· Heads up: Upcoming com.unity.pipeline 0.9.0 release will include breaking changes to command names
+· DLSS4 &amp; FSR4 in Unity URP (hidden preview)
+· Echo Weaver: Building a time-loop metroidbrainia in Unity 6
+· Why we built Unity Spark
+· I built a destruction system with a graph-based stress solver so buildings collapse when they lose support
+· How we did the 2d to 3d environment art for DuneCrawl
+🤖 AI × 游戏开发
+· CEO – AI-powered lip-sync
+· Capcom’s New AI Venture Gets Lost in Translation
+· #007 - AI Game Creation is an “aggressive race to the bottom”
+· [AINews] Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing
+· A new feature for my blog, built using my voice
+🛠 工具与开源
+· WouterApts/openik-unity：Inverse Kinematics package for Unity, featuring multiple solvers, joint limits and procedural animation samples.
+· Add-on for mesh reconstruction with Unrealizex
+· Free 100+ PBR Materials (Scans)
+· Free Online Archive Of PS1 &amp; N64 3D Models &amp; Game Assets
+📊 独游与市场
+· Pricing Conversion Updates
+· After losing my job and 5 years of doing all the marketing tricks I read everywhere, I got massive hype just by sending emails, and nothing else worked (city builder game at 15k wishlists)
+· Confused by app store and webshop fees? Try our commission calculator
+· How Dressmaker became ‘ready to wear’ for hundreds of thousands of players!
+· How Undead Labs saved itself and State of Decay from oblivion
+📝 技术长文
+· Unroll a loop, make shader 10x faster
+· How In-Game Overlays Work (2022)
+· The 2D physics prototype behind GTA’s vehicles
+· Friday Facts #448 - Tuning platforms</description></item><item><title>游戏开发周刊 第 011 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/011.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/011.html</guid><pubDate>Mon, 05 Oct 2026 08:00:00 +0800</pubDate><description>本周主线是 Unity 7 落地带来的版本分叉——CoreCLR 路线、Entities Write Groups 弃用、Input System 改走 core package，升级计划都得重算；AI 侧最可照抄的是官方那条「概念图 + Unity CLI 让 agent 搭出能跑的 UI Toolkit 菜单」的示范。
 🎮 Unity 官方与引擎
 · Unity 7 is here
 · CoreCLR, Scripting, and .NET Update, October 2026

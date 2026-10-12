@@ -1,0 +1,323 @@
+{
+ "no": 12,
+ "week": "2026-W42",
+ "date": "2026-10-12",
+ "range": [
+  "2026-10-06",
+  "2026-10-12"
+ ],
+ "intro": "本周两件事直接动到手上的工具链：com.unity.pipeline 0.9.0 要统一改命令名（你写的 CLI 脚本和给 agent 封的 wrapper 都得跟着改），以及论坛里有人把 URP 的 DLSS4/FSR4 隐藏预览挖出来了；另外 Steam 又调了一轮区域定价换算值，该去后台过一遍自己的价表。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "cac4a48b1d10",
+     "title": "Heads up: Upcoming com.unity.pipeline 0.9.0 release will include breaking changes to command names",
+     "url": "https://discussions.unity.com/t/heads-up-upcoming-com-unity-pipeline-0-9-0-release-will-include-breaking-changes-to-command-names/1738559",
+     "source": "discussions.unity.com",
+     "published": "2026-10-07",
+     "comment": "com.unity.pipeline 0.9.0 会把所有命令统一重命名，官方明说理由是让人和 AI agent 都更容易发现。意思很直接：GA 之前你现有的 Unity CLI 脚本、以及给 Claude Code 封的那层调用，都要再过一遍。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "07878533e47e",
+     "title": "DLSS4 & FSR4 in Unity URP (hidden preview)",
+     "url": "https://discussions.unity.com/t/dlss4-fsr4-in-unity-urp-hidden-preview/1738596",
+     "source": "discussions.unity.com",
+     "published": "2026-10-08",
+     "comment": "有人靠改 define symbols 把 URP 里没公开的 DLSS4 / FSR4 挖了出来，在 7.0 alpha 实测通，作者判断 6.7 大概也吃。想提前摸超分的照着试，但它没公开就意味着随时变，别写进要发版的分支。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "b72a07dde0a0",
+     "title": "Echo Weaver: Building a time-loop metroidbrainia in Unity 6",
+     "url": "https://unity.com/blog/echo-weaver-time-loop-unity",
+     "source": "unity.com",
+     "published": "2026-10-08",
+     "comment": "Moonlight Kids 拆 Echo Weaver 在 Unity 6 里怎么做时间循环：chunk 流式加载、循环重置的架构分层，外加 2D 优化细节。凡是要做存档回溯/轮回/重置机制的，重点看他们把什么状态划在循环边界里、什么划在外面。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "f5c2e6628cbc",
+     "title": "Why we built Unity Spark",
+     "url": "https://unity.com/blog/why-we-built-unity-spark",
+     "source": "unity.com",
+     "published": "2026-10-07",
+     "comment": "Unity CEO 亲自解释 Spark：浏览器里零基础做游戏并分享。配着另见那条看才完整——它实际是 Google Playground（提示词生成游戏）的「专业工具」一侧。对你的意义不在于去用，而在于新手侧供给变多之后，Asset Store 和低价区的竞争形态会跟着变。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Google reveals Playground, its AI-powered game-making platform",
+       "url": "https://mobilegamer.biz/google-reveals-playground-its-ai-powered-game-making-platform/",
+       "source": "mobilegamer.biz"
+      }
+     ]
+    },
+    {
+     "id": "f24e13caeaeb",
+     "title": "I built a destruction system with a graph-based stress solver so buildings collapse when they lose support",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1x2s740/i_built_a_destruction_system_with_a_graphbased/",
+     "source": "reddit.com",
+     "published": "2026-10-10",
+     "comment": "基于图结构的应力求解器做建筑破坏：支撑一断，受力顺着图传播，楼就塌。已经做成 Unity 工具包发布，作者在帖子里答技术细节。想要可破坏场景但不想自己写结构稳定性判定的，这是本周最省事的一条。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "c04cf22ccf0e",
+     "title": "How we did the 2d to 3d environment art for DuneCrawl",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1x2fy0r/how_we_did_the_2d_to_3d_environment_art_for/",
+     "source": "reddit.com",
+     "published": "2026-10-10",
+     "comment": "DuneCrawl 作者拆了他们「2D 美术拼进 3D 环境」的做法。一人美术想要画面密度又不想全套建模时，这种混合管线是性价比最高的一档。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "cead51cc82e2",
+     "title": "CEO – AI-powered lip-sync",
+     "url": "https://www.blendernation.com/2026/10/09/ceo-ai-powered-lip-sync/",
+     "source": "blendernation.com",
+     "published": "2026-10-09",
+     "comment": "UNOMi 的 AI 口型同步正式进 Blender：喂对白音频自动生成 lip-sync 动画。独立团队一旦给角色配了音，这块原来就是纯手 K 的大头工时，能砍就砍。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "b9aa7364e66f",
+     "title": "Capcom’s New AI Venture Gets Lost in Translation",
+     "url": "https://www.aiandgames.com/p/capcoms-new-ai-venture-gets-lost",
+     "source": "aiandgames.com",
+     "published": "2026-10-07",
+     "comment": "Capcom 那条「AI 造素材」的新闻，原文说的远没有转载里那么大，是翻译和二手转述放大的。省你一次被标题带走的注意力，也顺带校准一下日媒 AI 新闻的衰减率。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "d165789ad60f",
+     "title": "#007 - AI Game Creation is an “aggressive race to the bottom”",
+     "url": "https://www.aiandgames.com/p/007-ai-game-creation-is-an-aggressive",
+     "source": "aiandgames.com",
+     "published": "2026-10-09",
+     "comment": "这期的判断是 AI 生成游戏正在打一场「向下竞赛」，顺带捎了 RE Engine、PS5 的 QSSR 和 Sega 对生成式 AI 的回避态度。Tommy Thompson 是少数会先拆技术再下结论的人，拿来对冲各路通稿。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "55b1b1f65ad5",
+     "title": "[AINews] Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing",
+     "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+     "source": "latent.space",
+     "published": "2026-10-08",
+     "comment": "Claude Haiku 5.5 发布，同价位对标 GPT-6 Luna。批量机械活（资产命名、日志分类、本地化初翻、候选筛选）换成它，比继续拿大模型跑能省一个量级。",
+     "daily": false,
+     "also": [
+      {
+       "title": "ChatGPT Intelligent UI 🧠, Claude Haiku 5.5 ⚡, Grok Bot 3rd party models 🤖",
+       "url": "https://tldr.tech/ai/2026-10-08",
+       "source": "tldr.tech"
+      }
+     ]
+    },
+    {
+     "id": "68dee2e11183",
+     "title": "A new feature for my blog, built using my voice",
+     "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+     "source": "simonwillison.net",
+     "published": "2026-10-09",
+     "comment": "Simon Willison 几乎全程用语音给自己博客加了一个功能页。看点不是功能，是他口述驱动 agent 迭代的具体说法——手不在键盘上时怎么把任务推到完成。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "70a7dcc5b14d",
+     "title": "WouterApts/openik-unity：Inverse Kinematics package for Unity, featuring multiple solvers, joint limits and procedural animation samples.",
+     "url": "https://github.com/WouterApts/openik-unity",
+     "source": "github.com",
+     "published": "2026-10-09",
+     "comment": "Unity 的 IK 包，本周新仓 ★73：多种 solver、关节限位，带程序化动画示例。没买 Final IK 又需要脚部贴地、看向目标这类需求的，先拿它顶上。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "5907f74d4437",
+     "title": "Add-on for mesh reconstruction with Unrealizex",
+     "url": "https://www.blendernation.com/2026/10/08/add-on-for-mesh-reconstruction-with-unrealizex/",
+     "source": "blendernation.com",
+     "published": "2026-10-08",
+     "comment": "UnrealizeX 的 Blender 扩展做 3D 重建，并且明确不走生成式 AI。介意生成素材的版权来源或风格漂移时，照片转网格这条路还留着非 AI 的选项。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "e1d08519dee0",
+     "title": "Free 100+ PBR Materials (Scans)",
+     "url": "https://www.blendernation.com/2026/10/07/free-100-pbr-materials-scans/",
+     "source": "blendernation.com",
+     "published": "2026-10-07",
+     "comment": "100+ 扫描 PBR 材质，免注册直接下，Standard Royalty-Free 授权。现在存进素材库，比开工时临时翻贴图站快。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "7335904e11ec",
+     "title": "Free Online Archive Of PS1 & N64 3D Models & Game Assets",
+     "url": "https://80.lv/articles/free-online-archive-of-ps1-n64-3d-models-game-assets/",
+     "source": "80.lv",
+     "published": "2026-10-09",
+     "comment": "Pardall Games 做的 PS1 / N64 模型与素材在线存档。做低多边形复古风的，拿它当面数预算和 UV 拆法的参照物，比看教程直观。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "2158f20613a1",
+     "title": "Pricing Conversion Updates",
+     "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/677385327761951396",
+     "source": "steamcommunity.com",
+     "published": "2026-10-08",
+     "comment": "Steamworks 更新了各区定价换算值（今年 3 月那轮之后的又一次复核）。后台给你的推荐价表已经跟着变了，没手动锁价的去过一遍，汇率波动大的区尤其要看。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "91a39e97579d",
+     "title": "After losing my job and 5 years of doing all the marketing tricks I read everywhere, I got massive hype just by sending emails, and nothing else worked (city builder game at 15k wishlists)",
+     "url": "https://www.reddit.com/r/gamedev/comments/1x37ecp/after_losing_my_job_and_5_years_of_doing_all_the/",
+     "source": "reddit.com",
+     "published": "2026-10-11",
+     "comment": "五年各种营销技巧都不起效，最后只靠发邮件这一件事：愿望单从日增接近 0，到 demo 上线当天 400、峰值单日 1400，现在不做什么也日增 100+，累计 15k。数字和时间点都在帖子里，本周最值得照着抄的一条。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "16aab1575f26",
+     "title": "Confused by app store and webshop fees? Try our commission calculator",
+     "url": "https://mobilegamer.biz/__trashed-2/",
+     "source": "mobilegamer.biz",
+     "published": "2026-10-09",
+     "comment": "mobilegamer 做了个分成计算器：勾地区、商业模式等几项，算出 Apple / Google / 自建 webshop 各抽多少，含欧盟、日本、澳洲、韩国最近的费率变化。要做 webshop 或定移动端价格时，省掉一堆翻条款的时间。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "510b87967ad2",
+     "title": "How Dressmaker became ‘ready to wear’ for hundreds of thousands of players!",
+     "url": "https://newsletter.gamediscover.co/p/how-dressmaker-became-ready-to-wear",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-10-09",
+     "comment": "GameDiscoverCo 拆 Dressmaker 怎么做到几十万玩家量级，外加本周 Steam 大盘。这类发现性拆解在定位和品类判断阶段，是最值钱的一类输入。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "e2f5677f8501",
+     "title": "How Undead Labs saved itself and State of Decay from oblivion",
+     "url": "https://www.thegamebusiness.com/p/how-undead-labs-saved-itself-and",
+     "source": "thegamebusiness.com",
+     "published": "2026-10-06",
+     "comment": "Undead Labs 脱离 Xbox 之后怎么把自己和 State of Decay 救回来：裁员、现金流、以及他自称的「不负责任的透明」。看点是一个团队第一次要自己扛全部工资单时的取舍顺序；另见那条是他拒绝公布裁员人数的后续。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Undead Labs boss \"reluctant to share\" number affected by layoffs: \"I would hate to reduce the impact to those individuals to a number or statistic\"",
+       "url": "https://www.gamesindustry.biz/undead-labs-boss-reluctant-to-share-number-affected-by-layoffs-i-would-hate-to-reduce-the-impact-to-those-individuals-to-a-number-or-statistic",
+       "source": "gamesindustry.biz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "0d770f1c7f5e",
+     "title": "Unroll a loop, make shader 10x faster",
+     "url": "https://aras-p.info/blog/2026/10/05/Unroll-a-loop-make-shader-10x-faster/",
+     "source": "aras-p.info",
+     "published": "2026-10-05",
+     "comment": "aras-p 实测手动展开一个循环，让 shader 快了 10 倍——「编译器比你更懂」这条通识在 shader 编译器上并不成立。有 GPU 瓶颈的直接看他怎么定位、怎么验证收益。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "2158cded6e96",
+     "title": "How In-Game Overlays Work (2022)",
+     "url": "https://fredemmott.com/blog/2022/05/31/in-game-overlays.html",
+     "source": "fredemmott.com",
+     "published": "2026-10-07",
+     "comment": "游戏内覆盖层（Steam overlay、录屏、FPS 工具）到底怎么挂进你的渲染循环，讲的是 Direct3D 一侧，评论里有人补了没提 Vulkan layers 这点。查过「玩家装了某工具就崩」这类 bug 的人会一眼看出价值。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "52d90e3c8dc1",
+     "title": "The 2D physics prototype behind GTA’s vehicles",
+     "url": "https://patkerr.co.uk/2d-vehicles/",
+     "source": "patkerr.co.uk",
+     "published": "2026-10-10",
+     "comment": "GTA 初代车辆手感背后的 2D 物理原型。可借的不是实现而是取舍：用够用的廉价模型撑起手感，而不是一上来就套完整刚体。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "9415ad7ea7e1",
+     "title": "Friday Facts #448 - Tuning platforms",
+     "url": "https://www.factorio.com/blog/post/fff-448",
+     "source": "factorio.com",
+     "published": "2026-10-09",
+     "comment": "FFF #448 讲太空平台的数值调整，小行星伤害模型被改掉了。想看一个团队怎么把「手感不对」翻译成具体参数改动的，FFF 仍是公开样本里最好的一份。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 226,
+  "drop_ledger_url": 6,
+  "drop_ledger_title": 3,
+  "merge_url": 0,
+  "merge_title": 3,
+  "kept": 214,
+  "out_of_window": 1231,
+  "excluded": 1,
+  "source_capped": 110,
+  "trimmed": 0,
+  "candidates": 104,
+  "failed_sources": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCFK6NCbuCIVzA6Yj1G_ZqCg: HTTPError: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCFK6NCbuCIVzA6Yj1G_ZqCg",
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCr-5TdGkKszdbboXXsFZJTQ: HTTPError: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCr-5TdGkKszdbboXXsFZJTQ",
+   "reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/IndieDev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 24,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 0
+ },
+ "generated_at": "2026-10-12T10:26:01+08:00"
+}
