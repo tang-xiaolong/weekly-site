@@ -1,0 +1,350 @@
+{
+ "no": 13,
+ "week": "2026-W43",
+ "date": "2026-10-19",
+ "range": [
+  "2026-10-13",
+  "2026-10-19"
+ ],
+ "intro": "本期头条是 Kyle Kukshtel 那篇「给游戏开发搭 AI harness」——终于有人把 AI 工作流当工程来写；另一条主线是引擎自由度：Dean Hall 开源 C# 框架 Brutal，RimWorld 顺势搬出 Unity。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "c964e1de9b26",
+     "title": "How Soft Crunch Games built Foxy Dumplings for every platform",
+     "url": "https://unity.com/blog/foxy-dumplings-cross-platform-development",
+     "source": "unity.com",
+     "published": "2026-10-16",
+     "comment": "Unity 官方拆解 Foxy Dumplings 怎么用一个工程同时出 PC/主机/移动：平台抽象、输入适配、profiling 流程、Cloud Save 都给了做法。一份工程多端发的少见官方端到端样板，比翻零散论坛帖省事。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "493662574827",
+     "title": "Am I using CoreCLR wrong?",
+     "url": "https://discussions.unity.com/t/am-i-using-coreclr-wrong/1739479",
+     "source": "discussions.unity.com",
+     "published": "2026-10-17",
+     "comment": "有人把项目从 IL2CPP 切到 CoreCLR（6.7 beta 和 7.0a10 都试了），性能一点没涨，于是发帖问是不是自己用错了。想为 CoreCLR 的性能承诺排期的先读这条：收益强依赖代码形态，别当免费加速写进计划。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "37a99352d0aa",
+     "title": "Example ContentDirectory",
+     "url": "https://discussions.unity.com/t/example-contentdirectory/1739344",
+     "source": "discussions.unity.com",
+     "published": "2026-10-15",
+     "comment": "Unity 开了个公开 git 仓，放小示例工程演示新的 content directory。之前收过的 Beyond the AssetBundle 只讲概念，这次是能 clone 下来直接跑的；官方还在征集想看哪类示例。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "95765598bb43",
+     "title": "Upcoming video: Light baking with Unity CLI (commands for light baking)",
+     "url": "https://discussions.unity.com/t/upcoming-video-light-baking-with-unity-cli-commands-for-light-baking/1739366",
+     "source": "discussions.unity.com",
+     "published": "2026-10-16",
+     "comment": "官方放出配套脚本：用 Unity CLI 批量烘焙多场景光照、并按固定机位出对比图，省掉逐个开场景等烘焙。想把烘焙挂到 CI 或交给 agent 跑的，这就是现成模板。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ef255f88707b",
+     "title": "RimWorld Dump Unity Game Engine - Doubles Performance!",
+     "url": "https://www.youtube.com/watch?v=rebGOUdJdjU",
+     "source": "YouTube · Gamefromscratch",
+     "published": "2026-10-14",
+     "comment": "RimWorld 搬离 Unity，换到自研 Waylith（底层就是本周开源的 Brutal），视频口径是性能翻倍。标题数字别当普遍结论——那是十年期、极重模拟的特例；但一个大体量 Unity 项目为何愿意自己造引擎，这条理由链值得看。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "cbecee8e5046",
+     "title": "How to engineer an AI harness for game development",
+     "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+     "source": "kylekukshtel.com",
+     "published": "2026-10-13",
+     "comment": "题目说的就是正事：把 AI 当成需要工程化搭建的 harness，而不是随手问一句（HN 175 分 / 90 评论，评论区也值得翻）。重度 AI 工作流的人本周只读一篇，就读这篇。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "6d9c92c61f88",
+     "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+     "url": "https://sphinx-six-theta.vercel.app/",
+     "source": "sphinx-six-theta.vercel.app",
+     "published": "2026-10-18",
+     "comment": "开源 hook，接进现有 coding agent 流程：每次往 prod 推之前弹一份问卷，考你是不是真懂这段代码（HN 241 分）。听着像自虐，但 AI 产出量大到人工 review 形同虚设时，这是少见的可操作防线。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "a6d7ca69b8b2",
+     "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+     "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+     "source": "simonwillison.net",
+     "published": "2026-10-16",
+     "comment": "一段很准的引用：「有没有人读过这段代码」是个糙代理，真问题是这次改动可能出什么错、该由哪种检查（自动或人工）去挡——顺带把 review 从终点闸门挪进了过程。和上面那个 hook 配着读。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "751cccadd152",
+     "title": "EL4CTEO/blender-skills：Professional Blender 5.2 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
+     "url": "https://github.com/EL4CTEO/blender-skills",
+     "source": "github.com",
+     "published": "2026-10-14",
+     "comment": "把 Blender 5.2 的专业工作流（建模、UV、PBR、烘焙、绑定、动画、导出、QA）封成 Agent Skills，Claude Code / Codex / Cursor 都能直接挂。自己拿 AI 跑 3D 资产的，这是现成技能包底本，不必从零写 prompt。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "8d9e06572c54",
+     "title": "SubmitGame/awesome-ai-game-dev-tools：Open-source AI tools for making games, and for decompiling, remixing and mashing up games you own. 100+ stars, active in the last year, refreshed daily.",
+     "url": "https://github.com/SubmitGame/awesome-ai-game-dev-tools",
+     "source": "github.com",
+     "published": "2026-10-13",
+     "comment": "每日刷新的开源 AI 游戏开发工具清单，只收 100 星以上、近一年活跃的，顺带覆盖反编译/混搭那一类。当索引用，别指望点评。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "c1649735d169",
+     "title": "Viral Game Mash-ups: What AI Decompilation Capabilities Mean For Games",
+     "url": "https://naavik.co/ai-gaming/viral-game-mash-ups-what-ai-decompilation-capabilities-mean-for-games/",
+     "source": "naavik.co",
+     "published": "2026-10-13",
+     "comment": "Naavik 分析这两周满屏的 AI 游戏混搭（现代战争角色玩滑板、Minecraft 爬行者逛夜之城）背后的 AI 反编译能力，以及它对 IP 与资产安全意味着什么。你自己的游戏也在这把刀的射程里，先看清技术边界。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "40a76be0bce7",
+     "title": "How to best protect against the new wave of AI clones?",
+     "url": "https://www.reddit.com/r/gamedev/comments/1x8hvgn/how_to_best_protect_against_the_new_wave_of_ai/",
+     "source": "reddit.com",
+     "published": "2026-10-17",
+     "comment": "独立开发者发帖求对策：怎么防 Steam 上新一波 AI 批量克隆，起因是 Needle In A Haystack 被山寨潮淹没。没有标准答案，但把能用的手段和各自局限摊开了；和上面那条反编译分析同周出现，攻防两面正好对读。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "4009f70e9678",
+     "title": "Neural Processor Units: Explained",
+     "url": "https://www.aiandgames.com/p/neural-processor-units-explained",
+     "source": "aiandgames.com",
+     "published": "2026-10-13",
+     "comment": "AI and Games 讲清 NPU 到底是什么、为什么笔记本手机甚至主机都开始标配。打算把模型推理放进游戏运行时（而不是只在开发期用 AI）的，这是该补的硬件常识。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "297a95757e00",
+     "title": "ahwootech/BRUTAL：A free, open source C# framework for making games, or your own game engine. Direct access to native APIs and Vulkan, with the low-level libraries around them. The foundation under Kitten Space Agency and RimWorld's Waylith engine.",
+     "url": "https://github.com/ahwootech/BRUTAL",
+     "source": "github.com",
+     "published": "2026-10-14",
+     "comment": "Dean Hall 开源的 C# 游戏框架 Brutal：直通原生 API 与 Vulkan，定位是「做游戏或做自己引擎」的地基，Kitten Space Agency 和 RimWorld 的 Waylith 都建在它上面，一周冲到 1900 星。不是 Unity 替代品，但想知道 C# 栈脱开 Unity 能走多远，这是当下最实在的参照。",
+     "daily": false,
+     "also": [
+      {
+       "title": "DayZ creator Dean Hall releases open-source game development framework Brutal",
+       "url": "https://www.gamesindustry.biz/dayz-creator-dean-hall-releases-open-source-game-development-framework-brutal",
+       "source": "gamesindustry.biz"
+      },
+      {
+       "title": "BRUTAL C# Game Framework - Now Free & Open Source(ish)!",
+       "url": "https://www.youtube.com/watch?v=FmpFzPFe4R8",
+       "source": "YouTube · Gamefromscratch"
+      }
+     ]
+    },
+    {
+     "id": "21dbe13f7991",
+     "title": "Dev snapshot: Godot 4.8 beta 1",
+     "url": "https://godotengine.org/article/dev-snapshot-godot-4-8-beta-1/",
+     "source": "godotengine.org",
+     "published": "2026-10-15",
+     "comment": "Godot 4.8 进 beta、功能冻结，接下来资源全投回归修复。有 Godot 副项目或在评估迁移的，现在正是拿自己工程验回归、报 bug 的窗口。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "8609164172b1",
+     "title": "Defold Engine - Now On Xbox, PlayStation & Switch - FOR FREE!",
+     "url": "https://www.youtube.com/watch?v=ov3Na13h1us",
+     "source": "YouTube · Gamefromscratch",
+     "published": "2026-10-13",
+     "comment": "Defold 的主机导出（Xbox/PS/Switch）现在免费开放。对小团队是条真便宜的主机路径，省掉的恰好是最贵那一段——当然平台开发者资格和 devkit 还得自己过。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "96415d7ece58",
+     "title": "Kenney Shape, Tool for Generating Extruded 3D Models from 2D Pixel Art, Is Now Free",
+     "url": "https://80.lv/articles/kenney-shape-tool-for-generating-extruded-3d-models-from-2d-pixel-art-is-now-free/",
+     "source": "80.lv",
+     "published": "2026-10-16",
+     "comment": "Kenney 把 Kenney Shape（像素图一键挤出成 3D 模型）永久免费了。做 2D 但想给道具、图标加点立体感，十分钟就能上手。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "059f3a761daf",
+     "title": "TOP 10 FREE NEW Assets OCTOBER 2026!",
+     "url": "https://www.youtube.com/watch?v=qjNGL4qQvrQ",
+     "source": "YouTube · Code Monkey",
+     "published": "2026-10-17",
+     "comment": "Code Monkey 的 10 月免费资产盘点，照例是能直接拖进工程用的那种。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "1538b9b065b8",
+     "title": "Wishlist inflation is real, but you still need them",
+     "url": "https://howtomarketagame.com/2026/10/13/wishlist-inflation-is-real-but-they-are-still-important/?utm_source=rss&utm_medium=rss&utm_campaign=wishlist-inflation-is-real-but-they-are-still-important",
+     "source": "howtomarketagame.com",
+     "published": "2026-10-13",
+     "comment": "Chris Zukowski 把读者提交的 Steam 愿望单与销量数据做了横向分析：愿望单确实在通胀（同样数量换不来当年的首发销量），但没有它更不行。做首发预估的，按他这套口径重算一遍自己的数。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "1ba083a9107d",
+     "title": "Steam games with CCU staying power: what defines them?",
+     "url": "https://newsletter.gamediscover.co/p/steam-games-with-ccu-staying-power",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-10-13",
+     "comment": "GameDiscoverCo 回看 8 月那批赢家在数周之后的同时在线表现，拆什么特征能把 CCU 撑住。首发冲榜之后那段曲线才决定能不能长期赚钱，这类追踪数据很少有人做。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "52406396a70c",
+     "title": "Updated Achievement System",
+     "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/677385962174549064",
+     "source": "steamcommunity.com",
+     "published": "2026-10-15",
+     "comment": "Steam 成就系统升级，同时给开发者放了新工具，现在就能用到自己游戏上。成就是最便宜的留存与讨论度杠杆之一，这篇官方公告建议当 TODO 清单读。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Steamworks Development - Updated Achievement System",
+       "url": "https://www.reddit.com/r/gamedev/comments/1x6zfuu/steamworks_development_updated_achievement_system/",
+       "source": "reddit.com"
+      }
+     ]
+    },
+    {
+     "id": "ddb98fc7b021",
+     "title": "The Solo Developer Making Seven Figures From Free Browser Games",
+     "url": "https://naavik.co/podcast/the-solo-developer-making-seven-figures-from-free-browser-games/",
+     "source": "naavik.co",
+     "published": "2026-10-13",
+     "comment": "Naavik 播客聊 Trainwreck Labs 的 Abe Train：一台笔记本加几个外包，靠免费网页小游戏做到七位数收入。流量来源和变现方式跟 Steam 完全是两套，但对「一个人能撑多大生意」是很硬的参照。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ba113b2b1b3d",
+     "title": "How Star Wars: Galactic Racer kept the core team small and sustainable through \"distributed development\"",
+     "url": "https://www.gamesindustry.biz/how-star-wars-galactic-racer-kept-the-core-team-small-and-sustainable-through-distributed-development",
+     "source": "gamesindustry.biz",
+     "published": "2026-10-16",
+     "comment": "Fuse Games 的 CEO 讲 Star Wars: Galactic Racer 怎么靠「分布式开发」把核心团队压到很小，PS5 版 Metacritic 88。小核心 + 外部协作的具体组织方式，比「小团队也能做大作」的空话有用得多。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "e387017b1138",
+     "title": "We Put Fighting Game Netcode in Brood War",
+     "url": "https://www.youtube.com/watch?v=vIt9xua9bLc",
+     "source": "YouTube · Lobsters: games - Game design and study",
+     "published": "2026-10-12",
+     "comment": "给《星际争霸：母巢之战》硬塞进格斗游戏那套 rollback netcode 的全过程。做联机的最好教材之一——在一个完全没为回滚设计的老引擎上实现它，所有坑都会被迫暴露。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "9b56076ebde6",
+     "title": "My Game's Procedural Dialogue System",
+     "url": "https://www.youtube.com/watch?v=NaW0d7Tghw0",
+     "source": "YouTube · Lobsters: games - Game design and study",
+     "published": "2026-10-14",
+     "comment": "开发者讲自己游戏的程序化对话系统怎么搭。对话在独立游戏里最容易滑成硬编码泥潭，这种第一手结构设计比教科书实用。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "3b339afb172f",
+     "title": "Hidden Design Decisions Behind Believable Open-World Cities",
+     "url": "https://80.lv/articles/hidden-design-decisions-behind-believable-open-world-cities/",
+     "source": "80.lv",
+     "published": "2026-10-16",
+     "comment": "资深世界设计师 Nathan Cheever 拆《黑手党 3》的新波尔多：路径、地标、基础设施、世界状态，以及 30 多轮大改版图。规模学不来，但「一座可读的城市靠什么成立」这套判断，做任何有探索感的关卡都用得上。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "bc48e39f8975",
+     "title": "Graphics Programming weekly - Issue 458 - October 11th, 2026",
+     "url": "https://www.jendrikillner.com/post/graphics-programming-weekly-issue-458/",
+     "source": "jendrikillner.com",
+     "published": "2026-10-11",
+     "comment": "图形编程周报 458 期：这期有单位四元数 log/exp 的 SIMD 友好特化实现（误差与标准库相当，还避开整圈角度歧义）等条目。写 shader、做渲染优化或骨骼插值的，这是性价比最高的定期输入。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 221,
+  "drop_ledger_url": 1,
+  "drop_ledger_title": 2,
+  "merge_url": 2,
+  "merge_title": 3,
+  "kept": 213,
+  "out_of_window": 1277,
+  "excluded": 3,
+  "source_capped": 103,
+  "trimmed": 0,
+  "candidates": 110,
+  "failed_sources": [
+   "reddit r/Unity3D: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Unity3D/top/.rss?t=week&limit=25"
+  ],
+  "picked": 27,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 2
+ },
+ "generated_at": "2026-10-19T10:26:11+08:00"
+}

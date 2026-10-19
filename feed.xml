@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 012 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/012.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/012.html</guid><pubDate>Mon, 12 Oct 2026 08:00:00 +0800</pubDate><description>本周两件事直接动到手上的工具链：com.unity.pipeline 0.9.0 要统一改命令名（你写的 CLI 脚本和给 agent 封的 wrapper 都得跟着改），以及论坛里有人把 URP 的 DLSS4/FSR4 隐藏预览挖出来了；另外 Steam 又调了一轮区域定价换算值，该去后台过一遍自己的价表。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 013 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/013.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/013.html</guid><pubDate>Mon, 19 Oct 2026 08:00:00 +0800</pubDate><description>本期头条是 Kyle Kukshtel 那篇「给游戏开发搭 AI harness」——终于有人把 AI 工作流当工程来写；另一条主线是引擎自由度：Dean Hall 开源 C# 框架 Brutal，RimWorld 顺势搬出 Unity。
+🎮 Unity 官方与引擎
+· How Soft Crunch Games built Foxy Dumplings for every platform
+· Am I using CoreCLR wrong?
+· Example ContentDirectory
+· Upcoming video: Light baking with Unity CLI (commands for light baking)
+· RimWorld Dump Unity Game Engine - Doubles Performance!
+🤖 AI × 游戏开发
+· How to engineer an AI harness for game development
+· Show HN: Sphinx – A hook that quizzes you on your AI&#x27;s code before shipping
+· Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang
+· EL4CTEO/blender-skills：Professional Blender 5.2 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.
+· SubmitGame/awesome-ai-game-dev-tools：Open-source AI tools for making games, and for decompiling, remixing and mashing up games you own. 100+ stars, active in the last year, refreshed daily.
+· Viral Game Mash-ups: What AI Decompilation Capabilities Mean For Games
+· How to best protect against the new wave of AI clones?
+· Neural Processor Units: Explained
+🛠 工具与开源
+· ahwootech/BRUTAL：A free, open source C# framework for making games, or your own game engine. Direct access to native APIs and Vulkan, with the low-level libraries around them. The foundation under Kitten Space Agency and RimWorld&#x27;s Waylith engine.
+· Dev snapshot: Godot 4.8 beta 1
+· Defold Engine - Now On Xbox, PlayStation &amp; Switch - FOR FREE!
+· Kenney Shape, Tool for Generating Extruded 3D Models from 2D Pixel Art, Is Now Free
+· TOP 10 FREE NEW Assets OCTOBER 2026!
+📊 独游与市场
+· Wishlist inflation is real, but you still need them
+· Steam games with CCU staying power: what defines them?
+· Updated Achievement System
+· The Solo Developer Making Seven Figures From Free Browser Games
+· How Star Wars: Galactic Racer kept the core team small and sustainable through &quot;distributed development&quot;
+📝 技术长文
+· We Put Fighting Game Netcode in Brood War
+· My Game&#x27;s Procedural Dialogue System
+· Hidden Design Decisions Behind Believable Open-World Cities
+· Graphics Programming weekly - Issue 458 - October 11th, 2026</description></item><item><title>游戏开发周刊 第 012 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/012.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/012.html</guid><pubDate>Mon, 12 Oct 2026 08:00:00 +0800</pubDate><description>本周两件事直接动到手上的工具链：com.unity.pipeline 0.9.0 要统一改命令名（你写的 CLI 脚本和给 agent 封的 wrapper 都得跟着改），以及论坛里有人把 URP 的 DLSS4/FSR4 隐藏预览挖出来了；另外 Steam 又调了一轮区域定价换算值，该去后台过一遍自己的价表。
 🎮 Unity 官方与引擎
 · Heads up: Upcoming com.unity.pipeline 0.9.0 release will include breaking changes to command names
 · DLSS4 &amp; FSR4 in Unity URP (hidden preview)
