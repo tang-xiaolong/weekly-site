@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 013 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/013.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/013.html</guid><pubDate>Mon, 19 Oct 2026 08:00:00 +0800</pubDate><description>本期头条是 Kyle Kukshtel 那篇「给游戏开发搭 AI harness」——终于有人把 AI 工作流当工程来写；另一条主线是引擎自由度：Dean Hall 开源 C# 框架 Brutal，RimWorld 顺势搬出 Unity。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 014 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/014.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/014.html</guid><pubDate>Mon, 26 Oct 2026 08:00:00 +0800</pubDate><description>本周最该先看的三条：官方讲 MethodReload 怎么跳过 domain reload、Unity Ads SDK 4.20.1 把一款 app 送进 Google Play 下架、GameMaker 新运行时 2027 年起商用免费。
+🎮 Unity 官方与引擎
+· Skipping domain reload: faster iteration using the MethodReload feature
+· Google Play suspension (Device and Network Abuse) caused by Unity Ads SDK 4.20.1 – libunitycoherencenative.so
+· Unity is FINALLY moving to ONE Render Pipeline!
+· Unity 7 UI feedback: Consistency, contrast, and spacing
+· Do NEW C# versions make everything OBSOLETE?
+· I tried UI Toolkit and it&#x27;s fantastic
+· The 2026 Official Unity Game Jam starts November 5th!
+🤖 AI × 游戏开发
+· Donating Agent Skills to the Agentic AI Foundation
+· Claude Mods: Flipping the Harness Inside Out
+· LayerFS: A filesystem for AI coding agents
+· uilianks/vex：2D vector game art as code: a DSL that exports SVG/PNG sprites, animations and atlases, with a live viewer. Inspired by claude-pxl.
+· battledrones v14: Compass Rose, a four player map
+· Epic Provides The Real Litmus Test for the Generative AI Push | 21/10/26
+· [AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed
+· [AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback
+🛠 工具与开源
+· HD-2D Pixelart terrain painting! 🌲
+· GameMaker to make its &quot;next-generation runtime&quot; GMRT free for commercial use in January 2027
+· How Tripo P2.0 &amp; Astra Work Together in Blender and Unity
+· I got tired of animating pixel art water by hand, so I made a tool for it
+· UVgami -- Because UV Unwrapping SUCKS!
+📊 独游与市场
+· How sloppy is the October 2026 Steam Next Fest
+· How Invokyr sold ~250k copies with... Jumanji horror cool?
+· Should your game discovery plans change due to AI &amp; decompilation?
+· On the Lookout for Games That Make You Feel Something: Raw Fury CEO on Game Publishing
+📝 技术长文
+· Bluey’s Simple 2D Look Required Gameloft’s Most Technically Challenging Art Pipeline
+· My 6 Month Journey to Recreate Half-Life
+· The Many Many Missed Opportunities of Sonic 06
+· No Source Code? No Problem! What if you have to port a program, but all you have is a binary? (2003)</description></item><item><title>游戏开发周刊 第 013 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/013.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/013.html</guid><pubDate>Mon, 19 Oct 2026 08:00:00 +0800</pubDate><description>本期头条是 Kyle Kukshtel 那篇「给游戏开发搭 AI harness」——终于有人把 AI 工作流当工程来写；另一条主线是引擎自由度：Dean Hall 开源 C# 框架 Brutal，RimWorld 顺势搬出 Unity。
 🎮 Unity 官方与引擎
 · How Soft Crunch Games built Foxy Dumplings for every platform
 · Am I using CoreCLR wrong?

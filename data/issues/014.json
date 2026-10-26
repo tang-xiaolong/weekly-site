@@ -1,0 +1,401 @@
+{
+ "no": 14,
+ "week": "2026-W44",
+ "date": "2026-10-26",
+ "range": [
+  "2026-10-20",
+  "2026-10-26"
+ ],
+ "intro": "本周最该先看的三条：官方讲 MethodReload 怎么跳过 domain reload、Unity Ads SDK 4.20.1 把一款 app 送进 Google Play 下架、GameMaker 新运行时 2027 年起商用免费。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "2a872d852bb6",
+     "title": "Skipping domain reload: faster iteration using the MethodReload feature",
+     "url": "https://unity.com/blog/skipping-domain-reload-faster-iteration-using-the-methodreload-feature",
+     "source": "unity.com",
+     "published": "2026-10-22",
+     "comment": "官方亲自讲 MethodReload 怎么跳过 domain reload 换迭代速度，并且把限制条件和跟现有 hot reload 工具的差别摊开说。改一行等十几秒重载这笔账，一天省下来的时间比大多数优化都实在。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Skipping domain reload: faster iteration using the MethodReload feature",
+       "url": "https://discussions.unity.com/t/skipping-domain-reload-faster-iteration-using-the-methodreload-feature/1740090",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "13b52d8a4065",
+     "title": "Google Play suspension (Device and Network Abuse) caused by Unity Ads SDK 4.20.1 – libunitycoherencenative.so",
+     "url": "https://discussions.unity.com/t/google-play-suspension-device-and-network-abuse-caused-by-unity-ads-sdk-4-20-1-libunitycoherencenative-so/1740298",
+     "source": "discussions.unity.com",
+     "published": "2026-10-24",
+     "comment": "一款 app 因为 Unity Ads SDK 4.20.1 里的 libunitycoherencenative.so 被 Google Play 以「Device and Network Abuse（下载可执行代码）」10 月 24 日下架。出海手游在升广告 SDK 前先把这个帖子的进展看完，别自己撞上去。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "0eeda0075490",
+     "title": "Unity is FINALLY moving to ONE Render Pipeline!",
+     "url": "https://www.youtube.com/watch?v=zqxQ7PAeNN4",
+     "source": "YouTube · Code Monkey",
+     "published": "2026-10-19",
+     "comment": "Code Monkey 解读 Unity 把渲染管线收归一条这件事。新项目还在纠结 URP 还是 HDRP、老项目算不算要迁，先看这条再定。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "38180b8ec5d9",
+     "title": "Unity 7 UI feedback: Consistency, contrast, and spacing",
+     "url": "https://discussions.unity.com/t/unity-7-ui-feedback-consistency-contrast-and-spacing/1740318",
+     "source": "discussions.unity.com",
+     "published": "2026-10-24",
+     "comment": "两个高热反馈帖集中吐槽 Unity 7 alpha 新主题：模块之间风格割裂、输入框几乎全黑、对比度过头、间距变大（笔记本屏更吃亏）。还在 alpha，现在去提意见是少数真能改到结果的时候。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Alpha 7.0 ui regressing",
+       "url": "https://discussions.unity.com/t/alpha-7-0-ui-regressing/1740089",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "6a691d131b7c",
+     "title": "Do NEW C# versions make everything OBSOLETE?",
+     "url": "https://www.youtube.com/watch?v=IOpC_qtcV_Q",
+     "source": "YouTube · Code Monkey",
+     "published": "2026-10-24",
+     "comment": "CoreCLR 落地后新 C# 版本让哪些老写法真的过时了。配着论坛那条「怎么强制 Unity 只用 .NET 10」一起看，能知道现在哪些能用、哪些还得等。",
+     "daily": false,
+     "also": [
+      {
+       "title": "How do you force unity to only use .net 10 as a framework",
+       "url": "https://discussions.unity.com/t/how-do-you-force-unity-to-only-use-net-10-as-a-framework/1740240",
+       "source": "discussions.unity.com"
+      }
+     ]
+    },
+    {
+     "id": "311aed0e3a02",
+     "title": "I tried UI Toolkit and it's fantastic",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1xf8kze/i_tried_ui_toolkit_and_its_fantastic/",
+     "source": "reddit.com",
+     "published": "2026-10-25",
+     "comment": "一个被 uGUI 折磨多年的后端出身开发者转 UI Toolkit 的实感记录。如果你也是「一碰 UI 就想放弃」的那类人，这条比官方文档更能帮你判断值不值得换。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ec4ed8a33e4b",
+     "title": "The 2026 Official Unity Game Jam starts November 5th!",
+     "url": "https://discussions.unity.com/t/the-2026-official-unity-game-jam-starts-november-5th/1740103",
+     "source": "discussions.unity.com",
+     "published": "2026-10-22",
+     "comment": "官方 Game Jam 11 月 5 日开始，今年给七天开发期（去年只有一个周末），之后还有几天打包时间。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "5107c05a5a62",
+     "title": "Donating Agent Skills to the Agentic AI Foundation",
+     "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+     "source": "simonwillison.net",
+     "published": "2026-10-22",
+     "comment": "Anthropic 把 Agent Skills 标准捐给 Linux Foundation 旗下的 Agentic AI Foundation，承诺保持开放与厂商中立。自己攒了一堆 skill 的人，这意味着这份投入不再是单押一家。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "58cbca7db65d",
+     "title": "Claude Mods: Flipping the Harness Inside Out",
+     "url": "https://latent.space/p/claude-mods/",
+     "source": "latent.space",
+     "published": "2026-10-21",
+     "comment": "Claude Mods 把 harness 的朝向翻了个面：从面向机器改成面向人，作者称之为 Attention Interface 的早期形态。自己在给 agent 搭工作台的人，这是本周最值得琢磨的一篇思路文。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "b1de2f125f05",
+     "title": "LayerFS: A filesystem for AI coding agents",
+     "url": "https://layerfs.ai/",
+     "source": "layerfs.ai",
+     "published": "2026-10-21",
+     "comment": "专门给 AI 编码 agent 设计的文件系统，HN 76 分 47 评论在争它解决的是不是真问题。让 agent 直接动真仓库踩过坑的人值得读一遍它的论证。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "7afdf9a647e4",
+     "title": "uilianks/vex：2D vector game art as code: a DSL that exports SVG/PNG sprites, animations and atlases, with a live viewer. Inspired by claude-pxl.",
+     "url": "https://github.com/uilianks/vex",
+     "source": "github.com",
+     "published": "2026-10-21",
+     "comment": "vex / kiln / chirp 三件套把资产写成代码：2D 矢量精灵与图集、低模和体素 GLB（带灯光、转盘与 Blender 渲染）、音效与循环 chiptune，全部走 DSL，并且都给 agent 可读的预览。让 agent 出美术音频，这条路比直接丢给扩散模型可控得多。三个都是本周新仓，星数还小，当思路看。",
+     "daily": false,
+     "also": [
+      {
+       "title": "uilianks/kiln：Low-poly and voxel 3D game assets as code: a DSL that exports GLB with lights, agent-readable previews, a live viewer and Blender renders, turntables and camera-move videos. Sibling of vex and chirp.",
+       "url": "https://github.com/uilianks/kiln",
+       "source": "github.com"
+      },
+      {
+       "title": "uilianks/chirp：Game sound effects and music as code: a synth DSL that exports WAV/OGG, looping chiptune songs and audio-sprite banks, with spectrogram previews and a live player. Sibling of vex.",
+       "url": "https://github.com/uilianks/chirp",
+       "source": "github.com"
+      }
+     ]
+    },
+    {
+     "id": "53025e7fb74e",
+     "title": "battledrones v14: Compass Rose, a four player map",
+     "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+     "source": "simonwillison.net",
+     "published": "2026-10-24",
+     "comment": "Simon Willison 给自己 vibe-code 的 Battledrones 加四人对战地图，文章直接贴出他用的原始 prompt（四向旋转对称那段）。更有意思的是 Apache 2.0 放出第二天就被人 fork 成蒸汽朋克 1900 的法语版 Panache——AI 产的小游戏，开源后的二创速度是另一回事。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Panache — RTS Belle Époque pour mobile",
+       "url": "https://simonwillison.net/2026/Oct/21/panache/",
+       "source": "simonwillison.net"
+      }
+     ]
+    },
+    {
+     "id": "540e4f4a14c0",
+     "title": "Epic Provides The Real Litmus Test for the Generative AI Push | 21/10/26",
+     "url": "https://www.aiandgames.com/p/epic-provides-the-real-litmus-test",
+     "source": "aiandgames.com",
+     "published": "2026-10-21",
+     "comment": "AI and Games 认为 Epic 才是生成式 AI 这波真正的试金石，因为终于有人全量压上去了。关心这事落地后对小团队的价格和竞争意味着什么，这篇比厂商通稿值得读。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "30d5039f8447",
+     "title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
+     "url": "https://latent.space/p/ainews-kimi-31/",
+     "source": "latent.space",
+     "published": "2026-10-24",
+     "comment": "Kimi K3.1 Pro：104B 激活 / 2.8T 规模，被归为 Fable-5.1 档位，开闭源差距压到约一个月；Moonshot 承诺 11 月 4 日前放全量权重，另有 2-3 倍速的 Highspeed 版本（价格翻倍）。本地跑模型的可以把 11 月 4 日记下来。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Introducing Kimi K3.1 Pro",
+       "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+       "source": "simonwillison.net"
+      }
+     ]
+    },
+    {
+     "id": "f1f1fa4b2932",
+     "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
+     "url": "https://latent.space/p/ainews-deepseek-deepinfer-open-source/",
+     "source": "latent.space",
+     "published": "2026-10-21",
+     "comment": "DeepSeek 开源 DeepInfer 推理栈，号称单集群每天 155T tokens、约 80% 毛利、81 天回本。这组数字是目前少见能拿来对账自建推理成本的公开参照。",
+     "daily": true,
+     "also": [
+      {
+       "title": "DeepSeek DeepInfer 🐋, PyTorch on TPUs ⚡, Ramp’s agent framework 👨‍💻",
+       "url": "https://tldr.tech/ai/2026-10-21",
+       "source": "tldr.tech"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "612a8dc53310",
+     "title": "HD-2D Pixelart terrain painting! 🌲",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1xetl8y/hd2d_pixelart_terrain_painting/",
+     "source": "reddit.com",
+     "published": "2026-10-25",
+     "comment": "Strata：Unity 6 的像素 / HD-2D 地形笔刷工具，开源，带边缘检测并按邻居像素尽力补角块与接缝。做 HD-2D 的直接省掉自己写 autotile 那一层。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "144382205aac",
+     "title": "GameMaker to make its \"next-generation runtime\" GMRT free for commercial use in January 2027",
+     "url": "https://www.gamesindustry.biz/gamemaker-to-make-its-next-generation-runtime-gmrt-free-for-commercial-use-in-january-2027",
+     "source": "gamesindustry.biz",
+     "published": "2026-10-23",
+     "comment": "GameMaker 下一代运行时 GMRT 从 2027 年 1 月 1 日起商用免费，而且所有档位都给源码访问。2D 项目的引擎选型账要重算一遍了。",
+     "daily": false,
+     "also": [
+      {
+       "title": "GameMaker's New Runtime Will Become Free for Commercial Use",
+       "url": "https://80.lv/articles/gamemaker-s-new-runtime-will-become-free-for-commercial-use/",
+       "source": "80.lv"
+      },
+      {
+       "title": "GameMaker Going FREE For Commercial Use!",
+       "url": "https://www.youtube.com/watch?v=Ed3ZnBV0Mt8",
+       "source": "YouTube · Gamefromscratch"
+      }
+     ]
+    },
+    {
+     "id": "bdce49dd43e7",
+     "title": "How Tripo P2.0 & Astra Work Together in Blender and Unity",
+     "url": "https://80.lv/articles/how-tripo-p2-0-astra-work-together-in-blender-and-unity/",
+     "source": "80.lv",
+     "published": "2026-10-23",
+     "comment": "Tripo 讲 P2.0 加 Astra 在 Blender 与 Unity 里的完整落地：生成、绑定、动画、导入，还谈了质量把关和人工美术指导仍然要做哪些事。AI 3D 管线的介绍里，少见把交付环节讲清楚的一篇。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "415b35fdd345",
+     "title": "I got tired of animating pixel art water by hand, so I made a tool for it",
+     "url": "https://www.reddit.com/r/IndieDev/comments/1xfbglq/i_got_tired_of_animating_pixel_art_water_by_hand/",
+     "source": "reddit.com",
+     "published": "2026-10-25",
+     "comment": "Aseprite 插件，程序化生成池塘、河流、溪流、瀑布和岸线的动画，可调种子、季节、调色板和视角。手 K 像素水的活可以停了。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "46e0791a8ab3",
+     "title": "UVgami -- Because UV Unwrapping SUCKS!",
+     "url": "https://www.youtube.com/watch?v=Ntt-am2-wKw",
+     "source": "YouTube · Gamefromscratch",
+     "published": "2026-10-22",
+     "comment": "UVgami：自动 UV 展开。AI 生成的模型拿来就得展 UV，这类工具的实际成功率值得自己拿脏网格试一轮再下结论。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "821053a1121d",
+     "title": "How sloppy is the October 2026 Steam Next Fest",
+     "url": "https://howtomarketagame.com/2026/10/21/how-sloppy-is-the-october-2026-steam-next-fest/?utm_source=rss&utm_medium=rss&utm_campaign=how-sloppy-is-the-october-2026-steam-next-fest",
+     "source": "howtomarketagame.com",
+     "published": "2026-10-21",
+     "comment": "Next Fest 开幕两天后的现场观察，专门看这届参展阵容的成色。要不要报下一届、自己 demo 扔进这堆里排在什么水位，这是最新的参照系。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "f716efa4eb8a",
+     "title": "How Invokyr sold ~250k copies with... Jumanji horror cool?",
+     "url": "https://newsletter.gamediscover.co/p/how-invokyr-sold-250k-copies-with",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-10-23",
+     "comment": "拆 Invokyr 怎么靠「Jumanji + 恐怖」这种一句话说得清的拼接定位卖出约 25 万份。定位能不能一句话讲完，这条给的是带销量的证据。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "39b05417db94",
+     "title": "Should your game discovery plans change due to AI & decompilation?",
+     "url": "https://newsletter.gamediscover.co/p/should-your-game-discovery-plans",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-10-20",
+     "comment": "GameDiscoverCo 把问题直接摆出来：AI 和反编译／remix 成风之后，发现性策略要不要改。不是口水文，是一篇逼你回答的提问。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "c3667e10ecc9",
+     "title": "On the Lookout for Games That Make You Feel Something: Raw Fury CEO on Game Publishing",
+     "url": "https://80.lv/articles/on-the-lookout-for-games-that-make-you-feel-something-raw-fury-ceo-on-game-publishing/",
+     "source": "80.lv",
+     "published": "2026-10-23",
+     "comment": "Raw Fury CEO Pim Holfve 谈发行这些年变了什么、为什么他觉得独立发行现在处境不差，以及他们看 pitch 时到底在找什么。准备投发行商的人直接当筛选标准读。",
+     "daily": true,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "f64dce474c74",
+     "title": "Bluey’s Simple 2D Look Required Gameloft’s Most Technically Challenging Art Pipeline",
+     "url": "https://80.lv/articles/bluey-s-simple-2d-look-required-gameloft-s-most-technically-challenging-art-pipeline/",
+     "source": "80.lv",
+     "published": "2026-10-23",
+     "comment": "Gameloft Brisbane 拆 Bluey's Happy Snaps：SDF 贴图 + 2D 面片 + 自定义 shader + Control Rig 还原手绘风。最有价值的一点是它证明「看起来最简单的 2D」往往需要最硬的管线。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "11137b65d034",
+     "title": "My 6 Month Journey to Recreate Half-Life",
+     "url": "https://www.youtube.com/watch?v=rwQ8p_J5KhI",
+     "source": "YouTube · Lobsters: games - Game design and study",
+     "published": "2026-10-20",
+     "comment": "一个人用半年复刻 Half-Life 的完整过程记录。想知道独自啃一个完整技术栈的真实时间分布，这比任何教程诚实。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "e41f822d328f",
+     "title": "The Many Many Missed Opportunities of Sonic 06",
+     "url": "https://isaacmarovitz.com/posts/sonic-06/",
+     "source": "isaacmarovitz.com",
+     "published": "2026-10-23",
+     "comment": "Sonic 06 的逐项复盘，重点不是嘲笑，而是拆每个本来成立的设计是怎么在工期和系统耦合下崩掉的。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "abb6638d13b9",
+     "title": "No Source Code? No Problem! What if you have to port a program, but all you have is a binary? (2003)",
+     "url": "https://queue.acm.org/doi/10.1145/945131.945155",
+     "source": "queue.acm.org",
+     "published": "2026-10-23",
+     "comment": "2003 年的 ACM Queue：只有二进制、没有源码时怎么移植一个程序。老文，但今年 AI 辅助反编译重新热起来之后读它正合时候。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 218,
+  "drop_ledger_url": 0,
+  "drop_ledger_title": 4,
+  "merge_url": 2,
+  "merge_title": 1,
+  "kept": 211,
+  "out_of_window": 1285,
+  "excluded": 4,
+  "source_capped": 99,
+  "trimmed": 0,
+  "candidates": 112,
+  "failed_sources": [
+   "reddit r/gamedev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/gamedev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 28,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 2
+ },
+ "generated_at": "2026-10-26T10:24:47+08:00"
+}
