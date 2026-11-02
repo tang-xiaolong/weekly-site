@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 014 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/014.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/014.html</guid><pubDate>Mon, 26 Oct 2026 08:00:00 +0800</pubDate><description>本周最该先看的三条：官方讲 MethodReload 怎么跳过 domain reload、Unity Ads SDK 4.20.1 把一款 app 送进 Google Play 下架、GameMaker 新运行时 2027 年起商用免费。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 015 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/015.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/015.html</guid><pubDate>Mon, 02 Nov 2026 08:00:00 +0800</pubDate><description>官方这周只产出入门科普和 Industry 通稿，硬货都在 AI 与社区侧：Simon Willison 把 2026 年 10 月标成「vibe game development」的拐点，另有两份难得的一手市场数据——15 万愿望单的单人 Godot 游戏首发四天复盘，以及用 Steam 实测验证「爆款出现在已有爆款的地方」。
+🎮 Unity 官方与引擎
+· [RELEASED] Anvil CSG - Hammer-style Level Editor for Unity
+· [RELEASED] Ultimate Water 2D — Interactive Water System for 2D &amp; 2.5D Games
+· Every scene in our game starts as a watercolor painting. Here’s how we bring it into Unity.
+· Flow field canvas improvements
+· XREAL AURA Is Here: Meet Seven Made With Unity Titles
+🤖 AI × 游戏开发
+· The October inflection point for vibe game development
+· Building a multiplayer game world with autonomous Fable-class models
+· How Anthropic ships Claude with Claude: Separating the Brain from the Hands
+· Prompt-to-Game Is Here. Which Platforms Are Positioned to Win?
+· Agents Prompt People: Using Agents for Long-Horizon Financial Work
+· API credits benefit for eligible ChatGPT subscriptions
+🛠 工具与开源
+· patch-gg/pixelfx：244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.
+· patch-gg/anymove：Motion capture for any creature from one AI video: two cameras in one frame, a DINOv2 joint reader, the rig fitted in both views, a GLB out.
+· Polyweft: keep independent edits in one prepared Blender mesh
+· Dead Simple Motion
+· 5 Tips: Square to Round shapes, Inverted Hull, Reduce polycount, find double geometry, better bevels
+📊 独游与市场
+· I launched my solo-developed Godot game with 150,000 wishlists. Here&#x27;s what happened in the first 4 days
+· The hidden AI signifier in Next Fest - and why it’s so complex...
+· AI Cloners Are Here. Are Indie Devs Cooked?
+· Why asking &quot;what&#x27;s the budget for your game?&quot; doesn&#x27;t make sense in 2026 | Opinion</description></item><item><title>游戏开发周刊 第 014 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/014.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/014.html</guid><pubDate>Mon, 26 Oct 2026 08:00:00 +0800</pubDate><description>本周最该先看的三条：官方讲 MethodReload 怎么跳过 domain reload、Unity Ads SDK 4.20.1 把一款 app 送进 Google Play 下架、GameMaker 新运行时 2027 年起商用免费。
 🎮 Unity 官方与引擎
 · Skipping domain reload: faster iteration using the MethodReload feature
 · Google Play suspension (Device and Network Abuse) caused by Unity Ads SDK 4.20.1 – libunitycoherencenative.so

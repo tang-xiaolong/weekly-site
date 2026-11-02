@@ -1,0 +1,295 @@
+{
+ "no": 15,
+ "week": "2026-W45",
+ "date": "2026-11-02",
+ "range": [
+  "2026-10-27",
+  "2026-11-02"
+ ],
+ "intro": "官方这周只产出入门科普和 Industry 通稿，硬货都在 AI 与社区侧：Simon Willison 把 2026 年 10 月标成「vibe game development」的拐点，另有两份难得的一手市场数据——15 万愿望单的单人 Godot 游戏首发四天复盘，以及用 Steam 实测验证「爆款出现在已有爆款的地方」。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "57c94844020d",
+     "title": "[RELEASED] Anvil CSG - Hammer-style Level Editor for Unity",
+     "url": "https://discussions.unity.com/t/released-anvil-csg-hammer-style-level-editor-for-unity/1740584",
+     "source": "discussions.unity.com",
+     "published": "2026-10-28",
+     "comment": "Hammer/Radiant 那套 brush 建模搬进 Unity：经典四视图（俯/前/侧/3D），brush 实时更新。灰盒阶段还在拉 ProBuilder 方块、或者在 Blender 和引擎之间来回导的，可以省掉这段往返。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "770c02480004",
+     "title": "[RELEASED] Ultimate Water 2D — Interactive Water System for 2D & 2.5D Games",
+     "url": "https://discussions.unity.com/t/released-ultimate-water-2d-interactive-water-system-for-2d-2-5d-games/1740763",
+     "source": "discussions.unity.com",
+     "published": "2026-10-30",
+     "comment": "面向 URP 2D Renderer 的交互水体，覆盖横版、透视和 2.5D 视角。2D 水面一直是自己写 shader 加浮力脚本的老大难，先看它暴露的参数够不够你的玩法用，再决定自己造。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "da995e2bbac8",
+     "title": "Every scene in our game starts as a watercolor painting. Here’s how we bring it into Unity.",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1xkghms/every_scene_in_our_game_starts_as_a_watercolor/",
+     "source": "reddit.com",
+     "published": "2026-10-31",
+     "comment": "每个场景先画成水彩原画再进 Unity 的管线分享。做手绘/非写实方向的，这种一手流程帖比教程值钱——对着看他们怎么处理从纸面到引擎那一段。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "726671142a8f",
+     "title": "Flow field canvas improvements",
+     "url": "https://www.reddit.com/r/Unity3D/comments/1xlfa0i/flow_field_canvas_improvements/",
+     "source": "reddit.com",
+     "published": "2026-11-01",
+     "comment": "Tidal 2 的漩涡重做：转速直接决定漏斗下沉深度，螺旋臂把泡沫扫进去，船顺着壁面被拖下去。流场交互要做得「像」而不是「对」，这种把视觉反馈绑死在单一参数上的做法很好抄。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "6c3e27975586",
+     "title": "XREAL AURA Is Here: Meet Seven Made With Unity Titles",
+     "url": "https://unity.com/blog/xreal-aura-games-made-with-unity",
+     "source": "unity.com",
+     "published": "2026-10-28",
+     "comment": "Android XR 首款光学透视眼镜 XREAL AURA 开卖，Unity 列了七款首发作品并给出上手路径；Godot 同日进入首发阵容，编辑器和伴侣应用能直接装在眼镜上开发导出（另见）。新平台首发期竞争最少，但装机量还是未知数，当探索别当赌注。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Ready for XREAL AURA",
+       "url": "https://godotengine.org/article/godot-xreal-aura-launch/",
+       "source": "godotengine.org"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "bd6e09539e26",
+     "title": "The October inflection point for vibe game development",
+     "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+     "source": "simonwillison.net",
+     "published": "2026-10-28",
+     "comment": "Simon Willison 把 2026 年 10 月定为「vibe game development」的拐点，判断方法和他去年给编码 agent 定 2025 年 11 月那条线一样。已经在用 Claude Code 做游戏的，拿这篇校准预期：哪些活现在能一把过，哪些还得人兜底。",
+     "daily": true,
+     "also": [
+      {
+       "title": "The October inflection point for vibe game development",
+       "url": "https://www.reddit.com/r/gamedev/comments/1xhsjom/the_october_inflection_point_for_vibe_game/",
+       "source": "reddit.com"
+      }
+     ]
+    },
+    {
+     "id": "2075f47fc4b3",
+     "title": "Building a multiplayer game world with autonomous Fable-class models",
+     "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+     "source": "simonwillison.net",
+     "published": "2026-10-29",
+     "comment": "Spawn 团队用自主 agent 搭多人游戏世界的工程实录（标题党别被劝退，内容是正经的 agentic engineering）。想知道 agent 怎么长时间跑生产任务，这是目前能找到的最前沿的一手描述。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "502fe37057e9",
+     "title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+     "url": "https://latent.space/p/opus55/",
+     "source": "latent.space",
+     "published": "2026-10-27",
+     "comment": "Anthropic 自己怎么用 Claude 造 Claude：把「脑」（模型与规划）和「手」（工具与执行层）分开的设计，以及 Opus 5.5 和 Claude 平台背后的工程取舍。自建 harness 的人照着这条分界线切，比继续堆提示词有效。",
+     "daily": true,
+     "also": [
+      {
+       "title": "How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands",
+       "url": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
+       "source": "latent.space"
+      }
+     ]
+    },
+    {
+     "id": "9898aa91cfba",
+     "title": "Prompt-to-Game Is Here. Which Platforms Are Positioned to Win?",
+     "url": "https://naavik.co/ai-gaming/prompt-to-game-is-here-which-platforms-are-positioned-to-win/",
+     "source": "naavik.co",
+     "published": "2026-10-27",
+     "comment": "7 到 10 月 Roblox Build、Meta Horizon Create、Google Playground 接连上线「一句话出可玩游戏」，naavik 把这几家加 Astrocade、Rosebud、Jabali 的牌面摊开比了一遍（另见 Meta 高管的说法）。对我们的现实意义不是要不要用，而是 UGC 平台内容供给即将暴涨、发现机制会跟着变形。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Can you build a legitimate video game business on prompts? Meta thinks so",
+       "url": "https://www.thegamebusiness.com/p/can-you-build-a-legitimate-video",
+       "source": "thegamebusiness.com"
+      }
+     ]
+    },
+    {
+     "id": "5991c5ce1565",
+     "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+     "url": "https://latent.space/p/arca/",
+     "source": "latent.space",
+     "published": "2026-10-31",
+     "comment": "Arca 的 AI 负责人讲跨天运行的 agent 工作流：持久记忆怎么存、为什么自建 harness 而不是套现成框架、以及 agent 反过来向人要输入这个模式。场景是金融，但这三件事和游戏项目里长任务的痛点是同一套。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "e05989bb27bd",
+     "title": "API credits benefit for eligible ChatGPT subscriptions",
+     "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
+     "source": "simonwillison.net",
+     "published": "2026-10-29",
+     "comment": "Anthropic 先给 Max/Team 订阅按档送等额（会过期的）API 额度——100/200/500 美元每月，现在 ChatGPT 订阅也有同类福利。重度跑无头 agent 的，这笔额度能不能盖住你的脚本流量，直接决定要不要另开 API 付费。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "2b6b5201ac56",
+     "title": "patch-gg/pixelfx：244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+     "url": "https://github.com/patch-gg/pixelfx",
+     "source": "github.com",
+     "published": "2026-10-30",
+     "comment": "244 个像素特效，每个都是一小段代码，外带一个让 Claude Code 生成新特效的 skill（一周 2.6k 星）。打击感、拾取、爆裂这类边角特效最耗时间，这库既能直接翻素材，也能当 prompt 范本。另见同周冒出的 codixel（像素精灵与动画的 Claude Code skill）。",
+     "daily": false,
+     "also": [
+      {
+       "title": "mankidev/codixel：Pixel art skill for Claude Code: how to make good pixel, animated game sprite out, effects etc.",
+       "url": "https://github.com/mankidev/codixel",
+       "source": "github.com"
+      }
+     ]
+    },
+    {
+     "id": "6140a4eceee0",
+     "title": "patch-gg/anymove：Motion capture for any creature from one AI video: two cameras in one frame, a DINOv2 joint reader, the rig fitted in both views, a GLB out.",
+     "url": "https://github.com/patch-gg/anymove",
+     "source": "github.com",
+     "published": "2026-10-27",
+     "comment": "用一段 AI 生成视频做任意生物的动捕：同一画面摆两个机位，DINOv2 读关节，在两个视图里拟合骨架，直接吐 GLB。非人形生物的动作一向只能手 K 或买现成，这条路线哪怕只有七成可用也省掉大把工时（★460，Python）。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "38815e783e84",
+     "title": "Polyweft: keep independent edits in one prepared Blender mesh",
+     "url": "https://www.blendernation.com/2026/10/29/polyweft-keep-independent-edits-in-one-prepared-blender-mesh/",
+     "source": "blendernation.com",
+     "published": "2026-10-29",
+     "comment": "Blender 网格的三方合并：给共同祖先加两个分支文件，各自的独立编辑都保留，两边改了同一处就让你明确选一个。美术资产没法 merge 是协作里最硬的墙之一，这个思路值得拿示例跑一遍。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "4182efd7ec8b",
+     "title": "Dead Simple Motion",
+     "url": "https://www.blendernation.com/2026/10/29/dead-simple-motion/",
+     "source": "blendernation.com",
+     "published": "2026-10-29",
+     "comment": "物体、摄像机、骨骼的程序化运动插件，免去每次重搭约束、驱动器和循环关键帧。旗帜、浮沉、摇摆这类环境小动画批量出，比手 K 快得多。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "a084b0d9fe39",
+     "title": "5 Tips: Square to Round shapes, Inverted Hull, Reduce polycount, find double geometry, better bevels",
+     "url": "https://www.blendernation.com/2026/10/31/5-tips-square-to-round-shapes-inverted-hull-reduce-polycount-find-double-geometry-better-bevels/",
+     "source": "blendernation.com",
+     "published": "2026-10-31",
+     "comment": "Blender Secrets 五条：方转圆、inverted hull 描边、减面、找重叠几何、更好的倒角。减面和查重叠几何是导进引擎前的例行体检，顺手记下来。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "788cd64722c0",
+     "title": "I launched my solo-developed Godot game with 150,000 wishlists. Here's what happened in the first 4 days",
+     "url": "https://www.reddit.com/r/gamedev/comments/1xkxz6k/i_launched_my_solodeveloped_godot_game_with/",
+     "source": "reddit.com",
+     "published": "2026-11-01",
+     "comment": "15 万愿望单、两年业余时间、单人 Godot 开发的《Fantasy World Manager》抢先体验首发四天完整复盘。愿望单到首日销量的转化率是最难找的一手数据，这种自报体量的帖子看一条胜过十篇方法论。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "fe4da2229254",
+     "title": "The hidden AI signifier in Next Fest - and why it’s so complex...",
+     "url": "https://newsletter.gamediscover.co/p/the-hidden-ai-signifier-in-next-fest",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-10-30",
+     "comment": "GameDiscoverCo 扒 Next Fest 的 AI 披露：公开声明不能直接相加当统计用，口径和实际使用之间还隔着一层。想判断「标了 AI 会不会掉愿望单」，先得看懂这个口径问题。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "9030d4857380",
+     "title": "AI Cloners Are Here. Are Indie Devs Cooked?",
+     "url": "https://howtomarketagame.com/2026/10/28/ai-cloners-are-here-are-indie-devs-cooked/?utm_source=rss&utm_medium=rss&utm_campaign=ai-cloners-are-here-are-indie-devs-cooked",
+     "source": "howtomarketagame.com",
+     "published": "2026-10-28",
+     "comment": "Zukowski 从营销角度拆 Haystack Games 和 Drunken Goddess Reflux 两起 AI 克隆事件，回答独立开发者是不是真的完了。另见 AI and Games 本周把反编译、越狱和克隆串成一条线的那篇。",
+     "daily": true,
+     "also": [
+      {
+       "title": "Claude Coding Chaos & Resonance: A Plague Tale Legacy | 28/10/26",
+       "url": "https://www.aiandgames.com/p/claude-coding-chaos-and-resonance",
+       "source": "aiandgames.com"
+      }
+     ]
+    },
+    {
+     "id": "24e58657d36c",
+     "title": "Why asking \"what's the budget for your game?\" doesn't make sense in 2026 | Opinion",
+     "url": "https://www.gamesindustry.biz/why-asking-whats-the-budget-for-your-game-doesnt-make-sense-in-2026-opinion",
+     "source": "gamesindustry.biz",
+     "published": "2026-10-30",
+     "comment": "Spilt Milk 用 Trash Goblin 的经历说明 2026 年问「你的游戏预算多少」为什么不成立——他们被 74 家发行商拒过，最后靠 Kickstarter 活下来。谈发行、报预算之前读一遍，省得拿旧框架给自己定价。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 215,
+  "drop_ledger_url": 1,
+  "drop_ledger_title": 4,
+  "merge_url": 1,
+  "merge_title": 2,
+  "kept": 207,
+  "out_of_window": 1259,
+  "excluded": 4,
+  "source_capped": 103,
+  "trimmed": 0,
+  "candidates": 104,
+  "failed_sources": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCFK6NCbuCIVzA6Yj1G_ZqCg: HTTPError: 500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCFK6NCbuCIVzA6Yj1G_ZqCg",
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCr-5TdGkKszdbboXXsFZJTQ: HTTPError: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCr-5TdGkKszdbboXXsFZJTQ",
+   "reddit r/IndieDev: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/IndieDev/top/.rss?t=week&limit=25"
+  ],
+  "picked": 20,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 1
+ },
+ "generated_at": "2026-11-02T10:26:58+08:00"
+}
