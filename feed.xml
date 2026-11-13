@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 015 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/015.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/015.html</guid><pubDate>Mon, 02 Nov 2026 08:00:00 +0800</pubDate><description>官方这周只产出入门科普和 Industry 通稿，硬货都在 AI 与社区侧：Simon Willison 把 2026 年 10 月标成「vibe game development」的拐点，另有两份难得的一手市场数据——15 万愿望单的单人 Godot 游戏首发四天复盘，以及用 Steam 实测验证「爆款出现在已有爆款的地方」。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 016 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/016.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/016.html</guid><pubDate>Mon, 09 Nov 2026 08:00:00 +0800</pubDate><description>本期最该花时间的是 AI 署名的代价：Big Walk 因为开发末期用 LLM 查 bug 被独立游戏节评审团判定没有投票资格，另一边有团队发现合作半年的外包画师一直偷用生成式 AI——AI 工作流的风险第一次具体落到奖项和合同上。引擎侧 Unity 放出了统一渲染管线包的第一个预发布版，以及剔除系统的现状与路线。
+🎮 Unity 官方与引擎
+· Unity Pipeline 1.0.0-pre.1 is out
+· Culling Update - now and next
+· How SEED renders a world players never stop building
+· How Ares Interactive runs live ops without waiting on client updates
+· What making a game out of 1000s of layered illustrations looks like in engine vs in gameplay.
+🤖 AI × 游戏开发
+· Quoting Prompting Claude Fable 5.2
+· Yonkers Rises
+· Indie Game Festival Award Jury Decided Big Walk Was Ineligible For Voting Because The Studio Used AI, The Studio Said They Only Used AI Sparingly For Coding And To Troubleshoot Bugs
+· Our artist used gen AI :/
+· RapidSailorFreeze/studsmith：Free AI agent for Roblox Studio: plans, writes Luau, shows a diff and playtests its own changes. Windows app. 免费的 Roblox Studio AI 智能体。
+· The State of AI Voices in Games
+· Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives
+🛠 工具与开源
+· digitalhobbit/assetcat：Index, search and browse your game asset library: a local web UI and CLI that keeps licenses and AI provenance in plain files.
+· Phone Cam Controller: a free phone virtual camera for Blender
+· Koshizu Trees: procedural Japanese garden trees for Blender
+· Creating a Mech Girl Character – Part 4︱Retopology Tips
+📊 独游与市场
+· How Probably Stolen traded up to 750k copies sold in 5 days
+· Is Crack the future of small-footprint PC game success?
+· Updates to the Pre-Release Review Process
+· “Follow the fun”: a crowdfunding Q&amp;A with Catino Town
+📝 技术长文
+· Optimizing CPU-side Rendering Code
+· Graphics Programming weekly - Issue 461 - November 1st, 2026
+· Two Dimensional Version Control
+· Could a modern chess engine on a Pentium have defeated Kasparov in 1996?</description></item><item><title>游戏开发周刊 第 015 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/015.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/015.html</guid><pubDate>Mon, 02 Nov 2026 08:00:00 +0800</pubDate><description>官方这周只产出入门科普和 Industry 通稿，硬货都在 AI 与社区侧：Simon Willison 把 2026 年 10 月标成「vibe game development」的拐点，另有两份难得的一手市场数据——15 万愿望单的单人 Godot 游戏首发四天复盘，以及用 Steam 实测验证「爆款出现在已有爆款的地方」。
 🎮 Unity 官方与引擎
 · [RELEASED] Anvil CSG - Hammer-style Level Editor for Unity
 · [RELEASED] Ultimate Water 2D — Interactive Water System for 2D &amp; 2.5D Games
