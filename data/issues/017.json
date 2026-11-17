@@ -1,0 +1,298 @@
+{
+ "no": 17,
+ "week": "2026-W47",
+ "date": "2026-11-16",
+ "range": [
+  "2026-11-10",
+  "2026-11-16"
+ ],
+ "intro": "Unity 本周两手都冲着独立开发者：收了 Synty、放出 5 万美元不占股的赠金；但最该花时间的是那份 1,430 个 Steam demo 的对照数据——demo 的评测数预测首发体量，demo 的分数预测口碑，两件事互不相关。",
+ "sections": [
+  {
+   "key": "unity",
+   "title": "🎮 Unity 官方与引擎",
+   "items": [
+    {
+     "id": "e7c685acdaca",
+     "title": "Synty Studios Joins Unity, Bringing Artist-Made Assets to Unity Spark",
+     "url": "https://unity.com/blog/synty-studios-acquisition",
+     "source": "unity.com",
+     "published": "2026-11-16",
+     "comment": "Unity 收购 Synty Studios，POLYGON 系列并入 Unity Spark，官方声明现有素材包与授权不变。手上那堆 Synty 资产短期不用动，但原型期最常用的美术来源以后会长在 Unity 自己的管线里，后续的打包与授权形式值得盯一眼。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "74fdc94d5bbc",
+     "title": "Unity launches $50,000 grant for indie developers with no equity or repayment",
+     "url": "https://www.gamesindustry.biz/unity-launches-50000-grant-for-indie-developers-with-no-equity-or-repayment",
+     "source": "gamesindustry.biz",
+     "published": "2026-11-16",
+     "comment": "Unity Fellowship：给未来 12 个月内要发游戏的独立开发者 5 万美元，不占股、不用还。具体条件和名额得自己翻申请页，但'不占股不还款'的钱在当下极少，符合条件别拖到截止。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Unity Offers Indie Developers $50K Grants Through New Fellowship Program",
+       "url": "https://80.lv/articles/unity-offers-indie-developers-usd50k-grants-through-new-fellowship-program/",
+       "source": "80.lv"
+      }
+     ]
+    },
+    {
+     "id": "2299fdea86f1",
+     "title": "Unite Tokyo 2026: Watch the Keynote and Roadmap live on November 17",
+     "url": "https://discussions.unity.com/t/unite-tokyo-2026-watch-the-keynote-and-roadmap-live-on-november-17/1741819",
+     "source": "discussions.unity.com",
+     "published": "2026-11-13",
+     "comment": "Unite Tokyo 的 Keynote 与 Roadmap 两场 11/17 在 YouTube 直播（Keynote UTC 01:00）。想知道 6.x 之后引擎往哪走就看这一场，赶不上也会有录播。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "24e6614c5049",
+     "title": "In Case You Missed It - Unity Multiplayer",
+     "url": "https://discussions.unity.com/t/in-case-you-missed-it-unity-multiplayer/1741798",
+     "source": "discussions.unity.com",
+     "published": "2026-11-13",
+     "comment": "Unity Multiplayer 几个月的更新一次性汇总：Stateful Cloud Code、CloudBehaviours、本地开发支持。做联机的比翻一堆 release notes 省事，重点是服务端逻辑现在能带状态、还能在本地调。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "4ab287649ada",
+     "title": "Physics Fluid Experiments",
+     "url": "https://discussions.unity.com/t/physics-fluid-experiments/1742022",
+     "source": "discussions.unity.com",
+     "published": "2026-11-15",
+     "comment": "PhysicsCore2D 在试 2D 流体：一个世界多种流体、每种多材质（密度、黏度、硬度、内聚、塑性等），带接触过滤、查询和粒子预算。还是实验阶段，但如果你在等原生 2D 液体而不想自己糊 metaball，这是目前最值得跟的一条线。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "06912ce01f11",
+     "title": "How to Publish your Game on Steam! (FREE Course)",
+     "url": "https://www.youtube.com/watch?v=ZXANmGW_D20",
+     "source": "YouTube · Code Monkey",
+     "published": "2026-11-16",
+     "comment": "Code Monkey 出了一门免费的 Steam 上架课程。第一次自己发行的话，比零散啃 Steamworks 文档省事；已经上过架的可以跳过。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "title": "🤖 AI × 游戏开发",
+   "items": [
+    {
+     "id": "977879edadb2",
+     "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+     "url": "https://github.com/klad-app/klad",
+     "source": "github.com",
+     "published": "2026-11-11",
+     "comment": "Klad：专门给 coding agent 驱动的绘图应用（source-available），作者的动机就是做游戏时'AI 写代码很顺、到美术就断链'。价值在于它把画图做成 agent 能操作的工具，而不是再塞一个文生图接口——想把 Claude Code 接进 2D 素材生产的，这类形态最对路。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "ddc0a2349fd0",
+     "title": "op7418/guizang-game-skill：歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
+     "url": "https://github.com/op7418/guizang-game-skill",
+     "source": "github.com",
+     "published": "2026-11-11",
+     "comment": "歸藏的 Game Skill：给 Claude Code / Codex 的技能，从零产出浏览器里能玩的 3D 动作游戏（three.js、单 HTML、素材也是 AI 生成），附可玩 demo《雾锁山门》，本周新仓已 379 星。看点不是成品质量，是它怎么把'一个完整可玩的游戏'拆成 agent 能按序完成的步骤——这套拆法能搬到 Unity 流程上。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "88fb24422c43",
+     "title": "luccacerfz/character-factory-skills：7 Claude Code skills that take a game character from a one-page brief to an animated, measured Unity prefab: Tripo, Blender (Rigify), critic agents, Unity.",
+     "url": "https://github.com/luccacerfz/character-factory-skills",
+     "source": "github.com",
+     "published": "2026-11-14",
+     "comment": "7 个 Claude Code 技能串成一条链：一页需求 → Tripo 出模型 → Blender/Rigify 绑定动画 → 评审 agent 过一遍 → 产出尺寸正确的 Unity prefab。只有 19 星，但正好是你现在手里这套工具组合，值得拆开看它的提示词和中间校验怎么写。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "851bd8cda7a9",
+     "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+     "url": "https://huggingface.co/blog/3d-lora-finetuning",
+     "source": "huggingface.co",
+     "published": "2026-11-12",
+     "comment": "3D 生成模型的微调指南。用够通用 3D 生成就会撞上风格对不上项目这件事，而把'微调出符合自己美术规范的 3D 生成模型'从数据准备讲到训练细节的材料很少见。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "9ede670838ec",
+     "title": "CD Projekt Red used AI to alter the voice of Geralt's original Polish actor in Witcher 3: Songs of the Past",
+     "url": "https://www.gamesindustry.biz/cd-projekt-red-used-ai-to-alter-the-voice-of-geralts-original-polish-actor-in-witcher-3-songs-of-the-past",
+     "source": "gamesindustry.biz",
+     "published": "2026-11-13",
+     "comment": "CD Projekt Red 在《巫师 3：Songs of the Past》里用 AI 调整了 Geralt 波兰语原配音 Jacek Rozenek 的声音，并且是公开说明的。对小团队的参考在于'怎么用、怎么披露'——有原演员参与授权的 AI 配音，和整条管线换成合成音，在玩家眼里是两件事。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "tools",
+   "title": "🛠 工具与开源",
+   "items": [
+    {
+     "id": "82428a465c0e",
+     "title": "Blender 5.3 is AWESOME!",
+     "url": "https://www.youtube.com/watch?v=1itsKhVcAeg",
+     "source": "YouTube · Gamefromscratch",
+     "published": "2026-11-11",
+     "comment": "Blender 5.3 的新东西过一遍，重点落在高斯泼溅、DLSS 降噪、在线资产库和重做的合成器栈；另见一篇拿这些新功能做电影感场景的实操教程。",
+     "daily": false,
+     "also": [
+      {
+       "title": "Blender 5.3 Tutorial",
+       "url": "https://www.blendernation.com/2026/11/16/blender-5-3-tutorial/",
+       "source": "blendernation.com"
+      }
+     ]
+    },
+    {
+     "id": "25358c92ab6e",
+     "title": "Introducing Mat-Baker: A Free Add-on for Baking Procedural Materials",
+     "url": "https://www.blendernation.com/2026/11/12/introducing-mat-baker-a-free-add-on-for-baking-procedural-materials/",
+     "source": "blendernation.com",
+     "published": "2026-11-12",
+     "comment": "Mat-Baker：免费插件，把程序化材质烘成 PBR 贴图包，自动识别这套节点能生成哪些贴图，不用手动一张张配。Blender 里随手调的程序化材质要进 Unity 就卡在这一步，它正好省掉最烦的那段。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "7ec9286464fe",
+     "title": "Trim Sheets: The complete workflow in Blender, part 1 (the introduction)",
+     "url": "https://www.blendernation.com/2026/11/14/trim-sheets-the-complete-workflow-in-blender-part-1-the-introduction/",
+     "source": "blendernation.com",
+     "published": "2026-11-14",
+     "comment": "Trim sheet 工作流系列第一集，从做 trim sheet 讲到贴上低模。独立项目最划算的省素材手段之一：一张图铺满整个场景的硬表面，显存和制作时间一起降。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "title": "📊 独游与市场",
+   "items": [
+    {
+     "id": "82b893ad10cb",
+     "title": "I compared 1,430 Steam demos with the full games that came after them. How many reviews the demo got tells you how big the launch will be, and nothing about whether players will like the game. The demo's score tells you that, even with 10 reviews.",
+     "url": "https://www.reddit.com/r/gamedev/comments/1xwoqs9/i_compared_1430_steam_demos_with_the_full_games/",
+     "source": "reddit.com",
+     "published": "2026-11-15",
+     "comment": "作者把 2024 年 7 月以来 1,430 个有 demo 的付费游戏和正式版逐个对上：demo 收到多少条评测能预测首发体量，却完全不预测玩家喜不喜欢；而 demo 的评分哪怕只有 10 条评测就已经说明口碑。落到做法上——别把 demo 的评测数当质量信号，但分数低就先别急着上线。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "777af7b9a5f9",
+     "title": "What’s your China playbook for PC game discovery?",
+     "url": "https://newsletter.gamediscover.co/p/whats-your-china-playbook-for-pc",
+     "source": "newsletter.gamediscover.co",
+     "published": "2026-11-13",
+     "comment": "这期讲 PC 游戏在中国的发现渠道该怎么打，附本周 Steam 榜单。简中区对不少品类是最大的单一市场，而多数独立开发者的'中国策略'只是挂个机翻本地化，这篇给的是具体渠道和节奏。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "e2980550e10a",
+     "title": "Black Friday dates",
+     "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/689774035226066948",
+     "source": "steamcommunity.com",
+     "published": "2026-11-13",
+     "comment": "Steam 官方给了黑五安排：今年不办独立主题节，但会像去年那样给页面加黑五美术和曝光位。要参与就得提前把折扣配好；另见一期从发行方角度排这个窗口的播客。",
+     "daily": false,
+     "also": [
+      {
+       "title": "The Black Friday Playbook: How Game Publishers Can Maximize Holiday Sales",
+       "url": "https://naavik.co/podcast/the-black-friday-playbook-how-game-publishers-can-maximize-holiday-sales/",
+       "source": "naavik.co"
+      }
+     ]
+    },
+    {
+     "id": "b459d3db386f",
+     "title": "Package Discount Sales Reporting",
+     "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/689774035226066950",
+     "source": "steamcommunity.com",
+     "published": "2026-11-11",
+     "comment": "Steamworks 的 Sales & Activations 报表加了 Package 维度：每日营收与销量曲线，外加按折扣汇总的表现。以前要自己拼表才能回答'上次打 30% 到底比 20% 多赚多少'，现在后台直接给——这次黑五打完记得回来看。",
+     "daily": true,
+     "also": []
+    },
+    {
+     "id": "09a696c328c9",
+     "title": "How Clone-Proof Is Your Game? 4 Signs to Check",
+     "url": "https://howtomarketagame.com/2026/11/11/how-clone-proof-is-your-game-4-signs-to-check/?utm_source=rss&utm_medium=rss&utm_campaign=how-clone-proof-is-your-game-4-signs-to-check",
+     "source": "howtomarketagame.com",
+     "published": "2026-11-11",
+     "comment": "接着上一篇'多数人不必太担心 AI 克隆'，这篇给了 4 个自检信号判断你的游戏有多难被仿。结论偏乐观：Steam 赢家通吃，先放出 demo 的那个通常把跟风克隆闷死。另见一篇从法务角度讲 IP 怎么防（10 月 Next Fest 的 8000+ demo 里相当一部分用了生成式 AI）。",
+     "daily": true,
+     "also": [
+      {
+       "title": "How to protect your IP against the army of AI clones",
+       "url": "https://www.gamesindustry.biz/how-to-protect-your-ip-against-the-army-of-ai-clones",
+       "source": "gamesindustry.biz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "deep",
+   "title": "📝 技术长文",
+   "items": [
+    {
+     "id": "13b4ef047289",
+     "title": "Beating the frontier on NetHack",
+     "url": "https://antithesis.com/blog/2026/nethack/",
+     "source": "antithesis.com",
+     "published": "2026-11-13",
+     "comment": "Antithesis 写他们怎么把 NetHack 上的成绩推到前沿模型之上。NetHack 是公认最难的 AI 基准之一（永久死亡、状态空间巨大），这篇的方法论对想做自动化回归测试或游戏内 agent 的人更有用：在一个随时会把你随机杀死的系统里，怎么稳定取得进展。",
+     "daily": false,
+     "also": []
+    },
+    {
+     "id": "993f4585c26d",
+     "title": "The Secret of Monkey Island: all 13 versions side by side",
+     "url": "https://monkeyisland.pages.dev/",
+     "source": "monkeyisland.pages.dev",
+     "published": "2026-11-12",
+     "comment": "《猴岛小英雄》13 个版本逐屏并排对比，从 EGA 原版一路到各平台移植和重制。看同一份内容被重做三十多年的得失——哪些设计是技术限制逼出来的、哪些在重制时被抹平了——比读一篇讲像素美学的评论实在。",
+     "daily": false,
+     "also": []
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "raw": 250,
+  "drop_ledger_url": 16,
+  "drop_ledger_title": 5,
+  "merge_url": 1,
+  "merge_title": 3,
+  "kept": 225,
+  "out_of_window": 1254,
+  "excluded": 5,
+  "source_capped": 108,
+  "trimmed": 0,
+  "candidates": 117,
+  "failed_sources": [
+   "https://aiandgames.com/feed/: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "reddit r/Unity3D: HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Unity3D/top/.rss?t=week&limit=25"
+  ],
+  "picked": 21,
+  "bad_id": 0,
+  "dup_pick": 0,
+  "source_capped_pick": 4
+ },
+ "generated_at": "2026-11-17T10:09:16+08:00"
+}

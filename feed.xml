@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 016 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/016.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/016.html</guid><pubDate>Mon, 09 Nov 2026 08:00:00 +0800</pubDate><description>本期最该花时间的是 AI 署名的代价：Big Walk 因为开发末期用 LLM 查 bug 被独立游戏节评审团判定没有投票资格，另一边有团队发现合作半年的外包画师一直偷用生成式 AI——AI 工作流的风险第一次具体落到奖项和合同上。引擎侧 Unity 放出了统一渲染管线包的第一个预发布版，以及剔除系统的现状与路线。
+<rss version="2.0"><channel><title>游戏开发周刊</title><link>https://tang-xiaolong.github.io/weekly-site</link><description>Unity / AI 工作流 / 独立游戏市场 · 每周一期</description><language>zh-cn</language><item><title>游戏开发周刊 第 017 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/017.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/017.html</guid><pubDate>Mon, 16 Nov 2026 08:00:00 +0800</pubDate><description>Unity 本周两手都冲着独立开发者：收了 Synty、放出 5 万美元不占股的赠金；但最该花时间的是那份 1,430 个 Steam demo 的对照数据——demo 的评测数预测首发体量，demo 的分数预测口碑，两件事互不相关。
+🎮 Unity 官方与引擎
+· Synty Studios Joins Unity, Bringing Artist-Made Assets to Unity Spark
+· Unity launches $50,000 grant for indie developers with no equity or repayment
+· Unite Tokyo 2026: Watch the Keynote and Roadmap live on November 17
+· In Case You Missed It - Unity Multiplayer
+· Physics Fluid Experiments
+· How to Publish your Game on Steam! (FREE Course)
+🤖 AI × 游戏开发
+· Show HN: Klad, a paint app your coding agent can drive (source-available)
+· op7418/guizang-game-skill：歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.
+· luccacerfz/character-factory-skills：7 Claude Code skills that take a game character from a one-page brief to an animated, measured Unity prefab: Tripo, Blender (Rigify), critic agents, Unity.
+· The Definitive Fine-Tuning Guide for 3D Generation Models
+· CD Projekt Red used AI to alter the voice of Geralt&#x27;s original Polish actor in Witcher 3: Songs of the Past
+🛠 工具与开源
+· Blender 5.3 is AWESOME!
+· Introducing Mat-Baker: A Free Add-on for Baking Procedural Materials
+· Trim Sheets: The complete workflow in Blender, part 1 (the introduction)
+📊 独游与市场
+· I compared 1,430 Steam demos with the full games that came after them. How many reviews the demo got tells you how big the launch will be, and nothing about whether players will like the game. The demo&#x27;s score tells you that, even with 10 reviews.
+· What’s your China playbook for PC game discovery?
+· Black Friday dates
+· Package Discount Sales Reporting
+· How Clone-Proof Is Your Game? 4 Signs to Check
+📝 技术长文
+· Beating the frontier on NetHack
+· The Secret of Monkey Island: all 13 versions side by side</description></item><item><title>游戏开发周刊 第 016 期</title><link>https://tang-xiaolong.github.io/weekly-site/issues/016.html</link><guid isPermaLink="true">https://tang-xiaolong.github.io/weekly-site/issues/016.html</guid><pubDate>Mon, 09 Nov 2026 08:00:00 +0800</pubDate><description>本期最该花时间的是 AI 署名的代价：Big Walk 因为开发末期用 LLM 查 bug 被独立游戏节评审团判定没有投票资格，另一边有团队发现合作半年的外包画师一直偷用生成式 AI——AI 工作流的风险第一次具体落到奖项和合同上。引擎侧 Unity 放出了统一渲染管线包的第一个预发布版，以及剔除系统的现状与路线。
 🎮 Unity 官方与引擎
 · Unity Pipeline 1.0.0-pre.1 is out
 · Culling Update - now and next
